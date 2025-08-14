@@ -6,6 +6,11 @@ import asyncio
 
 
 from tqdm.asyncio import tqdm, tqdm_asyncio
+from tqdm import tqdm as tqdm_base
+from threading import RLock
+
+# Ensure tqdm uses a stable lock to avoid shutdown threading issues
+tqdm_base.set_lock(RLock())
 
 
 from cypher_queries import *
@@ -92,26 +97,26 @@ class MsGraphRAG:
         self.max_workers = max_workers
         self._database = database
         self._openai_client = AsyncOpenAI(api_key=openai_api_key)
-        # # Test for APOC
-        # try:
-        #     self.query("CALL apoc.help('test')")
-        # except:
-        #     raise ValueError("You need to install and allow APOC functions")
-        # # Test for GDS
-        # try:
-        #     self.query("CALL gds.list('test')")
-        # except:
-        #     raise ValueError("You need to install and allow GDS functions")
-        # if create_constraints:
-        #     self.query(
-        #         "CREATE CONSTRAINT IF NOT EXISTS FOR (e:__Chunk__) REQUIRE e.id IS UNIQUE;"
-        #     )
-        #     self.query(
-        #         "CREATE CONSTRAINT IF NOT EXISTS FOR (e:__Entity__) REQUIRE e.name IS UNIQUE;"
-        #     )
-        #     self.query(
-        #         "CREATE CONSTRAINT IF NOT EXISTS FOR (e:__Community__) REQUIRE e.id IS UNIQUE;"
-        #     )
+        # Test for APOC
+        try:
+            self.query("CALL apoc.help('test')")
+        except:
+            raise ValueError("You need to install and allow APOC functions")
+        # Test for GDS
+        try:
+            self.query("CALL gds.list('test')")
+        except:
+            raise ValueError("You need to install and allow GDS functions")
+        if create_constraints:
+            self.query(
+                "CREATE CONSTRAINT IF NOT EXISTS FOR (e:__Chunk__) REQUIRE e.id IS UNIQUE;"
+            )
+            self.query(
+                "CREATE CONSTRAINT IF NOT EXISTS FOR (e:__Entity__) REQUIRE e.name IS UNIQUE;"
+            )
+            self.query(
+                "CREATE CONSTRAINT IF NOT EXISTS FOR (e:__Community__) REQUIRE e.id IS UNIQUE;"
+            )
 
     async def extract_nodes_and_relationships(
         self, input_texts: list, allowed_entities: list
@@ -179,13 +184,22 @@ class MsGraphRAG:
         for text, output in zip(input_texts, results):
             nodes, relationships = output
             total_relationships += len(relationships)
-            # Import nodes
+            # Import nodes into Neo4J
             self.query(
                 import_nodes_query,
-                params={"text": text, "chunk_id": get_hash(text), "data": nodes},
+                params={
+                    "text": text,
+                    "chunk_id": get_hash(text),
+                    "data": nodes,
+                },
             )
-            # Import relationships
-            self.query(import_relationships_query, params={"data": relationships})
+            # Import relationships into Neo4J
+            self.query(
+                import_relationships_query,
+                params={
+                    "data": relationships,
+                },
+            )
 
         return f"Successfuly extracted and imported {total_relationships} relationships"
 
@@ -432,7 +446,7 @@ class MsGraphRAG:
         # fallback to allow implicit transactions
         session_params.setdefault("database", self._database)
         with self._driver.session(**session_params) as session:
-            result = session.run(Query(text=query, timeout=self.timeout), params)
+            result = session.run(Query(text=query), params)
             return [r.data() for r in result]
 
     async def achat(self, messages, model="gpt-4o", temperature=0, config={}):
@@ -472,6 +486,9 @@ class MsGraphRAG:
         """
         return self
 
+    async def __aenter__(self) -> "MsGraphRAG":
+        return self
+
     def __exit__(
         self,
         exc_type: Optional[Type[BaseException]],
@@ -495,6 +512,24 @@ class MsGraphRAG:
         Note:
             Any exception is re-raised after the connection is closed.
         """
+        self.close()
+
+    async def __aexit__(
+        self,
+        exc_type: Optional[Type[BaseException]],
+        exc_val: Optional[BaseException],
+        exc_tb: Optional[Any],
+    ) -> None:
+        await self.aclose()
+
+    async def aclose(self) -> None:
+        try:
+            # Close async OpenAI client if available
+            if hasattr(self, "_openai_client") and self._openai_client is not None:
+                await self._openai_client.aclose()
+        except Exception:
+            pass
+        # Also close the Neo4j driver synchronously
         self.close()
 
     def __del__(self) -> None:

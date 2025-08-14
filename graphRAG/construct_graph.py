@@ -1,4 +1,5 @@
 import os
+import asyncio
 
 from ms_graphrag import MsGraphRAG
 from neo4j import GraphDatabase
@@ -21,39 +22,43 @@ driver = GraphDatabase.driver(
     ),
 )
 
-ms_graph = MsGraphRAG(
-    driver=driver,
-    openai_model_name="gpt-4o",
-    openai_api_key=openai_api_key,
-    max_workers=10,
-)
 
-# Load data
-import pandas as pd
+async def main():
+    async with MsGraphRAG(
+        driver=driver,
+        openai_model_name="gpt-4.1-mini",
+        openai_api_key=openai_api_key,
+        max_workers=10,
+    ) as ms_graph:
+        # Load data
+        import pandas as pd
 
-# Login using e.g. `huggingface-cli login` to access this dataset
-df = pd.read_parquet(
-    "hf://datasets/weaviate/agents/query-agent/financial-contracts/0001.parquet"
-)
-df.head()
+        # Login using e.g. `huggingface-cli login` to access this dataset
+        df = pd.read_parquet(
+            "hf://datasets/weaviate/agents/query-agent/financial-contracts/0001.parquet"
+        )
+        df.head()
+
+        texts = [el["contract_text"] for el in df["properties"]]
+
+        # Extract Relevant Entities
+        allowed_entities = ["Person", "Organization", "Location"]
+        await ms_graph.extract_nodes_and_relationships(texts[:2], allowed_entities)
+
+        # Summarize Nodes and Communities
+        await ms_graph.summarize_nodes_and_relationships()
+        await ms_graph.summarize_communities()
+
+        # Entities
+        entities = ms_graph.query(
+            """
+ MATCH (e:__Entity__)
+ RETURN e.name AS entity_id, e.summary AS entity_summary
+ """
+        )
+
+        print(entities)
 
 
-texts = [el["contract_text"] for el in df["properties"]]
-
-# Extract Relevant Entities
-allowed_entities = ["Person", "Organization", "Location"]
-ms_graph.extract_nodes_and_relationships(texts, allowed_entities)
-
-# Summarize Nodes and Communities
-ms_graph.summarize_nodes_and_relationships()
-ms_graph.summarize_communities()
-
-# Entities
-entities = ms_graph.query(
-    """
-MATCH (e:__Entity__)
-RETURN e.name AS entity_id, e.summary AS entity_summary
-"""
-)
-
-print(entities)
+if __name__ == "__main__":
+    asyncio.run(main())

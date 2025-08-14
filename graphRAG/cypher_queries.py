@@ -1,12 +1,13 @@
 import_nodes_query = """
-CREATE (c:__Chunk__ {id: $chunk_id})
+MERGE (c:__Chunk__ {id: $chunk_id})
 SET c.text = $text
 WITH c
 UNWIND $data AS row
 MERGE (n:__Entity__ {name: row.entity_name})
-SET n:$(row.entity_type),
-    n.description = coalesce(n.description, []) + [row.entity_description]
-MERGE (n)<-[:MENTIONS]-(c)
+WITH c, row, n
+CALL apoc.create.addLabels(n, [row.entity_type]) YIELD node
+SET node.description = coalesce(node.description, []) + [row.entity_description]
+MERGE (node)<-[:MENTIONS]-(c)
 """
 
 import_relationships_query = """
@@ -137,4 +138,3 @@ SET c.title = row.community.title,
     c.rating = row.community.rating,
     c.rating_explanation = row.community.rating_explanation
 """
-
