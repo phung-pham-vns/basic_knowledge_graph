@@ -25,13 +25,16 @@ chain = GraphCypherQAChain.from_llm(
     allow_dangerous_requests=True,
 )
 
-response = chain.invoke({"query": "Bệnh nào ở Thailand ảnh hưởng tới nhiều giống cây sầu riêng nhất?"})
-print(response)
+examples = [
+    "Which disease in Thailand affects the most durian varieties?",
+    "Which disease appears in more than two seasons in a year, and which seasons are they?",
+    "Which disease usually appears on durian trees during the rainy season?",
+    "If my tree has yellowing leaves, what disease could it be?",
+    "Which disease appears on the most parts of the durian tree, and which parts are they?",
+]
 
-# # Generated Cypher:
-# MATCH (loc:Location {id: "Thailand"})<-[:OCCURS_IN]-(d:Disease)<-[:SUSCEPTIBLE_TO]-(v:Variety)
-# RETURN d.id AS Disease, COUNT(DISTINCT v) AS VarietyCount
-# ORDER BY VarietyCount DESC
-# LIMIT 1
-# Full Context:
-# [{'Disease': 'Fusarium Wilt Of Durian', 'VarietyCount': 14}]
+for query in examples:
+    print(f"Question: {query}")
+    response = chain.invoke({"query": query})
+    print(f"Answer: {response['result']}")
+    print("-" * 100)

@@ -40,6 +40,7 @@ async def construct_knowledge_graph(
     data_path: str,
     sheet_name: str,
     ignored_column_names: list[str] = None,
+    clear_existing_graph: bool = True,
 ):
     try:
         documents = load_document_from_excel(
@@ -75,8 +76,9 @@ async def construct_knowledge_graph(
         print(f"\nTotal nodes created: {total_nodes}")
         print(f"Total relations created: {total_relations}")
 
-        print(f"Clearing existing data from {settings.graph_db_provider}...")
-        graph_client.query("MATCH (n) DETACH DELETE n")
+        if clear_existing_graph:
+            print(f"Clearing existing data from {settings.graph_db_provider}...")
+            graph_client.query("MATCH (n) DETACH DELETE n")
 
         print(f"Adding graph documents to {settings.graph_db_provider}...")
         graph_client.add_graph_documents(graph_documents)
@@ -95,5 +97,6 @@ if __name__ == "__main__":
             data_path="docs/data/durian_pest_and_disease_data.xlsx",
             sheet_name="(3) Diseases Information",
             ignored_column_names=["No.", "References"],
+            clear_existing_graph=True,
         )
     )
