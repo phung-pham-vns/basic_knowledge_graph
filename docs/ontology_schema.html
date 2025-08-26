@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #FFFFFF;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#C6E9C6", "id": "CROP", "label": "CROP", "shape": "dot", "title": "\u003cb\u003eCROP\u003c/b\u003e\u003cbr\u003eA cultivated plant grown for food, fiber, or other use (e.g., rice, durian)."}, {"color": "#C6E9C6", "id": "VARIETY", "label": "VARIETY", "shape": "dot", "title": "\u003cb\u003eVARIETY\u003c/b\u003e\u003cbr\u003eA cultivar or variety of a crop."}, {"color": "#FFD6CC", "id": "DISEASE", "label": "DISEASE", "shape": "dot", "title": "\u003cb\u003eDISEASE\u003c/b\u003e\u003cbr\u003eA disorder affecting a crop or its parts.\u003cbr\u003e\u003ci\u003eProperties\u003c/i\u003e\u003cul\u003e\u003cli\u003edescription : STRING\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#C6E9C6", "id": "CROP_PART", "label": "CROP_PART", "shape": "dot", "title": "\u003cb\u003eCROP_PART\u003c/b\u003e\u003cbr\u003eA plant organ (morphological part), e.g., leaf, stem, root, fruit, flower, seed."}, {"color": "#FFD6CC", "id": "SYMPTOM", "label": "SYMPTOM", "shape": "dot", "title": "\u003cb\u003eSYMPTOM\u003c/b\u003e\u003cbr\u003eAn observable sign or manifestation of a disease (e.g., leaf spots, cankers, wilting)."}, {"color": "#C6E9C6", "id": "PATHOGEN", "label": "PATHOGEN", "shape": "dot", "title": "\u003cb\u003ePATHOGEN\u003c/b\u003e\u003cbr\u003eAn organism or agent that causes disease in crops.\u003cbr\u003e\u003ci\u003eProperties\u003c/i\u003e\u003cul\u003e\u003cli\u003etype : STRING (required)\u003c/li\u003e\u003c/ul\u003e"}, {"color": "#FFD6CC", "id": "CONDITION", "label": "CONDITION", "shape": "dot", "title": "\u003cb\u003eCONDITION\u003c/b\u003e\u003cbr\u003eAn environmental or management condition contributing to disease development (e.g., poor drainage, nutrient imbalance, mechanical injury)."}, {"color": "#E3D7FF", "id": "SEASONALITY", "label": "SEASONALITY", "shape": "dot", "title": "\u003cb\u003eSEASONALITY\u003c/b\u003e\u003cbr\u003eTime of year or growth stage when the disease is most likely to occur (e.g., rainy season, flowering)."}, {"color": "#E3D7FF", "id": "LOCATION", "label": "LOCATION", "shape": "dot", "title": "\u003cb\u003eLOCATION\u003c/b\u003e\u003cbr\u003eGeographic area where the disease has been reported (e.g., Southern Vietnam, Eastern Thailand, Sabah, Malaysia)."}, {"color": "#CCE0FF", "id": "TREATMENT", "label": "TREATMENT", "shape": "dot", "title": "\u003cb\u003eTREATMENT\u003c/b\u003e\u003cbr\u003eAn intervention used to manage or cure a disease (e.g., fungicide application, pruning)."}, {"color": "#CCE0FF", "id": "PREVENTION_METHOD", "label": "PREVENTION_METHOD", "shape": "dot", "title": "\u003cb\u003ePREVENTION_METHOD\u003c/b\u003e\u003cbr\u003eA practice that reduces the likelihood of disease (e.g., sanitation, resistant varieties)."}, {"color": "#E3D7FF", "id": "SPREAD_METHOD", "label": "SPREAD_METHOD", "shape": "dot", "title": "\u003cb\u003eSPREAD_METHOD\u003c/b\u003e\u003cbr\u003eA transmission pathway by which the disease or pathogen spreads (e.g., wind, insects, irrigation water, tools)."}, {"color": "#FFD6CC", "id": "RISK_FACTOR", "label": "RISK_FACTOR", "shape": "dot", "title": "\u003cb\u003eRISK_FACTOR\u003c/b\u003e\u003cbr\u003eA factor that increases the likelihood or severity of disease (e.g., high humidity, dense canopy)."}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "CROP", "label": "HAS_VARIETY", "to": "VARIETY"}, {"arrows": "to", "from": "CROP", "label": "AFFECTED_BY", "to": "DISEASE"}, {"arrows": "to", "from": "VARIETY", "label": "SUSCEPTIBLE_TO", "to": "DISEASE"}, {"arrows": "to", "from": "CROP", "label": "HAS_CROP_PART", "to": "CROP_PART"}, {"arrows": "to", "from": "CROP_PART", "label": "HAS_SYMPTOM", "to": "SYMPTOM"}, {"arrows": "to", "from": "CROP_PART", "label": "HAS_DISEASE", "to": "DISEASE"}, {"arrows": "to", "from": "DISEASE", "label": "CAUSED_BY", "to": "PATHOGEN"}, {"arrows": "to", "from": "DISEASE", "label": "CAUSED_BY", "to": "CONDITION"}, {"arrows": "to", "from": "DISEASE", "label": "PEAKS_DURING", "to": "SEASONALITY"}, {"arrows": "to", "from": "DISEASE", "label": "MANAGED_BY", "to": "TREATMENT"}, {"arrows": "to", "from": "DISEASE", "label": "PREVENTED_BY", "to": "PREVENTION_METHOD"}, {"arrows": "to", "from": "DISEASE", "label": "SPREADS_VIA", "to": "SPREAD_METHOD"}, {"arrows": "to", "from": "DISEASE", "label": "TRIGGERED_BY", "to": "RISK_FACTOR"}, {"arrows": "to", "from": "DISEASE", "label": "OCCURS_IN", "to": "LOCATION"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"stabilization": true, "barnesHut": {"gravitationalConstant": -12000}}, "nodes": {"shape": "box"}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

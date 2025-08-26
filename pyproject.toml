@@ -20,7 +20,10 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = []
+dev = [
+  "graphviz==0.2",
+  "pyvis==0.3.2",
+]
 
 [build-system]
 requires = ["hatchling"]

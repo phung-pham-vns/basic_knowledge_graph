@@ -24,7 +24,7 @@ node_types = [
     },
     {
         "label": "SYMPTOM",
-        "description": "An observable sign or manifestation of a disease (e.g., leaf spots, cankers, wilting).",
+        "description": "An observable sign or manifestation of a disease (e.g., leaf spots, cankers, wilting). Each node contains only one such sign or manifestation.",
     },
     {
         "label": "PATHOGEN",
@@ -44,7 +44,7 @@ node_types = [
     },
     {
         "label": "SEASONALITY",
-        "description": "Time of year or growth stage when the disease is most likely to occur (e.g., rainy season, flowering).",
+        "description": "Time of year when the disease is most likely to occur (e.g., rainy season).",
     },
     {
         "label": "LOCATION",

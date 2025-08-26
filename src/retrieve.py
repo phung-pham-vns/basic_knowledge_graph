@@ -25,12 +25,17 @@ chain = GraphCypherQAChain.from_llm(
     allow_dangerous_requests=True,
 )
 
+print("GRAPH SCHEMA:")
+print(graph_client.schema)
+print("-" * 100 + "\n")
+
 examples = [
     "Which disease in Thailand affects the most durian varieties?",
     "Which disease appears in more than two seasons in a year, and which seasons are they?",
     "Which disease usually appears on durian trees during the rainy season?",
     "If my tree has yellowing leaves, what disease could it be?",
     "Which disease appears on the most parts of the durian tree, and which parts are they?",
+    "Bệnh nào ảnh hưởng đến nhiều loại giống cây trồng nhất?",
 ]
 
 for query in examples:
@@ -38,3 +43,11 @@ for query in examples:
     response = chain.invoke({"query": query})
     print(f"Answer: {response['result']}")
     print("-" * 100)
+
+
+# MATCH p=(symptom:Symptom {id: "Unilateral Yellowing"})<-[:HAS_SYMPTOM]-(crop_part:Crop_part)-[:HAS_DISEASE]->(disease:Disease)
+# RETURN p;
+
+
+# MATCH p=(d:Disease)<-[:HAS_DISEASE]-(cp:Crop_part)
+# RETURN p;
