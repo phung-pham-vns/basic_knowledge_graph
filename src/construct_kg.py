@@ -8,6 +8,8 @@ from langchain_core.documents import Document
 from langchain_experimental.graph_transformers import LLMGraphTransformer
 
 from schema.disease_schema import node_types, allowed_relationships
+from utils import load_excel
+from create_prompt import create_detailed_schema_prompt
 
 
 def load_environment_variables():
@@ -41,34 +43,6 @@ def initialize_neo4j_graph():
     )
 
 
-def load_excel(
-    file_path: str, sheet_name: str, ignored_column_names: list[str] = None
-) -> list[str]:
-    """Load Excel file and convert rows to text format."""
-    if ignored_column_names is None:
-        ignored_column_names = []
-
-    df = pd.read_excel(file_path, sheet_name=sheet_name)
-
-    row_infos = []
-    for _, row in df.iterrows():
-        text_parts = []
-
-        column_id = 0
-        for column in df.columns:
-            if column in ignored_column_names:
-                continue
-
-            if pd.notna(row[column]) and str(row[column]).strip():
-                column_id += 1
-                text_parts.append(f"{column_id}. `{column}`: {row[column]}")
-
-        full_text = "\n".join(text_parts)
-        row_infos.append(full_text)
-
-    return row_infos
-
-
 async def construct_knowledge_graph(
     data_path: str, sheet_name: str, ignored_column_names: list[str] = None
 ):
@@ -91,31 +65,71 @@ async def construct_knowledge_graph(
         NODE_TYPES = [node_type["label"] for node_type in node_types]
         ALLOWED_RELATIONSHIPS = allowed_relationships
 
-        # Initialize LLM and transformer
+        # Create detailed schema prompt
+        schema_prompt = create_detailed_schema_prompt()
+        print("Schema prompt created successfully!")
+        print(f"Schema prompt length: {len(schema_prompt)} characters")
+
+        # Initialize LLM and transformer with enhanced configuration
         llm = ChatOpenAI(model_name=os.environ["LLM_MODEL_NAME"], temperature=0)
+
         llm_transformer = LLMGraphTransformer(
             llm=llm,
             allowed_nodes=NODE_TYPES,
             allowed_relationships=ALLOWED_RELATIONSHIPS,
         )
 
-        # Convert documents to graph format
-        documents = [Document(page_content=document) for document in documents]
-        graph_documents = await llm_transformer.aconvert_to_graph_documents(documents)
+        # Convert documents to graph format with enhanced context
+        enhanced_documents = []
+        for i, doc in enumerate(documents):
+            # Add schema context to each document
+            enhanced_content = f"""
+{schema_prompt}
+
+## SPECIFIC INSTRUCTIONS FOR THIS DATA:
+- Extract entities that match the defined node types from the agricultural disease data below
+- Create relationships following the allowed patterns shown above
+- Pay special attention to disease names, symptoms, pathogens, and treatments
+- Ensure all extracted entities have appropriate node types and properties
+
+## DATA TO PROCESS:
+{doc}
+
+## REMINDER:
+Follow the schema exactly. Only create nodes and relationships that match the defined types and patterns.
+"""
+            enhanced_documents.append(Document(page_content=enhanced_content))
+
+        print(f"Processing {len(enhanced_documents)} documents with enhanced schema...")
+
+        # Convert to graph documents
+        graph_documents = await llm_transformer.aconvert_to_graph_documents(
+            enhanced_documents
+        )
 
         # Print graph information
-        for graph_document in graph_documents:
-            print(f"Nodes ({len(graph_document.nodes)}): {graph_document.nodes}")
+        total_nodes = 0
+        total_relationships = 0
+        for i, graph_document in enumerate(graph_documents):
+            print(f"\nDocument {i+1}:")
+            print(f"  Nodes ({len(graph_document.nodes)}): {graph_document.nodes}")
             print(
-                f"Relationships ({len(graph_document.relationships)}): {graph_document.relationships}"
+                f"  Relationships ({len(graph_document.relationships)}): {graph_document.relationships}"
             )
+            total_nodes += len(graph_document.nodes)
+            total_relationships += len(graph_document.relationships)
+
+        print(f"\nTotal nodes created: {total_nodes}")
+        print(f"Total relationships created: {total_relationships}")
 
         # Clear existing data if needed
         DELETE_EXISTING_DATA = True
         if DELETE_EXISTING_DATA:
+            print("Clearing existing data from Neo4j...")
             graph.query("MATCH (n) DETACH DELETE n")
 
         # Add graph documents to Neo4j
+        print("Adding graph documents to Neo4j...")
         graph.add_graph_documents(graph_documents)
         print("Knowledge graph construction completed successfully!")
 
