@@ -1,8 +1,10 @@
 import pandas as pd
 
 
-def load_excel(
-    file_path: str, sheet_name: str, ignored_column_names: list[str] = None
+def load_document_from_excel(
+    file_path: str,
+    sheet_name: str,
+    ignored_column_names: list[str] = None,
 ) -> list[str]:
     """Load Excel file and convert rows to text format."""
     if ignored_column_names is None:

@@ -1,0 +1,33 @@
+[project]
+name = "basic-knowledge-graph"
+version = "0.1.0"
+description = "A Basic Knowledge Graph Construction and Retrieval"
+authors = [
+  { name = "phungpx", email = "phamxuanphungbku@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.12"
+
+# Dependencies your project needs at runtime
+dependencies = [
+  "dotenv==0.9.9",
+  "langchain-neo4j==0.5.0",
+  "pandas==2.3.2",
+  "langchain-experimental==0.3.4",
+  "langchain-openai==0.3.31",
+  "openpyxl==3.1.5",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+line-length = 120
+
+[tool.ruff]
+line-length = 120
