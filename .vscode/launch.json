@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "src/core/graph_construction.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "OPENAI_API_KEY": "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",
+                "NEO4J_URI": "bolt://localhost:7687",
+                "NEO4J_USER": "neo4j",
+                "NEO4J_PASSWORD": "aisac_kg"
+            }
+        }
+    ]
+}

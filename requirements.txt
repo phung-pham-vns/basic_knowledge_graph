@@ -4,6 +4,8 @@ neo4j_graphrag
 pymilvus
 numpy
 scipy
+pandas
+openpyxl
 langchain
 langchain-core
 langchain-openai
