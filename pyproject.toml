@@ -16,13 +16,14 @@ dependencies = [
   "pandas==2.3.2",
   "langchain-experimental==0.3.4",
   "langchain-openai==0.3.31",
-  "openpyxl==3.1.5",
+  "openpyxl==3.1.5"
 ]
 
 [project.optional-dependencies]
 dev = [
   "graphviz==0.2",
   "pyvis==0.3.2",
+  "gradio==5.43.1",
 ]
 
 [build-system]
