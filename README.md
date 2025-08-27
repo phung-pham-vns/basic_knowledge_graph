@@ -77,3 +77,73 @@ asyncio.run(
 python src/retrieve.py
 ```
 
+# Retrieval
+
+## Example 1.
+
+- Question & Response
+
+```bash
+Question: Which diseases on durian caused by Phytophthora Palmivora?
+
+
+> Entering new GraphCypherQAChain chain...
+Generated Cypher:
+cypher
+MATCH (d:Disease)-[:CAUSED_BY]->(p:Pathogen {id: "Phytophthora Palmivora"}),
+      (c:Crop {id: "Durian"})-[:AFFECTED_BY]->(d)
+RETURN d.id AS Disease
+
+Full Context:
+[{'Disease': 'Leaf Blight'}, {'Disease': 'Phytophthora Root Rot'}, {'Disease': 'Patch Canker'}, {'Disease': 'Phytophthora Fruit Rot Of Durian'}, {'Disease': 'Phytophthora Patch Canker'}]
+
+> Finished chain.
+Answer: The diseases on durian caused by Phytophthora Palmivora are Phytophthora Root Rot, Phytophthora Fruit Rot Of Durian, and Phytophthora Patch Canker.
+```
+
+- Graph Execution
+
+|Visualization|
+|:--:|
+|<img src="./docs/figures/ex1.png" width="600">|
+
+```bash
+MATCH (crop:Crop {id: "Durian"})
+MATCH (pathogen:Pathogen {id: "Phytophthora Palmivora"})
+MATCH p = (crop)-[:AFFECTED_BY]->(d:Disease)-[:CAUSED_BY]->(pathogen)
+RETURN p;
+```
+
+## Example 2.
+
+- Question & Response
+
+```bash
+Question: Which disease in Thailand affects the most durian varieties?
+
+
+> Entering new GraphCypherQAChain chain...
+Generated Cypher:
+cypher
+MATCH (loc:Location {id: "Thailand"})<-[:OCCURS_IN]-(d:Disease)<-[:SUSCEPTIBLE_TO]-(v:Variety)<-[:HAS_VARIETY]-(c:Crop {id: "Durian"})
+RETURN d.id AS disease, COUNT(DISTINCT v) AS varietyCount
+ORDER BY varietyCount DESC
+LIMIT 1
+
+Full Context:
+[{'disease': 'Phytophthora Patch Canker', 'varietyCount': 6}]
+
+> Finished chain.
+Answer: Phytophthora Patch Canker affects the most durian varieties in Thailand, impacting 6 different varieties.
+```
+
+- Graph Execution
+
+|Visualization|
+|:--:|
+|<img src="./docs/figures/ex2.png" width="600">|
+
+```bash
+MATCH p=(loc:Location {id: "Thailand"})<-[:OCCURS_IN]-(d:Disease)<-[:SUSCEPTIBLE_TO]-(v:Variety)<-[:HAS_VARIETY]-(c:Crop {id: "Durian"})
+RETURN p;
+```

@@ -1,5 +1,4 @@
 from langchain_neo4j import Neo4jGraph
-from langchain_openai import ChatOpenAI
 from langchain_core.documents import Document
 from langchain_experimental.graph_transformers import LLMGraphTransformer
 
@@ -8,8 +7,10 @@ from schema.disease_schema import (
     allowed_relationships as disease_allowed_relationships,
 )
 from utils import load_document_from_excel
-from prompts.disease_graph_schema_prompt import DISEASE_PROMPT
-from prompts.document_prompt import DOCUMENT_ENTITIES_RELATIONS_EXTRACTION_PROMPT
+from schema.disease_schema import node_types, relation_types, allowed_relationships
+from prompts.graph_schema_prompt import graph_schema_prompt
+from prompts.entity_and_relation_extraction_prompt import entities_and_relationships_extraction_prompt
+from deps.llm_client import get_llm_client
 from settings import settings
 
 
@@ -19,16 +20,18 @@ graph_client = Neo4jGraph(
     password=settings.graph_db.graph_db_password,
 )
 
-llm_client = ChatOpenAI(
-    api_key=settings.llm.llm_api_key,
-    model_name=settings.llm.llm_model,
-    temperature=settings.llm.llm_temperature,
-)
+llm_client = get_llm_client(settings)
 
 llm_transformer = LLMGraphTransformer(
     llm=llm_client,
     allowed_nodes=[node_type["label"] for node_type in disease_node_types],
     allowed_relationships=disease_allowed_relationships,
+)
+
+disease_graph_schema = graph_schema_prompt(
+    node_types,
+    relation_types,
+    allowed_relationships,
 )
 
 
@@ -48,11 +51,13 @@ async def construct_knowledge_graph(
         # Convert documents to graph format with enhanced context
         enhanced_documents = []
         for document in documents:
-            content = (
-                DOCUMENT_ENTITIES_RELATIONS_EXTRACTION_PROMPT.replace("<<GRAPH_SCHEMA>>", DISEASE_PROMPT)
-                .replace("<<CATEGORY>>", "disease")
-                .replace("<<DOCUMENT>>", document)
-            )
+            content = entities_and_relationships_extraction_prompt.invoke(
+                input={
+                    "graph_schema": disease_graph_schema,
+                    "category": "disease",
+                    "document": document,
+                }
+            ).text
             enhanced_documents.append(Document(page_content=content))
 
         # Convert to graph documents

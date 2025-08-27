@@ -20,7 +20,7 @@ node_types = [
     },
     {
         "label": "CROP_PART",
-        "description": "A plant organ (morphological part), e.g., leaf, stem, root, fruit, flower, seed.",
+        "description": "A plant organ or morphological part (e.g., leaf, stem, root, fruit, flower, seed). The output must be in singular form, e.g., trunk, branch (not trunks, branches).",
     },
     {
         "label": "SYMPTOM",
