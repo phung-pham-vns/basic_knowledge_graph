@@ -77,9 +77,9 @@ asyncio.run(
 python src/retrieve.py
 ```
 
-# Retrieval
+## Examples
 
-## Example 1.
+### Example 1.
 
 - Question & Response
 
@@ -114,7 +114,7 @@ MATCH p = (crop)-[:AFFECTED_BY]->(d:Disease)-[:CAUSED_BY]->(pathogen)
 RETURN p;
 ```
 
-## Example 2.
+### Example 2.
 
 - Question & Response
 
