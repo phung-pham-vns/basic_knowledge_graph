@@ -77,6 +77,16 @@ asyncio.run(
 python src/retrieve.py
 ```
 
+## KG Retrieval
+
+|Cypher Query Enhancement|
+|:--:|
+|<img src="./docs/figures/cypher_query.png" width="600">|
+
+|Logic Flow|
+|:--:|
+|<img src="./docs/figures/logic_flow.png" width="600">|
+
 ## Examples
 
 ### Example 1.
