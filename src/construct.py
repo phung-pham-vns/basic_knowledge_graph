@@ -26,6 +26,12 @@ llm_transformer = LLMGraphTransformer(
     llm=llm_client,
     allowed_nodes=[node_type["label"] for node_type in disease_node_types],
     allowed_relationships=disease_allowed_relationships,
+    node_properties=[
+        property["name"]
+        for node_type in disease_node_types
+        if len(node_type.get("properties", [])) > 0
+        for property in node_type["properties"]
+    ],
 )
 
 disease_graph_schema = graph_schema_prompt(

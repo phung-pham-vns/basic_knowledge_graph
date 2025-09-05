@@ -16,9 +16,12 @@ llm_client = get_llm_client(settings)
 
 chain = GraphCypherQAChain.from_llm(
     graph=graph_client,
-    llm=llm_client,
+    qa_llm=llm_client,
+    cypher_llm=llm_client,
     cypher_prompt=query_enhancement_prompt,
     verbose=True,
+    validate_cypher=True,
+    return_intermediate_steps=True,
     allow_dangerous_requests=True,
 )
 
