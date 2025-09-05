@@ -43,6 +43,11 @@ class LLMSettings(ProjectBaseSettings):
     llm_small_model: str | None = None
     llm_thinking_budget: int | None = None
 
+    # Embedding settings
+    embedding_provider: str = "openai"
+    embedding_model: str = "text-embedding-3-small"
+    embedding_dimensions: int = 1536
+
 
 class GraphDBSettings(ProjectBaseSettings):
     """Settings for graph database connection."""

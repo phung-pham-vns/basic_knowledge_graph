@@ -2,10 +2,24 @@ node_types = [
     {
         "label": "CROP",
         "description": "A cultivated plant grown for food, fiber, or other use (e.g., rice, durian).",
+        "properties": [
+            {
+                "name": "description",
+                "type": "STRING",
+                "description": "Comprehensive overview of the crop.",
+            }
+        ],
     },
     {
         "label": "VARIETY",
         "description": "A cultivar or variety of a crop.",
+        "properties": [
+            {
+                "name": "description",
+                "type": "STRING",
+                "description": "Comprehensive overview of the variety.",
+            }
+        ],
     },
     {
         "label": "DISEASE",
@@ -25,6 +39,13 @@ node_types = [
     {
         "label": "SYMPTOM",
         "description": "An observable sign or manifestation of a disease (e.g., leaf spots, cankers, wilting). Each node contains only one such sign or manifestation.",
+        "properties": [
+            {
+                "name": "description",
+                "type": "STRING",
+                "description": "Comprehensive overview of the symptom.",
+            }
+        ],
     },
     {
         "label": "PATHOGEN",
