@@ -147,6 +147,162 @@ async def embed_node_descriptions(
         raise
 
 
+def create_fulltext_index(
+    graph_client: Neo4jGraph,
+    index_name: str,
+    node_labels: list[str],
+    property_names: list[str],
+):
+    """Create a full-text index for specified node labels and properties."""
+    try:
+        # Check if index already exists
+        result = graph_client.query(
+            "SHOW INDEXES YIELD name WHERE name = $index_name", params={"index_name": index_name}
+        )
+
+        if result:
+            print(f"Full-text index '{index_name}' already exists, skipping creation.")
+            return
+
+        # Create full-text index
+        node_labels_str = "|".join(node_labels)
+        property_names_str = ", ".join([f"n.{prop}" for prop in property_names])
+
+        create_index_query = f"""
+        CREATE FULLTEXT INDEX {index_name} IF NOT EXISTS
+        FOR (n:{node_labels_str})
+        ON EACH [{property_names_str}]
+        """
+
+        graph_client.query(create_index_query)
+        print(f"Created full-text index '{index_name}' for labels {node_labels} on properties {property_names}")
+
+    except Exception as e:
+        print(f"Error creating full-text index '{index_name}': {e}")
+
+
+def setup_fulltext_indices(graph_client: Neo4jGraph):
+    """Set up full-text indices for searchable node properties."""
+    # Create a comprehensive full-text index for all nodes with descriptions
+    description_nodes = ["Crop", "Variety", "Disease", "Symptom"]
+    create_fulltext_index(
+        graph_client=graph_client,
+        index_name="nodes_description_fulltext_index",
+        node_labels=description_nodes,
+        property_names=["description"],
+    )
+
+    # Create additional indices for other searchable properties
+    all_searchable_nodes = [
+        "Crop",
+        "Variety",
+        "Disease",
+        "Symptom",
+        "Crop_part",
+        "Pathogen",
+        "Condition",
+        "Seasonality",
+        "Location",
+        "Treatment",
+        "Prevention_method",
+        "Spread_method",
+        "Risk_factor",
+    ]
+
+    # Index for node names/IDs across all node types
+    create_fulltext_index(
+        graph_client=graph_client,
+        index_name="nodes_name_fulltext_index",
+        node_labels=all_searchable_nodes,
+        property_names=["id", "name"],
+    )
+
+    # Special index for pathogen types
+    create_fulltext_index(
+        graph_client=graph_client,
+        index_name="pathogen_type_fulltext_index",
+        node_labels=["Pathogen"],
+        property_names=["type"],
+    )
+
+
+def fulltext_search(
+    graph_client: Neo4jGraph,
+    query: str,
+    index_name: str = "nodes_description_fulltext_index",
+    limit: int = 10,
+) -> list[dict]:
+    """
+    Perform full-text search on Neo4j graph using specified index.
+
+    Args:
+        graph_client: Neo4j graph client
+        query: Search query string
+        index_name: Name of the full-text index to use
+        limit: Maximum number of results to return
+
+    Returns:
+        List of matching nodes with their properties and relevance scores
+    """
+    try:
+        # Use CALL db.index.fulltext.queryNodes for full-text search
+        search_query = """
+        CALL db.index.fulltext.queryNodes($index_name, $query)
+        YIELD node, score
+        RETURN 
+            labels(node) as labels,
+            properties(node) as properties,
+            score,
+            elementId(node) as id
+        ORDER BY score DESC
+        LIMIT $limit
+        """
+
+        result = graph_client.query(search_query, params={"index_name": index_name, "query": query, "limit": limit})
+
+        return result
+
+    except Exception as e:
+        print(f"Error performing full-text search: {e}")
+        return []
+
+
+def search_by_keywords(
+    graph_client: Neo4jGraph,
+    keywords: str,
+    search_descriptions: bool = True,
+    search_names: bool = True,
+    limit: int = 20,
+) -> dict:
+    """
+    Comprehensive keyword search across different node properties.
+
+    Args:
+        graph_client: Neo4j graph client
+        keywords: Search keywords
+        search_descriptions: Whether to search in description properties
+        search_names: Whether to search in name/id properties
+        limit: Maximum results per search type
+
+    Returns:
+        Dictionary with search results categorized by type
+    """
+    results = {"description_matches": [], "name_matches": [], "pathogen_type_matches": []}
+
+    if search_descriptions:
+        results["description_matches"] = fulltext_search(
+            graph_client, keywords, "nodes_description_fulltext_index", limit
+        )
+
+    if search_names:
+        results["name_matches"] = fulltext_search(graph_client, keywords, "nodes_name_fulltext_index", limit)
+
+    # Also search pathogen types specifically
+    results["pathogen_type_matches"] = fulltext_search(graph_client, keywords, "pathogen_type_fulltext_index", limit)
+
+    return results
+
+
 def setup_vector_indices(graph_client: Neo4jGraph, dimensions: int = 1536):
     """Set up vector indices for all node types that have descriptions."""
     # Node types that have description properties
@@ -213,6 +369,13 @@ async def construct_knowledge_graph(
         print(f"Adding graph documents to {settings.graph_db_provider}...")
         graph_client.add_graph_documents(graph_documents)
         print("Knowledge graph construction completed successfully!")
+
+        # Set up search indices
+        print("\n--- Setting up search indices ---")
+
+        # Set up full-text indices for keyword search
+        print("Setting up full-text indices...")
+        setup_fulltext_indices(graph_client)
 
         # Embed node descriptions if requested
         if embed_descriptions:
