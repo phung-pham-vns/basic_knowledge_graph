@@ -17,7 +17,6 @@ qdrant_url = "http://localhost:6333"
 neo4j_uri = "bolt://localhost:7687"
 neo4j_username = "neo4j"
 neo4j_password = "aisac_kg"
-openai_key = "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"
 
 # Initialize Neo4j driver
 neo4j_driver = GraphDatabase.driver(neo4j_uri, auth=(neo4j_username, neo4j_password))
