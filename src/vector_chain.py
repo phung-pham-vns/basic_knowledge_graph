@@ -4,7 +4,8 @@ from langchain_community.vectorstores import Neo4jVector
 from langchain.chains import RetrievalQAWithSourcesChain
 from langchain.chains.conversation.memory import ConversationBufferMemory
 
-from src.deps.llm_client import get_llm_client, get_embedding_client
+from src.deps.llms import get_llm_client
+from src.deps.embeddings import get_embedding_client
 from src.settings import settings
 
 llm_client = get_llm_client(settings)

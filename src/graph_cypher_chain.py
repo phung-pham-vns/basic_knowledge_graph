@@ -3,10 +3,10 @@ from langchain_neo4j import Neo4jGraph
 from langchain_neo4j import GraphCypherQAChain
 from langchain_core.output_parsers import StrOutputParser
 
-from prompts.query_enhancement_prompt import query_enhancement_prompt
-from prompts.text_to_cypher_prompt import cypher_generation_prompt
-from deps.llm_client import get_llm_client
-from settings import settings
+from src.prompts.query_enhancement_prompt import query_enhancement_prompt
+from src.prompts.text_to_cypher_prompt import cypher_generation_prompt
+from src.deps.llms import get_llm_client
+from src.settings import settings
 
 graph_client = Neo4jGraph(
     url=settings.graph_db.graph_db_url,

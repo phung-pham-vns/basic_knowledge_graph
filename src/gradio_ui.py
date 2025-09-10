@@ -6,8 +6,8 @@ from pathlib import Path
 src_path = Path(__file__).parent
 sys.path.append(str(src_path))
 
-from retrieve import chain, graph_client
-from settings import settings
+from src.retrieve import chain, graph_client
+from src.settings import settings
 
 
 def gradio_qa_interface():

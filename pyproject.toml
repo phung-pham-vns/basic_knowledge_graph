@@ -19,7 +19,11 @@ dependencies = [
   "langchain-google-genai==2.1.10",
   "openpyxl==3.1.5",
   "pydantic==2.10.4",
-  "pydantic-settings==2.7.0"
+  "pydantic-settings==2.7.0",
+  "langchain-community>=0.3.27",
+  "langchain-huggingface>=0.3.1",
+  "transformers>=4.56.1",
+  "langchain-ollama>=0.3.7",
 ]
 
 [project.optional-dependencies]

@@ -1,18 +1,18 @@
-from langchain_neo4j import Neo4jGraph, Neo4jVector
+from langchain_neo4j import Neo4jGraph
 from langchain_core.documents import Document
 from langchain_experimental.graph_transformers import LLMGraphTransformer
 
 from schema.disease_schema import (
     node_types as disease_node_types,
     allowed_relationships as disease_allowed_relationships,
-    relation_types as disease_relation_types,
 )
 from utils import load_document_from_excel
 from schema.disease_schema import node_types, relation_types, allowed_relationships
 from prompts.graph_schema_prompt import graph_schema_prompt
 from prompts.entity_and_relation_extraction_prompt import entities_and_relationships_extraction_prompt
-from deps.llm_client import get_llm_client, get_embedding_client
-from settings import settings
+from src.deps.llms import get_llm_client
+from src.deps.embeddings import get_embedding_client
+from src.settings import settings
 
 
 graph_client = Neo4jGraph(
@@ -34,12 +34,6 @@ llm_transformer = LLMGraphTransformer(
         if len(node_type.get("properties", [])) > 0
         for property in node_type["properties"]
     ],
-    # relationship_properties=[
-    #     property["name"]
-    #     for relationship_type in disease_relation_types
-    #     if len(relationship_type.get("properties", [])) > 0
-    #     for property in relationship_type["properties"]
-    # ],
 )
 
 disease_graph_schema = graph_schema_prompt(

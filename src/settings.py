@@ -20,6 +20,20 @@ class LogLevel(str, enum.Enum):
     FATAL = "FATAL"
 
 
+class LLMProviders(str, enum.Enum):
+    OPENAI = "openai"
+    GEMINI = "gemini"
+    OLLAMA = "ollama"
+    HUGGINGFACE = "huggingface"
+
+
+class EmbeddingProviders(str, enum.Enum):
+    OPENAI = "openai"
+    GEMINI = "gemini"
+    OLLAMA = "ollama"
+    HUGGINGFACE = "huggingface"
+
+
 class ProjectBaseSettings(BaseSettings, ABC):
     """Base settings for the project."""
 
