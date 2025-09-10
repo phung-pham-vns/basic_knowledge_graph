@@ -11,13 +11,15 @@ requires-python = ">=3.12"
 
 # Dependencies your project needs at runtime
 dependencies = [
-  "python-dotenv==1.0.0",
+  "python-dotenv>=1.0.1",
   "langchain-neo4j==0.5.0",
   "pandas==2.3.2",
   "langchain-experimental==0.3.4",
   "langchain-openai==0.3.31",
   "langchain-google-genai==2.1.10",
-  "openpyxl==3.1.5"
+  "openpyxl==3.1.5",
+  "graphiti-core[google-genai]>=0.20.3",
+  "pydantic>=2.0.0",
 ]
 
 [project.optional-dependencies]
