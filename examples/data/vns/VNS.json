@@ -1,0 +1,1440 @@
+[
+  {
+    "updated_at": "2025-08-22T10:22:16.747411",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:22:16.747406",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "Growth Mindset: Encourage a growth mindset among employees, where they believe their abilities can be developed through hard work and dedication. Provide opportunities for learning, development, and professional growth.\n\nEmpowerment: Empower employees to take ownership of their work and make decisions. Provide them with the autonomy and resources they need to succeed. Trust them to do their best work.\n\nRecognition and Rewards: Recognize and reward employees for their contributions and achievements. Celebrate successes, both big and small. Show appreciation for hard work and dedication.\n\nDiversity and Inclusion: Promote and foster an environment where all individuals feel welcomed, and respected regardless of their background, identity, or personal characteristics. The goal is to create a workplace where diversity is celebrated, and inclusion means everyone feels they belong and have equal opportunities to succeed.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "Growth Mindset: Encourage a growth mindset among employees, where they believe their abilities can be developed through hard work and dedication. Provide opportunities for learning, development, and professional growth.\n\n![](images/c9f6a5c2ca8ce96ccf37be75e75d70954f7eece584689aae4809af74e04f90cf.jpg)\n\nEmpowerment: Empower employees to take ownership of their work and make decisions. Provide them with the autonomy and resources they need to succeed. Trust them to do their best work.\n\nRecognition and Rewards: Recognize and reward employees for their contributions and achievements. Celebrate successes, both big and small. Show appreciation for hard work and dedication.\n\nDiversity and Inclusion: Promote and foster an environment where all individuals feel welcomed, and respected regardless of their background, identity, or personal characteristics. The goal is to create a workplace where diversity is celebrated, and inclusion means everyone feels they belong and have equal opportunities to succeed.",
+      "contextual_content": null
+    },
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "896608c2-44ee-4a5b-a1bf-972b782b07de"
+  },
+  {
+    "updated_at": "2025-08-22T10:21:55.164981",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:21:55.164972",
+    "block_index": 44.0,
+    "image": {
+      "has_valuable_info": true,
+      "image_path": "images/866abc1a64c04a5881ba52365de3b535d7d778bb066c1808b97295788e620ce3.jpg",
+      "image_caption": "This diagram illustrates an agriculture monitoring and controlling system. The left side depicts farm elements: a farmer tending to crops, a drone, servers, sensors, and a router, connected to a cloud icon. The right side details the system architecture. Under Transformation, there's Streaming Processing (AWS Glue) and a Streaming Platform (AWS Kinesis). Under Serving, there's Real-time Analytics (SageMaker), an AI/ML System (ML Flow), a Gen AI (LLM + RAG), and a BI Tool which includes Power BI, Tableau, and Reporting (Gradio/Streamlit). Data Storage is handled by AWS S3, feeding into a Data Warehouse (AWS Redshift) and a Data Lake (Athena). Reverse ELT and Farm Management Services are also components. The system serves clients through Web, Mobile, Chat Bot, and IoT Edge Devices.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "diagram",
+        "farmer",
+        "crops",
+        "drone",
+        "servers",
+        "sensors",
+        "router",
+        "cloud",
+        "AWS Glue",
+        "AWS Kinesis",
+        "SageMaker",
+        "ML Flow",
+        "LLM",
+        "RAG",
+        "Power BI",
+        "Tableau",
+        "Gradio",
+        "Streamlit",
+        "AWS S3",
+        "AWS Redshift",
+        "Athena",
+        "Web",
+        "Mobile",
+        "Chat Bot",
+        "IoT",
+        "Edge Device"
+      ],
+      "image_type": "technical_diagram"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "39157658-81c1-41a2-878e-e025ed001d01"
+  },
+  {
+    "updated_at": "2025-08-22T10:22:10.000916",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:22:10.000905",
+    "block_index": 65.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/0436f648d6a38cef4e4d14d4c11101a7cef2fa99d953d3240f1fc6169e0f459a.jpg",
+      "image_caption": "A simple image with the word \"Welcome\" written in cursive script inside a black circle adorned with red flowers and pink hearts.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "text: Welcome",
+        "circle",
+        "flowers",
+        "hearts"
+      ],
+      "image_type": "graphic"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "42f29864-013d-46ac-aa6d-7c0adb807f26"
+  },
+  {
+    "updated_at": "2025-08-22T10:21:37.490446",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:21:37.490437",
+    "block_index": 23.0,
+    "image": {
+      "has_valuable_info": true,
+      "image_path": "images/794a6cfb7d40392bae4f795ee0588969b58e3643260a581bd1a66a9e669c55c2.jpg",
+      "image_caption": "This timeline chart illustrates the growth and milestones of VNS from September 2024 to December 2025. The timeline starts in September 2024 with the decision to establish VNS. In October 2024, there were 3 members. A key milestone occurred on November 15, 2024, when VNS was licensed, indicated by a star. By December 25, 2024, the first office was established with 8 members. The membership grew steadily through 2025, reaching 15 members in January, 32 in February, 55 in March, 81 in April, and 100 in May. The projection for December 2025 is 500 to 600 members.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "timeline",
+        "date",
+        "member count",
+        "milestone",
+        "star icon"
+      ],
+      "image_type": "timeline_diagram"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "8dd6d0ad-c465-4fa8-957d-c279be70e072"
+  },
+  {
+    "updated_at": "2025-08-22T10:22:05.027908",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:22:05.027900",
+    "block_index": 59.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/2ecd41d8295068eb03e661b3388776d736c5b86264ca696545fff4c7a2c843cc.jpg",
+      "image_caption": "A simple image displaying the text \"Code of Conduct\" in blue, centered within a tilted, translucent orange square.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "text: Code of Conduct",
+        "square outline"
+      ],
+      "image_type": "text_and_graphics"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "5de3c0b1-8287-438c-8c0d-294e42dd1e7e"
+  },
+  {
+    "updated_at": "2025-08-22T10:21:43.235513",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:21:43.235499",
+    "block_index": 33.0,
+    "image": {
+      "has_valuable_info": true,
+      "image_path": "images/d881c21dc60081040e30a4e8ed177723b10672cae47d68e730725fe4b80c9fbd.jpg",
+      "image_caption": "This diagram illustrates the Digital Transformations framework. At the top level, it includes: Delivery Solutions Unit (DSU), AI Insights Solutions Center (AIS), Emerging Technology Solutions Center (ETS), and Cyber Securities Solutions Center (CSS). Below these, there is a Talent Solutions Center, which encompasses Acquisition, Development and Retention, and Resource Planning and Allocation. At the bottom level, four key areas are listed: HRS, ITS, FIS, and Marketing.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "diagram",
+        "boxes",
+        "text"
+      ],
+      "image_type": "organizational_diagram"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "0d281fc0-75ae-454b-851d-e559aaee43ff"
+  },
+  {
+    "updated_at": "2025-08-22T10:22:16.008414",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:22:16.008409",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "# Welcome to Vietnam Silicon – VNS! The Premier Innovation and Technology Solutions Center\n\nVNS Vision, Mission, Values and Culture   \n2 VNS Journey   \n3 VNS Business model   \n4 VNS Structures   \n5 VNS Our Tech OrgChart and Projects   \n6 Compensation & Benefits Frame   \n7 Internal Policy   \n8 Welcome on-board!   \n9 Next schedule\n\nAgenda\n\n# 1 Our Drives\n\nTo be the leading enabler of digital transformation in Vietnam and ASEAN by enabling businesses and governments with AI and emerging technologies, driving sustainable growth and competitive advantage.\n\nOur mission is to become the premier innovation and technology solutions center driving digital transformation, empowering businesses and talent through cutting-edge solutions.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "# Welcome to Vietnam Silicon – VNS! The Premier Innovation and Technology Solutions Center\n\n![](images/5cfad421fd6b1e58934648796fae7e7b7838a94726f892490355cf96b4b8ec17.jpg)\n\nVNS Vision, Mission, Values and Culture   \n2 VNS Journey   \n3 VNS Business model   \n4 VNS Structures   \n5 VNS Our Tech OrgChart and Projects   \n6 Compensation & Benefits Frame   \n7 Internal Policy   \n8 Welcome on-board!   \n9 Next schedule\n\nAgenda\n\n# 1 Our Drives\n\n![](images/32e2dfcbc7fd4ef05076021e7b985cac3e7eaa3a9b636978076949ab80877662.jpg)\n\nTo be the leading enabler of digital transformation in Vietnam and ASEAN by enabling businesses and governments with AI and emerging technologies, driving sustainable growth and competitive advantage.\n\n![](images/ae67ce789177a56cca5ea4b3823a3f9757164635c3eac09058ffb6d9a5b26219.jpg)\n\nOur mission is to become the premier innovation and technology solutions center driving digital transformation, empowering businesses and talent through cutting-edge solutions.",
+      "contextual_content": null
+    },
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "0c12429e-e3e7-4c9d-9b27-b1f014cc670f"
+  },
+  {
+    "updated_at": "2025-08-22T10:21:40.177034",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:21:40.177026",
+    "block_index": 24.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/591be63e138591829570692466e0b5a4c6c60d263c8e4810167d53a3d0c47c17.jpg",
+      "image_caption": "The image displays the text 'Welcome Newbies' in blue, centered on a white background with a subtle peach-colored geometric design. The logo of 'Vietnam Silicon' is visible in the upper right corner.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "text: Welcome Newbies",
+        "logo: Vietnam Silicon",
+        "geometric design"
+      ],
+      "image_type": "graphic"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "c4ed6216-aedd-4c55-9b59-001b7d6f18d9"
+  },
+  {
+    "updated_at": "2025-08-22T10:21:32.006287",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:21:32.006277",
+    "block_index": 9.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/6a1ec7c2de10c2e6b2eecd6c4fb98ff0085c5ad024b565f3da29244b98f5847d.jpg",
+      "image_caption": "The image displays the word \"Values\" in blue text, superimposed on a white square with an orange gradient border. The square is tilted, and there are blue squares in the background.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "text: Values",
+        "square",
+        "gradient border",
+        "blue squares"
+      ],
+      "image_type": "graphic"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "4ddf90c2-6db2-4b2e-80da-6502116ebcd2"
+  },
+  {
+    "updated_at": "2025-08-22T10:22:17.885403",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:22:17.885399",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "# REMUNERATION STRUCTURE\n\n# Key components of our rewards philosophy:\n\nFairness & Equity both   \ninternal & external   \nEncourage to boost the   \nperformance   \nDevelop the talents   \nAlignment with our   \nbusiness goal\n\nRemain competitive within the market Encompass the majority of employee’s need\n\n# 6\n\n# Compensation and Benefits Frame\n\n--- Page 11-14 ---\n\n# 7 Internal Policy\n\nThe normal working hours are 8 hours per   \nday, from Mondays to Fridays: Morning: 09:00 to 12:00 Afternoon: 13:00 to 18:00   \nOffice dress   \nProfessional behavior   \nConflict of interest   \nConfidentiality   \nAnti-discrimination and harassment   \nSecurity and privacy\n\n# 8 Welcome On-board",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "# REMUNERATION STRUCTURE\n\n# Key components of our rewards philosophy:\n\nFairness & Equity both   \ninternal & external   \nEncourage to boost the   \nperformance   \nDevelop the talents   \nAlignment with our   \nbusiness goal\n\nRemain competitive within the market Encompass the majority of employee’s need\n\n# 6\n\n# Compensation and Benefits Frame\n\n![](images/3c74c5755faf04245ab2fea6e392d6247f3121ee68d65599fa228239c5ccf092.jpg)\n\n--- Page 11-14 ---\n\n# 7 Internal Policy\n\n![](images/2079d5bf4dfe530a0d80cfef24d2c34572a65be4fdabf02df59dfaec0ff2d6fa.jpg)\n\nThe normal working hours are 8 hours per   \nday, from Mondays to Fridays: Morning: 09:00 to 12:00 Afternoon: 13:00 to 18:00   \nOffice dress   \nProfessional behavior   \nConflict of interest   \nConfidentiality   \nAnti-discrimination and harassment   \nSecurity and privacy\n\n![](images/2ecd41d8295068eb03e661b3388776d736c5b86264ca696545fff4c7a2c843cc.jpg)\n\n![](images/e96fb799cf3075329ea27f8b5af104119e26fe30a8cdfba63c1f982bb85b74e5.jpg)\n\n# 8 Welcome On-board",
+      "contextual_content": null
+    },
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "755a51be-717b-41d4-92db-288bd7be41cb"
+  },
+  {
+    "updated_at": "2025-08-22T10:22:18.266252",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:22:18.266249",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "# 8 Welcome On-board\n\n# We're thrilled to have you join the VNS team!\n\nYour training schedule and initial assignments will be provided shortly. Your manager will be in touch to schedule recurring one-on-one meetings. Don't hesitate to connect with your direct Line Manager, your team member or HRBP for any questions or support. We're excited to see the contributions you'll make to our company's future!\n\n9\n\n10.00 - 10.15: Office tour $^ +$ took some photo   \n10.15 - 11.30: ITs - Transferring equipment including laptops, Wi-Fi passwords, and email accounts.   \n11.30 - 12.00: Introduce to Head Team, friendly   \nwelcome with Team members.   \n12.00 - 01.00: Lunch Break   \n13.00 - 17.00: Team catch-up   \n17.00 - 18.00: Quick responds with HRBP (if not)",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "# 8 Welcome On-board\n\n# We're thrilled to have you join the VNS team!\n\nYour training schedule and initial assignments will be provided shortly. Your manager will be in touch to schedule recurring one-on-one meetings. Don't hesitate to connect with your direct Line Manager, your team member or HRBP for any questions or support. We're excited to see the contributions you'll make to our company's future!\n\n![](images/0436f648d6a38cef4e4d14d4c11101a7cef2fa99d953d3240f1fc6169e0f459a.jpg)\n\n9\n\n![](images/8d2ef723bae9e734da216ceb1259dd0d4e0e1121ea379f53722b33d27702015d.jpg)\n\n10.00 - 10.15: Office tour $^ +$ took some photo   \n10.15 - 11.30: ITs - Transferring equipment including laptops, Wi-Fi passwords, and email accounts.   \n11.30 - 12.00: Introduce to Head Team, friendly   \nwelcome with Team members.   \n12.00 - 01.00: Lunch Break   \n13.00 - 17.00: Team catch-up   \n17.00 - 18.00: Quick responds with HRBP (if not)\n\n![](images/be2f9970b6a7f2d9b95f359f244cfcc362e3ed0437d0d63f822b8575901822fd.jpg)",
+      "contextual_content": null
+    },
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "4e393e0f-797b-4650-87d6-1a02fe65a315"
+  },
+  {
+    "updated_at": "2025-08-22T10:22:03.150004",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:22:03.149995",
+    "block_index": 57.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/2079d5bf4dfe530a0d80cfef24d2c34572a65be4fdabf02df59dfaec0ff2d6fa.jpg",
+      "image_caption": "A simple image with the word \"Punctual\" written in blue text, set inside a tilted orange frame.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "text: Punctual",
+        "frame"
+      ],
+      "image_type": "text_only"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "bac22de6-1468-42b4-9d20-ab9b446e7d04"
+  },
+  {
+    "updated_at": "2025-08-22T10:21:57.345381",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:21:57.345372",
+    "block_index": 46.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/1836f55fd496faedfb09aab37d26b88150b4fd709be451711af1b7631939b0ba.jpg",
+      "image_caption": "The image displays the words \"REWARDS PHILOSOPHY\" in bold orange lettering against a dark blue background. The text is centered and appears to be a title or heading.",
+      "image_footnote": [],
+      "caption_confidence": 0.98,
+      "detected_objects": [
+        "text: REWARDS PHILOSOPHY"
+      ],
+      "image_type": "text_only"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "60239dd0-4983-4deb-8e7b-d532efcc77d0"
+  },
+  {
+    "updated_at": "2025-08-22T10:22:16.377846",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:22:16.377841",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "Innovation: Continuous learning and exploration, new technologies, and creative solutions to client challenges.\n\nClient Focus: Prioritize client needs and satisfaction above all else, open communication, and a deep understanding of their business goals. Go the extra mile to deliver exceptional service and exceed expectations.\n\nExcellence: Strive for the highest standards in all aspects of works. From project delivery to customer service, aim for quality, precision, and attention to detail. Commitment to continuous improvement.\n\nIntegrity: Uphold the highest ethical standards in all dealings. Be honest, transparent, and accountable for actions. Build a reputation for trustworthiness and reliability.\n\nEmployee-centric: Investing in employees' happiness and success, companies create a more productive, engaged, and loyal workforce.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "![](images/6a1ec7c2de10c2e6b2eecd6c4fb98ff0085c5ad024b565f3da29244b98f5847d.jpg)\n\nInnovation: Continuous learning and exploration, new technologies, and creative solutions to client challenges.\n\nClient Focus: Prioritize client needs and satisfaction above all else, open communication, and a deep understanding of their business goals. Go the extra mile to deliver exceptional service and exceed expectations.\n\nExcellence: Strive for the highest standards in all aspects of works. From project delivery to customer service, aim for quality, precision, and attention to detail. Commitment to continuous improvement.\n\nIntegrity: Uphold the highest ethical standards in all dealings. Be honest, transparent, and accountable for actions. Build a reputation for trustworthiness and reliability.\n\nEmployee-centric: Investing in employees' happiness and success, companies create a more productive, engaged, and loyal workforce.",
+      "contextual_content": null
+    },
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "de0f9217-3d91-495e-aa19-61809873fb88"
+  },
+  {
+    "updated_at": "2025-08-22T10:22:17.504353",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:22:17.504347",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "# Our Stakeholders\n\nShareholders   \nEmployees   \nCommunity & Society   \nGovernment &   \nRegulators\n\n# 4\n\n# Our Organization Structure\n\n# 5 Our Tech Orgchart\n\n# 5\n\n# Our Projects\n\nWe aim to leverage the latest technologies to drive digital transformation across industries, including: Data with AI/ML, Gen AI, and Agentic AI Blockchain….\n\n# Compensation and Benefits frame\n\nFocuses on recognizing employee's contributions.\n\nWe offer competitive pay, performance-based bonuses, and robust career development opportunities to help you grow and succeed.\n\n# REMUNERATION STRUCTURE\n\n# Key components of our rewards philosophy:",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "# Our Stakeholders\n\nShareholders   \nEmployees   \nCommunity & Society   \nGovernment &   \nRegulators\n\n# 4\n\n# Our Organization Structure\n\n![](images/a51fd72558cf2bc6f2d1a20380dc832ee1ebec395d0e8091065459569d619e64.jpg)\n\n# 5 Our Tech Orgchart\n\n![](images/aa97ee1d2739363f2ed61342c735a8b70b6efce41fbab779938d2ca9cda9d4e9.jpg)\n\n# 5\n\n# Our Projects\n\nWe aim to leverage the latest technologies to drive digital transformation across industries, including: Data with AI/ML, Gen AI, and Agentic AI Blockchain….\n\n![](images/866abc1a64c04a5881ba52365de3b535d7d778bb066c1808b97295788e620ce3.jpg)\n\n# Compensation and Benefits frame\n\n![](images/1836f55fd496faedfb09aab37d26b88150b4fd709be451711af1b7631939b0ba.jpg)\n\nFocuses on recognizing employee's contributions.\n\nWe offer competitive pay, performance-based bonuses, and robust career development opportunities to help you grow and succeed.\n\n# REMUNERATION STRUCTURE\n\n# Key components of our rewards philosophy:",
+      "contextual_content": null
+    },
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "aae32bcc-7858-451b-8d6a-a50719e366a4"
+  },
+  {
+    "updated_at": "2025-08-22T10:21:26.070543",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:21:26.070534",
+    "block_index": 1.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/5cfad421fd6b1e58934648796fae7e7b7838a94726f892490355cf96b4b8ec17.jpg",
+      "image_caption": "The word \"INDUCTION\" is displayed in blue text on a white background. A light orange gradient forms an abstract shape resembling a checkmark or a corner bracket.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "text: INDUCTION",
+        "abstract shape"
+      ],
+      "image_type": "graphic"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "26e6f55b-41a9-4910-9908-25ae9dc1ab5f"
+  },
+  {
+    "updated_at": "2025-08-22T10:21:34.156531",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:21:34.156522",
+    "block_index": 16.0,
+    "image": {
+      "has_valuable_info": true,
+      "image_path": "images/c9f6a5c2ca8ce96ccf37be75e75d70954f7eece584689aae4809af74e04f90cf.jpg",
+      "image_caption": "This image shows a diagram with the word 'Culture' prominently displayed within a tilted square with an orange gradient border. To the right of the 'Culture' element, there appear to be other elements indicated by blue squares and connecting lines, suggesting a larger diagram or structure, but these are only partially visible.",
+      "image_footnote": [],
+      "caption_confidence": 0.85,
+      "detected_objects": [
+        "diagram",
+        "text: Culture",
+        "square",
+        "gradient",
+        "blue squares",
+        "lines"
+      ],
+      "image_type": "diagram"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "139d0f96-dd90-4ed9-abc8-c8c4074e89dd"
+  },
+  {
+    "updated_at": "2025-08-22T10:22:12.812160",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:22:12.812156",
+    "block_index": 67.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/8d2ef723bae9e734da216ceb1259dd0d4e0e1121ea379f53722b33d27702015d.jpg",
+      "image_caption": "The image displays elements related to scheduling and time management. There are two calendars with checkboxes, a megaphone with lightning bolts indicating a sound or alert, a pencil marking a checkbox on one calendar, and a blue alarm clock. The overall impression is of an organized schedule or an announcement of important deadlines or events.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "calendar",
+        "checkboxes",
+        "megaphone",
+        "lightning bolts",
+        "pencil",
+        "alarm clock"
+      ],
+      "image_type": "illustration"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "8c06391f-e4d5-414b-96fb-8c28e95ba2b3"
+  },
+  {
+    "updated_at": "2025-08-22T10:21:28.081839",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:21:28.081835",
+    "block_index": 5.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/32e2dfcbc7fd4ef05076021e7b985cac3e7eaa3a9b636978076949ab80877662.jpg",
+      "image_caption": "A simple image with the word \"Vision\" in blue text against a white background, framed by an orange, incomplete square.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "text: Vision",
+        "frame",
+        "square"
+      ],
+      "image_type": "simple_scene"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "920dc5ea-d29a-4113-acfc-1b2d7e05162b"
+  },
+  {
+    "updated_at": "2025-08-22T10:22:07.745479",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:22:07.745468",
+    "block_index": 61.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/e96fb799cf3075329ea27f8b5af104119e26fe30a8cdfba63c1f982bb85b74e5.jpg",
+      "image_caption": "A man in a blue jacket and dark pants holds a clock in his left hand and makes an \"okay\" gesture with his right hand. There are stylized lines emanating from the clock, suggesting time or urgency. A yellow tie is draped around his neck. The image has a light beige background with abstract clouds. The overall impression is one of time management or achievement.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "man",
+        "clock",
+        "tie",
+        "hand gesture"
+      ],
+      "image_type": "illustration"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "a9dbfdfc-3556-4c35-a6fd-56df8104d15c"
+  },
+  {
+    "updated_at": "2025-08-22T10:21:47.879882",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:21:47.879873",
+    "block_index": 38.0,
+    "image": {
+      "has_valuable_info": true,
+      "image_path": "images/a51fd72558cf2bc6f2d1a20380dc832ee1ebec395d0e8091065459569d619e64.jpg",
+      "image_caption": "This organizational chart illustrates a company's structure, headed by the CEO - Tai Pham. Reporting directly to the CEO is the Managing Director, Jessica Quach, who oversees two main divisions. The Technical Director, Kevin Le, reports to the Managing Director and also has a dotted-line reporting relationship to the CEO. The two main divisions are Corporate Services and Technology Solutions. The Corporate Services division includes HRBP Manager Phuong Nguyen, TA Manager Hoan Bui, C&B Manager Tan Le, Admin Lead Tho Bui, Marketing Manager Tu Kieu, an FIS Manager, and ITS Manager Hai Nguyen. The Technology Solutions division, led by the Technical Director, is composed of three units: DSU Head, AIS Head, and CSS Head. The DSU unit includes roles like Backend, Frontend, Mobile, QA/QC, DevOps, UXUI, PM, BA/PO, and Designer. The AIS unit includes Data Scientist, Data Engineer, and Data Analytic roles. The CSS unit covers roles such as Cyber Security, Risk & Compliance, Security Auditor, Security Operations Center Analyst, and Security Engineer.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "organizational chart",
+        "CEO",
+        "Managing Director",
+        "Technical Director",
+        "ITS Manager",
+        "HRBP Manager",
+        "Marketing Manager",
+        "TA Manager",
+        "FIS Manager",
+        "DSU Head",
+        "AIS Head",
+        "CSS Head",
+        "Backend",
+        "Frontend",
+        "Mobile",
+        "QA/QC",
+        "DevOps",
+        "UXUI",
+        "Data Scientist",
+        "Data Engineer",
+        "Data Analytic",
+        "Cyber Security",
+        "Risk & Compliance",
+        "Security Auditor",
+        "Security Operations",
+        "Center Analyst",
+        "Security Engineer",
+        "Corporate Services",
+        "Technology Solutions"
+      ],
+      "image_type": "organizational_diagram"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "102f39ac-dd94-42fe-9521-988e1b25ed5d"
+  },
+  {
+    "updated_at": "2025-08-22T10:22:15.065124",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:22:15.065113",
+    "block_index": 69.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/be2f9970b6a7f2d9b95f359f244cfcc362e3ed0437d0d63f822b8575901822fd.jpg",
+      "image_caption": "A simple graphic with a blue vertical bar on the left, and a white rectangle overlaid with abstract, angled, peach-colored lines that fade from a darker shade at the bottom to lighter at the top.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "graphic",
+        "rectangle",
+        "lines"
+      ],
+      "image_type": "graphic"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "165146bc-22d7-4f07-9883-4f16255e7a16"
+  },
+  {
+    "updated_at": "2025-08-22T10:21:51.614342",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:21:51.614333",
+    "block_index": 40.0,
+    "image": {
+      "has_valuable_info": true,
+      "image_path": "images/aa97ee1d2739363f2ed61342c735a8b70b6efce41fbab779938d2ca9cda9d4e9.jpg",
+      "image_caption": "This diagram illustrates the organizational structure of the DELIVERY unit. The top level is DELIVERY. Underneath DELIVERY are five main units: Delivery Solution Unit (DSU), AI Insights Solutions Center (AIS), Cyber Securities Solutions Center (CSS), IOT Center (IOT), and Technical Support Department (TSD). DSU has two branches: Agriculture and Exploration. Agriculture contains Minister Dashboard, Smart Farm, and Traceability Platform. Exploration contains Manufacture and Dynamic Solutions. Manufacture further contains Zero Carbon Score, RPA, and Safering. AIS includes Agriculture, Biometric/OCR, and Finance. CSS includes Security Consultant and Fraud/Risk Management System. IOT Center (IOT) has VNS ERP, and Websites, Branding. Technical Support Department (TSD) includes VNS ERP, ITS, and DevOps/SRE. ITS further includes IT and ISO/CMMI Audit team. DevOps/SRE has QA/QC and Designer. Designer has UX/UI.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "diagram",
+        "organization chart",
+        "boxes",
+        "arrows",
+        "text"
+      ],
+      "image_type": "organizational_diagram"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "c0fec904-8614-4ed5-a069-98ff25e0ca13"
+  },
+  {
+    "updated_at": "2025-08-22T10:22:18.620904",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:22:18.620900",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "# Thank you for watching!!!",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "![](images/be2f9970b6a7f2d9b95f359f244cfcc362e3ed0437d0d63f822b8575901822fd.jpg)\n\n# Thank you for watching!!!",
+      "contextual_content": null
+    },
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "411fafff-36b4-42eb-8b20-a4f23430433e"
+  },
+  {
+    "updated_at": "2025-08-22T10:21:30.126167",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:21:30.126158",
+    "block_index": 7.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/ae67ce789177a56cca5ea4b3823a3f9757164635c3eac09058ffb6d9a5b26219.jpg",
+      "image_caption": "A simple image with the word \"Mission\" in blue text, centered within a tilted square frame with a gradient from orange to white.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "text: Mission",
+        "frame"
+      ],
+      "image_type": "text_image"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "b55a9eaf-4662-4c5e-b70b-e45ef106d96b"
+  },
+  {
+    "updated_at": "2025-08-22T10:22:01.481280",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:22:01.481271",
+    "block_index": 55.0,
+    "image": {
+      "has_valuable_info": true,
+      "image_path": "images/3c74c5755faf04245ab2fea6e392d6247f3121ee68d65599fa228239c5ccf092.jpg",
+      "image_caption": "This document outlines various benefits, categorized into Total cash, Benefit in kind (Non-cash), and Engagement activity. Total cash benefits include Salary, Bonus, Allowances, Overtime Pay, and Loyalty. Salary components are Basic salary (competitive), Promotion (ad-hoc or annual), Review (annual, applied on Apr), and Adjustment (ad-hoc). Bonus categories are 13th month (guarantee), Incentives (follow KPIs, and only to certain roles), Annual performance (follow PA, paid on Apr), Referral (as campaign), and Project bonus (Occationlly, paid next month). Allowances include Allowance, and Overtime Pay includes Upon advanced approval with a note about Following project plan. Loyalty is detailed by tenure: 3 years (1M), 5 years (1.5M), and 10 years (2M). Benefit in kind (Non-cash) encompasses Healthcare and Leaves. Healthcare includes Healthcare premium and Health-check with Premium package. Leaves include Statutory day off, with details about carried over days, service milestone, and special days off (Christmas and 2nd half of 31 Dec). Other supports like Pre-paid phone card are also listed. Engagement activity includes Daily/Weekly, Monthly, Yearly, and Occasionally activities. Daily/Weekly activities are Happy hours and Snacks and cafeteria. Monthly activities include Monthly team eating out and Chat with CEO / Town Hall. Yearly activities are YEP, Company Trip, and TET gift. Occasionally activities include Welcome Kit and Occasional gifts. The 'Others' category lists Personal event supports (Wedding gift, Baby gift), Parking supports (Bike and car pack at DH), Training and development, and Bussiness Networking (reimbursement).",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "document",
+        "text",
+        "boxes",
+        "lines"
+      ],
+      "image_type": "infographic"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "a7c3e7d1-ad5f-4f0f-a315-7db33a8c1d44"
+  },
+  {
+    "updated_at": "2025-08-22T10:22:17.124987",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:22:17.124981",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "Entrepreneurial Spirit: Promote and encourage employees to think, act, take accountabilities and ownership for everything they do like entrepreneurs within the company. This kind of culture promotes innovation, calculated risk-taking, problem-solving, and continuous improvement, with a focus on seizing opportunities and creating value.\n\n# 2\n\n# DID YOU KNOW?\n\n# 3\n\n# Our Business Model\n\n# Client sectors\n\n# Industries\n\n# Goverment Bussinesses\n\nFinancial Services, Retail & E-commerce, Agriculture, Manufacturing, Logistics and Transportation, Govement services\n\n# Our Strategic Partners\n\nTechnology Partners   \nSoftware Partners   \nResearch & Academic   \nPartners (University,   \nInstitutions)   \nIndustry Strategic   \nPartners\n\n# Our Stakeholders",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "Entrepreneurial Spirit: Promote and encourage employees to think, act, take accountabilities and ownership for everything they do like entrepreneurs within the company. This kind of culture promotes innovation, calculated risk-taking, problem-solving, and continuous improvement, with a focus on seizing opportunities and creating value.\n\n# 2\n\n# DID YOU KNOW?\n\n![](images/794a6cfb7d40392bae4f795ee0588969b58e3643260a581bd1a66a9e669c55c2.jpg)\n\n![](images/591be63e138591829570692466e0b5a4c6c60d263c8e4810167d53a3d0c47c17.jpg)\n\n# 3\n\n# Our Business Model\n\n# Client sectors\n\n# Industries\n\n# Goverment Bussinesses\n\nFinancial Services, Retail & E-commerce, Agriculture, Manufacturing, Logistics and Transportation, Govement services\n\n# Our Strategic Partners\n\nTechnology Partners   \nSoftware Partners   \nResearch & Academic   \nPartners (University,   \nInstitutions)   \nIndustry Strategic   \nPartners\n\n![](images/d881c21dc60081040e30a4e8ed177723b10672cae47d68e730725fe4b80c9fbd.jpg)\n\n# Our Stakeholders",
+      "contextual_content": null
+    },
+    "document_id": "c6620cb3c417e51d3bd7ac7032c7d5dea0fd1fed6835529a31a41527c57996e7",
+    "id": "ef5a9398-10a4-45cc-80ea-3a0b9d904cb2"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:14.427178",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:14.427173",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "# DATA PROTECTION POLICY\n\nPersonal Data Protection Policy & Confidentiality Commitment (Updated: 25/11/2024 – Effective: 25/11/2024)\n\n# Personal Data Protection Policy\n\nVietnam Silicon Co., Ltd. (“VNS”) always values the protection of personal data when collecting and using Personal Data (as defined below). The following personal data protection policy (“Policy”) aims to inform data subjects, referred to as “You” in this policy, about your rights, how VNS processes Personal Data, and the reasons for collecting Personal Data to provide VNS’s products or services, comply with legal requirements, contractual obligations, or for recruitment purposes. VNS may change this Policy from time to time, and the version displayed on the Website will be the most recently updated version.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "![](images/6e91fa48d0a7d16d129880e09a734b214e862d85af033eccd5e020e8ff404623.jpg)\n\n# DATA PROTECTION POLICY\n\nPersonal Data Protection Policy & Confidentiality Commitment (Updated: 25/11/2024 – Effective: 25/11/2024)\n\n# Personal Data Protection Policy\n\nVietnam Silicon Co., Ltd. (“VNS”) always values the protection of personal data when collecting and using Personal Data (as defined below). The following personal data protection policy (“Policy”) aims to inform data subjects, referred to as “You” in this policy, about your rights, how VNS processes Personal Data, and the reasons for collecting Personal Data to provide VNS’s products or services, comply with legal requirements, contractual obligations, or for recruitment purposes. VNS may change this Policy from time to time, and the version displayed on the Website will be the most recently updated version.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "130dea48-758d-4c34-9002-d26c6197d73b"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:24.020064",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:24.020059",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "For direct marketing purposes, if permitted by law, we may provide your personal information (excluding any personal data collected by VNS when providing services to third-party service providers (inside or outside VNS) under any category in the Marketing Topics and customer call centers, marketing or survey research services so they can send You promotional materials and organize direct marketing about products and services they provide (this information may be sent to You by mail, email, or other means). If permitted by law, to supplement information, we may transfer your personal data to service providers (inside or outside VNS) of any category in the Marketing Topics.   \nBefore using or providing your personal information for the purposes and to the recipients specifically mentioned in this section, as required by law, we may obtain your consent, and in such cases, only after receiving this consent will we use and provide your personal information for marketing or promotional purposes.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "For direct marketing purposes, if permitted by law, we may provide your personal information (excluding any personal data collected by VNS when providing services to third-party service providers (inside or outside VNS) under any category in the Marketing Topics and customer call centers, marketing or survey research services so they can send You promotional materials and organize direct marketing about products and services they provide (this information may be sent to You by mail, email, or other means). If permitted by law, to supplement information, we may transfer your personal data to service providers (inside or outside VNS) of any category in the Marketing Topics.   \nBefore using or providing your personal information for the purposes and to the recipients specifically mentioned in this section, as required by law, we may obtain your consent, and in such cases, only after receiving this consent will we use and provide your personal information for marketing or promotional purposes.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "14261c3e-4ac8-487f-b44c-332c92294822"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:20.328651",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:20.328646",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "Processing, managing, implementing, and performing requests or transactions mentioned in this document or any other documents You may submit to us from time to time, including but not limited to managing your contract; collecting service fees and outstanding amounts from You; investigating, analyzing, processing, and paying claims made under your service contract; and renewing, changing, canceling, or re-signing your contract; Exercising any rights under your service contract, including the right of subrogation, if applicable.   \nTo communicate with You, including sending You management information and other exchanges about any contract or account You may have with us, providing technical support related to our websites and applications, or about future changes to this Policy; to provide You with access to content on our websites or applications [or social media platforms];",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "Processing, managing, implementing, and performing requests or transactions mentioned in this document or any other documents You may submit to us from time to time, including but not limited to managing your contract; collecting service fees and outstanding amounts from You; investigating, analyzing, processing, and paying claims made under your service contract; and renewing, changing, canceling, or re-signing your contract; Exercising any rights under your service contract, including the right of subrogation, if applicable.   \nTo communicate with You, including sending You management information and other exchanges about any contract or account You may have with us, providing technical support related to our websites and applications, or about future changes to this Policy; to provide You with access to content on our websites or applications [or social media platforms];",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "2539bbb9-1044-468b-9e89-2a319c1d25ab"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:17.004719",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:17.004714",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "# DATA PROTECTION POLICY\n\nViet Nam Silicon Company Limited Security Level: Public\n\ncomplying with the Personal Data Protection Regulations and all relevant legal documents in the host country, ensuring our staff adheres to strict safety and confidentiality standards.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "# DATA PROTECTION POLICY\n\nViet Nam Silicon Company Limited Security Level: Public\n\n![](images/70c21ee22c0a9b21fd3db3261082bcba4f56f3ffb624bda114e2718219f3554d.jpg)\n\ncomplying with the Personal Data Protection Regulations and all relevant legal documents in the host country, ensuring our staff adheres to strict safety and confidentiality standards.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "75e7bce3-89ac-4b4a-9dd5-931e379327f6"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:18.141959",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:18.141954",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "VNS is responsible for collecting, storing, processing, or using personal information. Providing personal information from You is voluntary. You may choose not to provide us with the requested information. However, the lack of information may hinder our ability to provide appropriate services to You. VNS will not collect any personally identifiable information through this website, application, tool unless and until You participate in an insurance product or use our services, register as a member, or submit personal information for job application purposes.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "VNS is responsible for collecting, storing, processing, or using personal information. Providing personal information from You is voluntary. You may choose not to provide us with the requested information. However, the lack of information may hinder our ability to provide appropriate services to You. VNS will not collect any personally identifiable information through this website, application, tool unless and until You participate in an insurance product or use our services, register as a member, or submit personal information for job application purposes.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "8eff667b-bf7a-409b-a66c-45d4c897e315"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:16.648583",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:16.648578",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "Additionally, the regulations on Processing Personal Data, Purpose, information about organizations, individuals Processing Personal Data, rights, and obligations of Data Subjects under this Policy are also regulated and adjusted in other agreements between You and VNS; and the Confidentiality Commitment Regulations (“Confidentiality Commitment”). VNS reserves the right to update the Confidentiality Commitment regulations from time to time, and therefore, VNS recommends You regularly check VNS’s Website to ensure that You are aware of the latest updates.\n\n# Confidentiality Commitment\n\nOne of the most important assets of Vietnam Silicon Co., Ltd. is the trust and confidence in managing information correctly. Customers and potential customers require us to keep their information accurate, avoid misuse and errors, prevent theft, and not disclose unauthorized information. We protect the safety of customer and potential customer information by\n\n# DATA PROTECTION POLICY",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "Additionally, the regulations on Processing Personal Data, Purpose, information about organizations, individuals Processing Personal Data, rights, and obligations of Data Subjects under this Policy are also regulated and adjusted in other agreements between You and VNS; and the Confidentiality Commitment Regulations (“Confidentiality Commitment”). VNS reserves the right to update the Confidentiality Commitment regulations from time to time, and therefore, VNS recommends You regularly check VNS’s Website to ensure that You are aware of the latest updates.\n\n# Confidentiality Commitment\n\nOne of the most important assets of Vietnam Silicon Co., Ltd. is the trust and confidence in managing information correctly. Customers and potential customers require us to keep their information accurate, avoid misuse and errors, prevent theft, and not disclose unauthorized information. We protect the safety of customer and potential customer information by\n\n# DATA PROTECTION POLICY",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "a388b570-229a-4e80-958b-9c30fe0d67d1"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:17.366850",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:17.366847",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "This Confidentiality Policy (“Policy”) outlines how personal data is processed, including why personal information is collected, how it is used, recorded, analyzed, stored, changed, accessed, retrieved, encrypted, decrypted, copied, transferred, deleted, or destroyed, who it may be transferred to, how to access, view, and modify your personal information, as well as our policies in direct marketing and the use of data processing tools. By using this website, application, or tool, You are deemed to have agreed and accepted the applications and regulations in this Policy. If You do not agree with any application or regulation in this Policy, please do not use the website, application, or related tool to submit personal information to VNS.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "This Confidentiality Policy (“Policy”) outlines how personal data is processed, including why personal information is collected, how it is used, recorded, analyzed, stored, changed, accessed, retrieved, encrypted, decrypted, copied, transferred, deleted, or destroyed, who it may be transferred to, how to access, view, and modify your personal information, as well as our policies in direct marketing and the use of data processing tools. By using this website, application, or tool, You are deemed to have agreed and accepted the applications and regulations in this Policy. If You do not agree with any application or regulation in this Policy, please do not use the website, application, or related tool to submit personal information to VNS.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "cc5b6c3d-e6de-4418-b4a3-5d781010e434"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:13.479787",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:13.479780",
+    "block_index": 49.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/de33654a8d6c6f57ad4c1aedf1b5cc30a2db3db0461418058887ce8c6cb1acb8.jpg",
+      "image_caption": "Abstract geometric pattern with sharp white lines on a vibrant blue background.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "abstract",
+        "geometric",
+        "lines",
+        "background"
+      ],
+      "image_type": "abstract_pattern"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "aa4e6a57-ac83-4000-a02a-474a7ca9d1a8"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:25.089805",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:25.089799",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "VNS may use multiple processing tools on various websites, applications, and tools we manage. The information collected (including but not limited to: your IP address, domain name, browsing software, types and configurations of your browsing tools, language settings, geographic location, operating system, reference website, websites and content viewed, along with access time) is used to compile statistics on the number of visitors and references to our website, application, tool to help us understand how we need to change your experience on this website, application, tool. This information is collected anonymously, and You cannot be identified unless You access it as a member. We only use this data for upgrading and adjusting the website, application, tool.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "VNS may use multiple processing tools on various websites, applications, and tools we manage. The information collected (including but not limited to: your IP address, domain name, browsing software, types and configurations of your browsing tools, language settings, geographic location, operating system, reference website, websites and content viewed, along with access time) is used to compile statistics on the number of visitors and references to our website, application, tool to help us understand how we need to change your experience on this website, application, tool. This information is collected anonymously, and You cannot be identified unless You access it as a member. We only use this data for upgrading and adjusting the website, application, tool.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "4fc4fd86-471b-43d0-9d40-ea13dea623aa"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:11.508354",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:11.508345",
+    "block_index": 40.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/19d9740db354c013724aef06347c8cf2f6ffaddba0d87504ab11f7434fa94616.jpg",
+      "image_caption": "Abstract geometric pattern with white lines on a blue background.",
+      "image_footnote": [],
+      "caption_confidence": 0.85,
+      "detected_objects": [
+        "abstract",
+        "geometric pattern",
+        "lines"
+      ],
+      "image_type": "abstract"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "66ced9c1-96ec-47e7-8acf-18224415dfca"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:17.756195",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:17.756190",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "This website, application, tool is for general information purposes or specific purposes stated in the corresponding Terms of Service of the application, tool. Although we always use appropriate tools to ensure the accuracy of the information on this website, application, tool, VNS does not guarantee absolute accuracy of the data or be responsible for any loss or damage due to discrepancies or omissions. Without prior consent from VNS, the information on this website, application, tool is not allowed to be copied (except for personal use) or forwarded.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "This website, application, tool is for general information purposes or specific purposes stated in the corresponding Terms of Service of the application, tool. Although we always use appropriate tools to ensure the accuracy of the information on this website, application, tool, VNS does not guarantee absolute accuracy of the data or be responsible for any loss or damage due to discrepancies or omissions. Without prior consent from VNS, the information on this website, application, tool is not allowed to be copied (except for personal use) or forwarded.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "1b9f8d5a-f018-446e-b4d9-3dbb628d1f96"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:22.203976",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:22.203970",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "Any agent, contractor, or third-party service provider (inside or outside VNS) providing administrative, data processing, telecommunications, computer, payment, debt collection, information technology services, cloud computing services, customer center, postal and printing services related to VNS’s operations and providing VNS’s services to You;   \nAny member company of VNS;   \nAgents, contractors, or third-party service providers (inside or outside VNS) including companies using VNS’s services, companies helping distribute VNS’s services, investment management companies, claims investigation companies, industry associations, or federations;   \nGovernment or regulatory authorities in any country or any individual to whom VNS [or another member of VNS] must disclose data: (a) under legal and/or statutory obligations there or any other country applicable to the specific VNS company; or (b) under an agreement between the VNS company and the relevant government, regulatory authority, or other party.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "Any agent, contractor, or third-party service provider (inside or outside VNS) providing administrative, data processing, telecommunications, computer, payment, debt collection, information technology services, cloud computing services, customer center, postal and printing services related to VNS’s operations and providing VNS’s services to You;   \nAny member company of VNS;   \nAgents, contractors, or third-party service providers (inside or outside VNS) including companies using VNS’s services, companies helping distribute VNS’s services, investment management companies, claims investigation companies, industry associations, or federations;   \nGovernment or regulatory authorities in any country or any individual to whom VNS [or another member of VNS] must disclose data: (a) under legal and/or statutory obligations there or any other country applicable to the specific VNS company; or (b) under an agreement between the VNS company and the relevant government, regulatory authority, or other party.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "8bf7bf9f-e0fa-4c33-b44d-7af34db08cf0"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:05.608132",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:05.608123",
+    "block_index": 0.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/6e91fa48d0a7d16d129880e09a734b214e862d85af033eccd5e020e8ff404623.jpg",
+      "image_caption": "A geometric abstract background with white lines on a blue background, suggesting depth and movement.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "abstract",
+        "lines",
+        "geometric"
+      ],
+      "image_type": "abstract_background"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "d96343e6-107f-4ea0-891c-569f9d3f29ce"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:16.263702",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:16.263697",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "At any time, at your discretion, including but not limited to when You find any Personal Data provided has expired, is outdated, or is no longer accurate, or You request to adjust any content related to Personal Data previously provided during the Agreement between You and VNS, You have the right to request VNS to update or correct or adjust such information (“Adjust Personal Data”). You hereby acknowledge and agree that VNS is allowed to Process Your Personal Data in each request to Adjust Personal Data without prior notice or consent.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "At any time, at your discretion, including but not limited to when You find any Personal Data provided has expired, is outdated, or is no longer accurate, or You request to adjust any content related to Personal Data previously provided during the Agreement between You and VNS, You have the right to request VNS to update or correct or adjust such information (“Adjust Personal Data”). You hereby acknowledge and agree that VNS is allowed to Process Your Personal Data in each request to Adjust Personal Data without prior notice or consent.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "fa29f281-6602-4dca-b15d-ac75d9b3aed2"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:25.476294",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:25.476289",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "These processing tools can also make our website, application, tool record your access and preferences, and adjust the website, application, tool to suit your needs. Data processing tools for advertising purposes allow us to provide more relevant advertisements on our websites, applications, tools, for example, by selecting advertisements based on your interests, or blocking repeated advertisements with the same content.\n\nMost browsing tools are initially designed to accept processing tools. If You do not want to accept these tools, You can temporarily block them when setting up your browsing tool. However, You will not fully enjoy all the benefits of our websites, applications, or tools, and some functions may not work correctly.\n\nAdditionally, VNS may apply automated personal data processing methods through algorithms to process your data.\n\n# External Links",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "These processing tools can also make our website, application, tool record your access and preferences, and adjust the website, application, tool to suit your needs. Data processing tools for advertising purposes allow us to provide more relevant advertisements on our websites, applications, tools, for example, by selecting advertisements based on your interests, or blocking repeated advertisements with the same content.\n\nMost browsing tools are initially designed to accept processing tools. If You do not want to accept these tools, You can temporarily block them when setting up your browsing tool. However, You will not fully enjoy all the benefits of our websites, applications, or tools, and some functions may not work correctly.\n\nAdditionally, VNS may apply automated personal data processing methods through algorithms to process your data.\n\n# External Links",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "9c6c8642-27c9-4e24-8d58-77d8e3a35170"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:15.902228",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:15.902224",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "as collecting, recording, analyzing, verifying, storing, editing, publishing, combining, accessing, retrieving, recovering, encrypting, decrypting, copying, sharing, transmitting, providing, transferring, deleting, destroying personal data, and/or other actions as prescribed by applicable law at any given time (“Processing Personal Data”).",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "as collecting, recording, analyzing, verifying, storing, editing, publishing, combining, accessing, retrieving, recovering, encrypting, decrypting, copying, sharing, transmitting, providing, transferring, deleting, destroying personal data, and/or other actions as prescribed by applicable law at any given time (“Processing Personal Data”).",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "ee38efc6-00cd-4ac1-bd56-e51d21414343"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:23.656421",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:23.656416",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "# Use of Personal Data for Direct Marketing Purposes\n\nIn addition to the Purposes mentioned above, if permitted by law, VNS may use your name and contact information for marketing and promotional purposes, including sending promotional materials and organizing direct marketing for products, services, recruitment advice, and personnel recommendations.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "# Use of Personal Data for Direct Marketing Purposes\n\nIn addition to the Purposes mentioned above, if permitted by law, VNS may use your name and contact information for marketing and promotional purposes, including sending promotional materials and organizing direct marketing for products, services, recruitment advice, and personnel recommendations.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "5e606c0c-e193-4c6f-b9d8-69bf92899883"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:26.196986",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:26.196981",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "# Amendments to This Privacy Policy\n\nAt any time and without notice, VNS reserves the right to add, change, update, or adjust this Policy. If we decide to change the policy on personal data, these changes will be announced on our website, application, or corresponding tool so that You are always updated on the information we collect, how we use this data, and under what circumstances this information is disclosed. These changes, updates, or additions will take effect immediately upon being updated on the website, application, or tool. By continuing to use the corresponding website, application, or tool, we understand that You have read, understood, and accepted the revised and supplemented confidentiality commitment.\n\n# Additional Information\n\nIf You have any questions related to any part of this Policy or want more information about implementing information security, please contact us using the details provided above.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "# Amendments to This Privacy Policy\n\nAt any time and without notice, VNS reserves the right to add, change, update, or adjust this Policy. If we decide to change the policy on personal data, these changes will be announced on our website, application, or corresponding tool so that You are always updated on the information we collect, how we use this data, and under what circumstances this information is disclosed. These changes, updates, or additions will take effect immediately upon being updated on the website, application, or tool. By continuing to use the corresponding website, application, or tool, we understand that You have read, understood, and accepted the revised and supplemented confidentiality commitment.\n\n# Additional Information\n\nIf You have any questions related to any part of this Policy or want more information about implementing information security, please contact us using the details provided above.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "514fc3dc-80ac-473a-8902-8a1285ea8ed6"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:25.827961",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:25.827959",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "# External Links\n\nIf any part of this website, application, tool contains links to other websites, those sites may not be governed by this Policy. You should check the privacy policy on those websites to understand their policies when collecting, using, transferring, and disclosing personal information.\n\n# Amendments to This Privacy Policy",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "# External Links\n\nIf any part of this website, application, tool contains links to other websites, those sites may not be governed by this Policy. You should check the privacy policy on those websites to understand their policies when collecting, using, transferring, and disclosing personal information.\n\n# Amendments to This Privacy Policy",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "6e5be61f-50ea-4978-9bf8-322c1dc720eb"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:24.729307",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:24.729302",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "# DATA PROTECTION POLICY\n\nViet Nam Silicon Company Limited Security Level: Public\n\n# Use of Data Processing Tools\n\nA data processing tool is a unique tool on your computer or other devices through a website server, containing information that can later be read from the server that provided You with this tool.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "# DATA PROTECTION POLICY\n\nViet Nam Silicon Company Limited Security Level: Public\n\n![](images/de33654a8d6c6f57ad4c1aedf1b5cc30a2db3db0461418058887ce8c6cb1acb8.jpg)\n\n# Use of Data Processing Tools\n\nA data processing tool is a unique tool on your computer or other devices through a website server, containing information that can later be read from the server that provided You with this tool.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "7e343bcf-767e-42a7-81d5-7224b9fc7241"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:23.313684",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:23.313682",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "Your information may be sent, stored, and processed in Vietnam or any country where VNS is based, or in the country where the third-party contractor is based or from the country where the third-party contractor provides services to us. By providing us with your personal information or using our services, website, or applications, You agree to transfer this information out of your country to our processing tools or to third parties we wish to share information with as stated above. All requests for access, correction, or other requests related to your personal information should be sent to: Email career@vnsilicon.net. VNS reserves the right to request payment for costs directly and necessarily related to fulfilling these requests.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "Your information may be sent, stored, and processed in Vietnam or any country where VNS is based, or in the country where the third-party contractor is based or from the country where the third-party contractor provides services to us. By providing us with your personal information or using our services, website, or applications, You agree to transfer this information out of your country to our processing tools or to third parties we wish to share information with as stated above. All requests for access, correction, or other requests related to your personal information should be sent to: Email career@vnsilicon.net. VNS reserves the right to request payment for costs directly and necessarily related to fulfilling these requests.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "46ec8ef7-0491-4238-b849-7d83f2e102ec"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:22.930660",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:22.930656",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "In the event we may acquire a business or sell one or more of our companies (or shares from these companies) and if permitted by law, your personal information may be transferred or disclosed as part of the sale or acquisition plan. In the event we acquire a business, personal data received with that business will be processed according to this Policy, if feasible and permissible. If permitted by law, your personal information will be provided to the above-mentioned partners, which may be based in Vietnam or outside Vietnam.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "In the event we may acquire a business or sell one or more of our companies (or shares from these companies) and if permitted by law, your personal information may be transferred or disclosed as part of the sale or acquisition plan. In the event we acquire a business, personal data received with that business will be processed according to this Policy, if feasible and permissible. If permitted by law, your personal information will be provided to the above-mentioned partners, which may be based in Vietnam or outside Vietnam.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "e3643f3a-5faf-4e64-90a6-aee4b1b1fa42"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:19.959158",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:19.959153",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "We will generally identify any information as mandatory (i.e., information necessary to manage the insurance contract) when we collect information from You. [In certain countries and when required by law, VNS will not collect personal data without your consent.]\n\n# Why do we need to collect your personal information and how is this data used?\n\nersonal information is collected for the following purposes:",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "We will generally identify any information as mandatory (i.e., information necessary to manage the insurance contract) when we collect information from You. [In certain countries and when required by law, VNS will not collect personal data without your consent.]\n\n# Why do we need to collect your personal information and how is this data used?\n\nersonal information is collected for the following purposes:",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "9dfd7cef-b428-4a0e-89f3-2dc7df7fb3ad"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:19.600609",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:19.600605",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "If You use any social media feature or forum, or on our website, an application we provide, or through a social media provider, we may access and collect your information through the social media provider according to their policy. When using a social media feature, we may access and collect information You have chosen and included in your profile or account on social media, including but not limited to your full name, gender, birthday, email address, address, location,\n\n# DATA PROTECTION POLICY\n\nViet Nam Silicon Company Limited Security Level: Public\n\netc. Our access to this information may be restricted or blocked due to your privacy settings with the relevant social media provider.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "If You use any social media feature or forum, or on our website, an application we provide, or through a social media provider, we may access and collect your information through the social media provider according to their policy. When using a social media feature, we may access and collect information You have chosen and included in your profile or account on social media, including but not limited to your full name, gender, birthday, email address, address, location,\n\n# DATA PROTECTION POLICY\n\nViet Nam Silicon Company Limited Security Level: Public\n\n![](images/e71251c0b544f02ce2259b3b8446b60b07e5d22fdbdebd161fd4366b6687be2c.jpg)\n\netc. Our access to this information may be restricted or blocked due to your privacy settings with the relevant social media provider.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "2379cb7b-7acb-43e1-9881-7efead849139"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:21.448619",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:21.448617",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "And other purposes directly related to any of the above purposes. (Hereinafter referred to as “Purpose”)\n\nBy providing personal information, You acknowledge that VNS may retain your information as long as necessary to fulfill the purposes for which the information was collected and ensure compliance with applicable laws and regulations. VNS applies appropriate safeguards to prevent accidental or unauthorized access, processing, erasure, loss, or use, including restricting direct access to data within VNS’s system and encrypting sensitive data during transmission. Appropriate steps will be taken to delete or destroy information when it is no longer needed for the stated purposes.\n\nRegarding our policy on using your personal information for promotional or marketing purposes, VNS also uses clear codes in HTML-formatted emails to identify which emails have been opened by recipients. This allows VNS to evaluate the effectiveness of certain media and the effectiveness of VNS’s marketing strategies.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "And other purposes directly related to any of the above purposes. (Hereinafter referred to as “Purpose”)\n\nBy providing personal information, You acknowledge that VNS may retain your information as long as necessary to fulfill the purposes for which the information was collected and ensure compliance with applicable laws and regulations. VNS applies appropriate safeguards to prevent accidental or unauthorized access, processing, erasure, loss, or use, including restricting direct access to data within VNS’s system and encrypting sensitive data during transmission. Appropriate steps will be taken to delete or destroy information when it is no longer needed for the stated purposes.\n\nRegarding our policy on using your personal information for promotional or marketing purposes, VNS also uses clear codes in HTML-formatted emails to identify which emails have been opened by recipients. This allows VNS to evaluate the effectiveness of certain media and the effectiveness of VNS’s marketing strategies.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "b23d060f-6962-4928-8beb-e69f5a3db981"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:21.054541",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:21.054535",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "To support law enforcement purposes, police or legal investigations, or other competent authorities in any country and meet legal and reporting obligations agreed with the government or regulatory authorities in any country;   \nOther purposes as notified at the time of information collection.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "To support law enforcement purposes, police or legal investigations, or other competent authorities in any country and meet legal and reporting obligations agreed with the government or regulatory authorities in any country;   \nOther purposes as notified at the time of information collection.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "33f883fd-93a0-40b0-9d71-142727cf4b60"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:19.248031",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:19.248027",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "Information You provide when registering, renewing, or claiming under a contract and/or exchanging letters with us, including name, address, and other contact details, date of birth, bank account or credit card details, passport/ID number, information about your work experience; and Technical information collected when You use our websites, applications, and social media platforms developed or co-developed, owned or co-owned by VNS or our partners (individuals and entities): such as IP address, browser type and version, time zone settings, browser plugin types, operating system and platform, email interaction system information, device information (including wireless network and general network information).",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "Information You provide when registering, renewing, or claiming under a contract and/or exchanging letters with us, including name, address, and other contact details, date of birth, bank account or credit card details, passport/ID number, information about your work experience; and Technical information collected when You use our websites, applications, and social media platforms developed or co-developed, owned or co-owned by VNS or our partners (individuals and entities): such as IP address, browser type and version, time zone settings, browser plugin types, operating system and platform, email interaction system information, device information (including wireless network and general network information).",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "51b66b45-13ae-47d1-87ac-3262b8964285"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:20.695697",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:20.695694",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "To design new or improve existing products and services; enhance customer experience and introduce products that meet customer protection needs through advanced customer database analysis.   \nTo reconcile our data, internal operations (including business reorganization), and administrative purposes. Analyzing your profile information to suggest job recommendations based on the analysis.   \nSending You congratulatory messages and/or error notifications on VNS Websites and/or VNS Service information.   \nSending You instructions, advice, and survey information to maximize your career development, including but not limited to using VNS Services.   \nTo manage your use of our websites and applications [and social media platforms], and conduct usage analysis to personalize, operate, evaluate, and improve them and our services, understand your preferences, and troubleshoot.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "To design new or improve existing products and services; enhance customer experience and introduce products that meet customer protection needs through advanced customer database analysis.   \nTo reconcile our data, internal operations (including business reorganization), and administrative purposes. Analyzing your profile information to suggest job recommendations based on the analysis.   \nSending You congratulatory messages and/or error notifications on VNS Websites and/or VNS Service information.   \nSending You instructions, advice, and survey information to maximize your career development, including but not limited to using VNS Services.   \nTo manage your use of our websites and applications [and social media platforms], and conduct usage analysis to personalize, operate, evaluate, and improve them and our services, understand your preferences, and troubleshoot.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "9269e8eb-6f9c-453b-870a-2cb87cc4aaea"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:18.886621",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:18.886616",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "# How do we collect data?\n\nWe will collect and store your personal information:\n\nDirectly when You provide that information to us (e.g., when You fill out request forms; or when You send us a request or make contact);   \nIndirectly through your use of our websites, applications, or social media platforms; or   \nWhen You provide it to us through any other means; We may obtain legally collected personal or non-personal data about You from affiliated organizations, business partners, and other independent third-party sources. We may also collect some information about your computer or other devices used when You access our websites or applications [or social media platforms].   \nThe personal data we collect (including sensitive personal data as defined by applicable laws and regulations) includes the following information:",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "# How do we collect data?\n\nWe will collect and store your personal information:\n\nDirectly when You provide that information to us (e.g., when You fill out request forms; or when You send us a request or make contact);   \nIndirectly through your use of our websites, applications, or social media platforms; or   \nWhen You provide it to us through any other means; We may obtain legally collected personal or non-personal data about You from affiliated organizations, business partners, and other independent third-party sources. We may also collect some information about your computer or other devices used when You access our websites or applications [or social media platforms].   \nThe personal data we collect (including sensitive personal data as defined by applicable laws and regulations) includes the following information:",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "30dfe723-9edb-45b9-b130-3edf80350dd3"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:22.568491",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:22.568486",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "For any personal data collected when providing services related to the basic trust program of the mandatory savings fund, this information will only be sent to the above parties for the purpose of providing services related to the mandatory savings fund.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "For any personal data collected when providing services related to the basic trust program of the mandatory savings fund, this information will only be sent to the above parties for the purpose of providing services related to the mandatory savings fund.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "247c8813-e61a-4032-bc2c-9899d3e6a5dd"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:14.792143",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:14.792140",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "Personal Data, including basic personal data and sensitive personal data, are information and data about individuals in the form of symbols, letters, numbers, images, sounds, or similar forms in an electronic environment associated with a specific individual or help identify a specific person or relate to the identification or potential identification of a specific individual. Personal Data may include ID cards, citizen identification, passports, full names, dates of birth, gender, residence, email addresses, educational qualifications, nationality, phone numbers, marital status, work experience, access history, job search, application information, other information related to job applications (CV), information related to the use of salary calculation tools, aptitude tests, and any data or information that is considered Personal Data under the law at any given time. If You choose to add a referee in your profile, VNS will request the name, phone number, email, job position, and other specific information of",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "Personal Data, including basic personal data and sensitive personal data, are information and data about individuals in the form of symbols, letters, numbers, images, sounds, or similar forms in an electronic environment associated with a specific individual or help identify a specific person or relate to the identification or potential identification of a specific individual. Personal Data may include ID cards, citizen identification, passports, full names, dates of birth, gender, residence, email addresses, educational qualifications, nationality, phone numbers, marital status, work experience, access history, job search, application information, other information related to job applications (CV), information related to the use of salary calculation tools, aptitude tests, and any data or information that is considered Personal Data under the law at any given time. If You choose to add a referee in your profile, VNS will request the name, phone number, email, job position, and other specific information of",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "d3c17956-efdc-4f7d-8979-9a225ea04a99"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:24.377186",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:24.377182",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "The types of personal data that VNS uses and provides for direct marketing purposes include names and contact details, although we may also have additional information.   \nIf consent is required, and You have provided consent by mail, email, or other means, You may still withdraw your consent for VNS to use and provide your personal information to third parties for direct marketing purposes, in which case VNS will stop using or providing that information for direct marketing purposes.   \nIf You have confirmed and wish to withdraw this opinion, please notify us in writing at the address mentioned in the “Right to Access Personal Data” section or send an email to career@vnsilicon.net. Please provide details of the personal information related to the opt-out request in this notification.",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "The types of personal data that VNS uses and provides for direct marketing purposes include names and contact details, although we may also have additional information.   \nIf consent is required, and You have provided consent by mail, email, or other means, You may still withdraw your consent for VNS to use and provide your personal information to third parties for direct marketing purposes, in which case VNS will stop using or providing that information for direct marketing purposes.   \nIf You have confirmed and wish to withdraw this opinion, please notify us in writing at the address mentioned in the “Right to Access Personal Data” section or send an email to career@vnsilicon.net. Please provide details of the personal information related to the opt-out request in this notification.",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "751b425c-6d9d-416f-8d09-f0e6b0db24d6"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:09.829851",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:09.829840",
+    "block_index": 28.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/e71251c0b544f02ce2259b3b8446b60b07e5d22fdbdebd161fd4366b6687be2c.jpg",
+      "image_caption": "Abstract geometric pattern with white lines on a blue background.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "geometric shapes",
+        "lines",
+        "abstract pattern"
+      ],
+      "image_type": "abstract_art"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "4d8ca4c8-81f7-423c-923a-5d69da502078"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:18.508883",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:18.508877",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "Although we have appropriate security measures to protect personal information and strive to take precautions to prevent and minimize risks when You use the website, application, tool, the Internet is an open system, and no online system is absolutely secure; any system can be flawed by human or operational activities. When You notice, suspect, or know that your personal information has been modified, used, or appropriated by a third party to log into the website, application, tool, or for any other purpose, please contact VNS immediately (using the information provided below) for support.\n\nThis website, application, tool, and our social media forums are not intended for individuals in countries where we have restrictions on providing information or using social media forums. If You fall within this scope, please self-assess your restricted status and refer to the limited content, and VNS is not responsible for this issue.\n\n# How do we collect data?\n\nWe will collect and store your personal information:",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "Although we have appropriate security measures to protect personal information and strive to take precautions to prevent and minimize risks when You use the website, application, tool, the Internet is an open system, and no online system is absolutely secure; any system can be flawed by human or operational activities. When You notice, suspect, or know that your personal information has been modified, used, or appropriated by a third party to log into the website, application, tool, or for any other purpose, please contact VNS immediately (using the information provided below) for support.\n\nThis website, application, tool, and our social media forums are not intended for individuals in countries where we have restrictions on providing information or using social media forums. If You fall within this scope, please self-assess your restricted status and refer to the limited content, and VNS is not responsible for this issue.\n\n# How do we collect data?\n\nWe will collect and store your personal information:",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "7f1d56b4-6e52-4a7b-be07-6aafb407a723"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:15.535480",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:15.535476",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "Any Personal Data You provide to VNS and/or collected by VNS from You at any time for the Purposes mentioned below is legally owned by You and/or has been approved by the Personal Data Subject before providing it to VNS under the Contract (“Data Subject”). Accordingly, You ensure and allow VNS to process Your Personal Data, including Your sensitive Personal Data, without prior notice or consent for purposes related to all agreements, contracts, and/or any documents (“Agreements”) and/or to comply with anti-money laundering, anti-corruption, conflict checks, risk management, accounting purposes; and/or for surveys, research, quality assessment; and/or for dispute resolution, database management (“Purpose”). You are responsible for providing VNS with a copy of the Data Subject’s consent when requested by VNS. Processing Personal Data may be performed by one or more activities affecting Personal Data such as collecting, recording, analyzing, verifying, storing, editing, publishing, combining, accessing,",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "Any Personal Data You provide to VNS and/or collected by VNS from You at any time for the Purposes mentioned below is legally owned by You and/or has been approved by the Personal Data Subject before providing it to VNS under the Contract (“Data Subject”). Accordingly, You ensure and allow VNS to process Your Personal Data, including Your sensitive Personal Data, without prior notice or consent for purposes related to all agreements, contracts, and/or any documents (“Agreements”) and/or to comply with anti-money laundering, anti-corruption, conflict checks, risk management, accounting purposes; and/or for surveys, research, quality assessment; and/or for dispute resolution, database management (“Purpose”). You are responsible for providing VNS with a copy of the Data Subject’s consent when requested by VNS. Processing Personal Data may be performed by one or more activities affecting Personal Data such as collecting, recording, analyzing, verifying, storing, editing, publishing, combining, accessing,",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "fef00152-f3d1-4adf-be46-effa9001423a"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:15.152865",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:15.152859",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "VNS will request the name, phone number, email, job position, and other specific information of these individuals. This information will be attached to your job application, and employers may contact the referee to obtain reference information for your job application. You confirm that you have read and agreed to the following:",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "VNS will request the name, phone number, email, job position, and other specific information of these individuals. This information will be attached to your job application, and employers may contact the referee to obtain reference information for your job application. You confirm that you have read and agreed to the following:",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "6aa1e143-72fe-4349-91bd-48706fffb0b9"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:21.824308",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:21.824303",
+    "block_index": null,
+    "image": null,
+    "content_type": "text",
+    "table": null,
+    "text": {
+      "raw_text": "# Who will your personal information be provided to?\n\nPersonal information will be kept confidential but may be disclosed, if permitted by law and if such disclosure is necessary to meet a request or a purpose directly related to the purpose for which the personal data was collected, to the following parties (regarding our policy on sharing your personal information for promotional and marketing purposes, please see the section “Use of Personal Data for Direct Marketing Purposes”):\n\nAny person authorized as an agent of VNS [or another subsidiary of VNS] to distribute products and services provided by Vsilicon [or the subsidiary];",
+      "intents": null,
+      "chunk_level": 1.0,
+      "content": "# Who will your personal information be provided to?\n\nPersonal information will be kept confidential but may be disclosed, if permitted by law and if such disclosure is necessary to meet a request or a purpose directly related to the purpose for which the personal data was collected, to the following parties (regarding our policy on sharing your personal information for promotional and marketing purposes, please see the section “Use of Personal Data for Direct Marketing Purposes”):\n\nAny person authorized as an agent of VNS [or another subsidiary of VNS] to distribute products and services provided by Vsilicon [or the subsidiary];\n\n![](images/19d9740db354c013724aef06347c8cf2f6ffaddba0d87504ab11f7434fa94616.jpg)",
+      "contextual_content": null
+    },
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "cb6daac9-0aa3-465a-833c-11dfe4611b93"
+  },
+  {
+    "updated_at": "2025-08-22T10:26:07.839704",
+    "metadata": {},
+    "equation": null,
+    "created_at": "2025-08-22T10:26:07.839696",
+    "block_index": 13.0,
+    "image": {
+      "has_valuable_info": false,
+      "image_path": "images/70c21ee22c0a9b21fd3db3261082bcba4f56f3ffb624bda114e2718219f3554d.jpg",
+      "image_caption": "A simple blue background with intersecting white lines forming abstract geometric shapes and patterns, resembling a digital or futuristic design.",
+      "image_footnote": [],
+      "caption_confidence": 0.95,
+      "detected_objects": [
+        "abstract",
+        "geometric shapes",
+        "lines",
+        "background"
+      ],
+      "image_type": "abstract"
+    },
+    "content_type": "image",
+    "table": null,
+    "text": null,
+    "document_id": "7793f97e4dc0f3802f9e002765bae4a511bce9d507611028a617ee565ce9e3fb",
+    "id": "06b1727c-3656-4f31-81b1-f78c279965a7"
+  }
+]

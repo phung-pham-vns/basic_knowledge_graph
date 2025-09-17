@@ -1,0 +1,2090 @@
+{
+  "entities": [
+    {
+      "label": "Movie",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "release_date_theaters",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "release_date_streaming",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "runtime_minutes",
+          "type": "number",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "box_office_gross_usa",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "original_language",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "critics_consensus",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "tomatometer_score",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "popcornmeter_score",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "tomatometer_reviews_count",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "popcornmeter_ratings_count",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "rerelease_date_theaters",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "runtime",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "synopsis",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "sound_mix",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "aspect_ratio",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "mpaa_rating",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "release_year",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "plot_summary",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "streaming_release_date",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "tomatometer_review_count",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "popcornmeter_rating_count",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "is_certified_fresh",
+          "type": "boolean",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "TvShow",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "tomatometer_score",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "season_number",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "full_title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "is_certified_fresh",
+          "type": "boolean",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Person",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "handle",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "StreamingService",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Company",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "company_type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Genre",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ReviewPlatform",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "CriticReview",
+      "attributes": [
+        {
+          "name": "review_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "rating_text",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "review_date",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "publication",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "review_text",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "rating_score",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "publication_name",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "rating",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "AudienceReview",
+      "attributes": [
+        {
+          "name": "review_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "rating_stars",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "review_date",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "review_text",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "rating_score",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "reviewer_identifier",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "rating",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Platform",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "platform_type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "MovieRating",
+      "attributes": [
+        {
+          "name": "code",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Distributor",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ProductionCompany",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Review",
+      "attributes": [
+        {
+          "name": "review_text",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "score_value",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "review_date",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "source_publication",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "is_critic_review",
+          "type": "boolean",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "score",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "date",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "review_signature",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "rating_value",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "rating_scale_max",
+          "type": "number",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Content",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "link",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "duration",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "content_type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Character",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "alias",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "SoundMix",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Guide",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "link",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Hub",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "link",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "NewsArticle",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "link",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Season",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "season_number",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "tomatometer_score",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "season_title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Rating",
+      "attributes": [
+        {
+          "name": "code",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "rating_name",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Article",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "link",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "article_type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ContentCategory",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Trailer",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "duration",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "PosterArt",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "image_url",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "MovieList",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "link",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "TvShowList",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "link",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "TrendingTopic",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "TelevisionShow",
+      "attributes": [
+        {
+          "name": "full_title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "season_number",
+          "type": "number",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "tomatometer_score",
+          "type": "number",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Role",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Language",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "AspectRatio",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "VideoContent",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "duration",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "video_type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "link",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Website",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "User",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "user_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "WebsiteFeature",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Video",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "runtime_display",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Topic",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "App",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "relations": [
+    {
+      "label": "HAS_GENRE",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "Genre"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DIRECTOR",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ACTOR",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "WRITER",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PRODUCER",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CINEMATOGRAPHER",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DISTRIBUTOR",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PRODUCTION_COMPANY",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AVAILABLE_ON",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "StreamingService"
+      },
+      "attributes": [
+        {
+          "name": "can_rent",
+          "type": "boolean",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "can_buy",
+          "type": "boolean",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "availability_type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "PUBLISHED_BY",
+      "source": {
+        "label": "CriticReview"
+      },
+      "target": {
+        "label": "ReviewPlatform"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AUTHORED_BY",
+      "source": {
+        "label": "CriticReview"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REVIEWS",
+      "source": {
+        "label": "CriticReview"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_RATING",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "MovieRating"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AVAILABLE_ON_STREAMING",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "StreamingService"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DIRECTS",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "WRITES",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PRODUCES",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ACTS_IN",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": [
+        {
+          "name": "character_name",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "DISTRIBUTED_BY",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "Distributor"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PRODUCED_BY",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "ProductionCompany"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PUBLISHES",
+      "source": {
+        "label": "Platform"
+      },
+      "target": {
+        "label": "Content"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AUTHORS",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Review"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ABOUT",
+      "source": {
+        "label": "Review"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REFERENCES",
+      "source": {
+        "label": "Content"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_TOMATOMETER_RATING",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "Platform"
+      },
+      "attributes": [
+        {
+          "name": "score_percentage",
+          "type": "number",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "review_count",
+          "type": "number",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "HAS_POPCORNMETER_RATING",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "Platform"
+      },
+      "attributes": [
+        {
+          "name": "score_percentage",
+          "type": "number",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "rating_count",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "HAS_RATING_SCORE",
+      "source": {
+        "label": "TvShow"
+      },
+      "target": {
+        "label": "Platform"
+      },
+      "attributes": [
+        {
+          "name": "score_percentage",
+          "type": "number",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "DIRECTED",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PRODUCED",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "WROTE_SCREENPLAY_FOR",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_SOUND_MIX",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "SoundMix"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ACTED_AS",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Character"
+      },
+      "attributes": []
+    },
+    {
+      "label": "FEATURED_IN",
+      "source": {
+        "label": "Character"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CONTAINS",
+      "source": {
+        "label": "Platform"
+      },
+      "target": {
+        "label": "Guide"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_SIMILAR_MOVIE",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ACTED_IN",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": [
+        {
+          "name": "role_name",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "PORTRAYS",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Character"
+      },
+      "attributes": []
+    },
+    {
+      "label": "APPEARS_IN",
+      "source": {
+        "label": "Character"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_SEASON",
+      "source": {
+        "label": "TvShow"
+      },
+      "target": {
+        "label": "Season"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_REVIEW",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "Review"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PUBLISHED_IN",
+      "source": {
+        "label": "Review"
+      },
+      "target": {
+        "label": "Company"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SIMILAR_TO",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_TRAILER",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "Trailer"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_POSTER_ART",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "PosterArt"
+      },
+      "attributes": []
+    },
+    {
+      "label": "INCLUDES_MOVIE",
+      "source": {
+        "label": "MovieList"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "INCLUDES_TV_SHOW",
+      "source": {
+        "label": "TvShowList"
+      },
+      "target": {
+        "label": "TvShow"
+      },
+      "attributes": []
+    },
+    {
+      "label": "BELONGS_TO",
+      "source": {
+        "label": "Article"
+      },
+      "target": {
+        "label": "ContentCategory"
+      },
+      "attributes": []
+    },
+    {
+      "label": "RELATED_TO",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "NewsArticle"
+      },
+      "attributes": []
+    },
+    {
+      "label": "COVERS",
+      "source": {
+        "label": "Hub"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CONTAINS_ARTICLE",
+      "source": {
+        "label": "ContentCategory"
+      },
+      "target": {
+        "label": "Article"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CONTAINS_NEWS_ARTICLE",
+      "source": {
+        "label": "ContentCategory"
+      },
+      "target": {
+        "label": "NewsArticle"
+      },
+      "attributes": []
+    },
+    {
+      "label": "BELONGS_TO_TV_SHOW",
+      "source": {
+        "label": "Season"
+      },
+      "target": {
+        "label": "TvShow"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MENTIONS",
+      "source": {
+        "label": "TrendingTopic"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_ORIGINAL_LANGUAGE",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "Language"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_ASPECT_RATIO",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "AspectRatio"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SCREENWROTE",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ACTS_AS",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Role"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DISTRIBUTES",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PRODUCED_BY_COMPANY",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_CRITIC_REVIEW",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "CriticReview"
+      },
+      "attributes": []
+    },
+    {
+      "label": "WRITTEN_BY",
+      "source": {
+        "label": "CriticReview"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_AUDIENCE_REVIEW",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "AudienceReview"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_VIDEO_CONTENT",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "VideoContent"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MENTIONED_IN",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "NewsArticle"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_PAGE_ON",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "Website"
+      },
+      "attributes": []
+    },
+    {
+      "label": "FEATURES_CATEGORY",
+      "source": {
+        "label": "Website"
+      },
+      "target": {
+        "label": "ContentCategory"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PROVIDES_FEATURE",
+      "source": {
+        "label": "Website"
+      },
+      "target": {
+        "label": "WebsiteFeature"
+      },
+      "attributes": []
+    },
+    {
+      "label": "LISTS_MOVIE",
+      "source": {
+        "label": "ContentCategory"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "LISTS_TV_SHOW",
+      "source": {
+        "label": "ContentCategory"
+      },
+      "target": {
+        "label": "TvShow"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DIRECTED_BY",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PLAYS_CHARACTER",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Character"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_IN",
+      "source": {
+        "label": "Character"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "WROTE_REVIEW",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "Review"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_RELATED_TO",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_VIDEO",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "Video"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REFERENCES_PERSON",
+      "source": {
+        "label": "Article"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REFERENCES_MOVIE",
+      "source": {
+        "label": "Article"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REFERENCES_TV_SHOW",
+      "source": {
+        "label": "Article"
+      },
+      "target": {
+        "label": "TvShow"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_TRENDING_TOPIC",
+      "source": {
+        "label": "Website"
+      },
+      "target": {
+        "label": "Topic"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_APP",
+      "source": {
+        "label": "Website"
+      },
+      "target": {
+        "label": "App"
+      },
+      "attributes": []
+    },
+    {
+      "label": "WRITES_FOR",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": [
+        {
+          "name": "role",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "CINEMATOGRAPHY",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PRODUCES_MOVIE",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PUBLISHED_ON",
+      "source": {
+        "label": "Review"
+      },
+      "target": {
+        "label": "Platform"
+      },
+      "attributes": []
+    },
+    {
+      "label": "WROTE_BY",
+      "source": {
+        "label": "Review"
+      },
+      "target": {
+        "label": "User"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_MPAA_RATING",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "Rating"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PERFORMS_ROLE_IN",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": [
+        {
+          "name": "role_name",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "INCLUDES",
+      "source": {
+        "label": "MovieList"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_LANGUAGE",
+      "source": {
+        "label": "Movie"
+      },
+      "target": {
+        "label": "Language"
+      },
+      "attributes": []
+    },
+    {
+      "label": "LISTS",
+      "source": {
+        "label": "ContentCategory"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_TOPIC",
+      "source": {
+        "label": "Website"
+      },
+      "target": {
+        "label": "Topic"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PRODUCES_TV_SHOW",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "TvShow"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_GUIDE",
+      "source": {
+        "label": "Website"
+      },
+      "target": {
+        "label": "Guide"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_HUB",
+      "source": {
+        "label": "Website"
+      },
+      "target": {
+        "label": "Hub"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_ARTICLE",
+      "source": {
+        "label": "Website"
+      },
+      "target": {
+        "label": "Article"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_MOVIE_LIST",
+      "source": {
+        "label": "Website"
+      },
+      "target": {
+        "label": "MovieList"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_TV_SHOW_LIST",
+      "source": {
+        "label": "Website"
+      },
+      "target": {
+        "label": "TvShowList"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IN_MEDIA",
+      "source": {
+        "label": "Role"
+      },
+      "target": {
+        "label": "Movie"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PERFORMS",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Role"
+      },
+      "attributes": []
+    }
+  ]
+}

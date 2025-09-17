@@ -1,0 +1,64 @@
+[
+  {
+    "metadata": {},
+    "element_index": 0.0,
+    "equation": null,
+    "created_at": "2025-09-15T07:26:41.806350",
+    "table": null,
+    "text": {
+      "text_translated": "Durian seed borer (Durian seed borer). Nature of Damage: The larva bores into the durian fruit and excretes dark brown frass that covers the entry hole. It feeds on the seed inside the fruit. When the larva is fully grown and ready to pupate, or when food is insufficient, it will bore a hole out of the husk and drop to the ground to pupate in the soil or find a new food source to complete its life cycle. Scientific Name: Mudaria luteileprosa Holloway. Other names: Southern Borer, Hole Borer, Malay Borer.",
+      "intents": null,
+      "text": "หนอนเจาะเมล็ดทุเรียน \n\n(Durian seed borer) \n\nลักษณะการท าลาย หนอนเจาะเข้า ไปในผลทุเรียนและมีการถ่ายมูลสี % น าตาลเข้มปกคลุมบริเวณรูทางเข้า และกัดกินเมล็ดอยู่ภายในผล จนกระทั่งเมื่อหนอนโตเต็มวัยพร้อม เข้าดักแด้หรืออาหารไม่เพียงพอ จะเจาะเปลือกเป็นรูออกมาและทิ ง 9J 26 ตัวลงบนพื นดินเพื่อเข้าดักแด้ในดิน หรือหาแหล่งอาหารใหม่เพื่อให้ เจริญเติบโตได้ครบวงจรชีวิต \n\nชื่อวิทยาศาสตร์ : Mudaria luteileprosa Holloway ชื่ออื่น : หนอนใต้ หนอนรู หนอนมาเลย์ \n\nA collection of images displays the damage caused to durian fruit by a red caterpillar pest. The central image shows a clear view of the pinkish-red caterpillar with a light-colored head. Surrounding photos document the infestation's effects, including small entry holes on the spiky exterior of the durians, some with dark frass or exudate. Cross-sections of the fruit reveal the caterpillars burrowed inside the flesh and core, leading to significant internal rot and decay. The damage is shown on fruits of various sizes and stages of maturity, both on the tree and on the ground.",
+      "contextual_text": null
+    },
+    "updated_at": "2025-09-15T07:26:41.806354",
+    "source_blocks": [
+      {
+        "page_idx": 0.0,
+        "char_start": 0.0,
+        "type": "text",
+        "block_idx": 0.0,
+        "char_end": 21.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 22.0,
+        "type": "text",
+        "block_idx": 1.0,
+        "char_end": 42.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 44.0,
+        "type": "text",
+        "block_idx": 2.0,
+        "char_end": 355.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 357.0,
+        "type": "text",
+        "block_idx": 3.0,
+        "char_end": 442.0
+      },
+      {
+        "page_idx": 1.0,
+        "char_start": 444.0,
+        "type": "image",
+        "block_idx": 5.0,
+        "char_end": 1027.0
+      }
+    ],
+    "block_index": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      5.0
+    ],
+    "image": null,
+    "content_type": "text",
+    "document_id": "6c4f90ec65191d48b991b01cb105139308d36b0d400134cff4c9c63408046999",
+    "id": "2e2d1bda-c809-4b9d-8bdb-bd85e3784f7e"
+  }
+]

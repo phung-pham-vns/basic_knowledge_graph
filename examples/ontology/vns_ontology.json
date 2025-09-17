@@ -1,0 +1,6897 @@
+{
+  "entities": [
+    {
+      "label": "Company",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "abbreviation",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Policy",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "security_level",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "update_date",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "effective_date",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "policy_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "scope",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Regulation",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "country",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Country",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Person",
+      "attributes": [
+        {
+          "name": "employee_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "role",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "identifier",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "person_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "full_name",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "email_address",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Standard",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "GeometricPattern",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Background",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "color_description",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Line",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "quality",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Shape",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "resemblance",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Polygon",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "VisualDesign",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "style",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "quality",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Data",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "data_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "is_sensitive",
+          "type": "boolean",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Organization",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "contact_email",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "location_context",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "goal",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "slogan",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "mission",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "organization_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Information",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "is_mandatory",
+          "type": "boolean",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "is_accuracy_guaranteed",
+          "type": "boolean",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "ip_address",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "domain_name",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "browsing_software",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "browser_configurations",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "language_settings",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "geographic_location",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "operating_system",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "reference_website",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "content_viewed",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "access_time",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "is_anonymous",
+          "type": "boolean",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataProvider",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "LegalBasis",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Location",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "location_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Purpose",
+      "attributes": [
+        {
+          "name": "description",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "notification_context",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "purpose_name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "PersonalInformation",
+      "attributes": [
+        {
+          "name": "data_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "info_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "information_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "is_personally_identifiable",
+          "type": "boolean",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "form",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "environment",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "BusinessTransaction",
+      "attributes": [
+        {
+          "name": "transaction_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Partner",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DigitalAsset",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "identifier",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Document",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "security_level",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "UsagePolicy",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "restricted_action",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "requirement",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "exception",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "User",
+      "attributes": [
+        {
+          "name": "identifier",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "user_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "passport_id_number",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "address",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "contact_details",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "date_of_birth",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "is_member",
+          "type": "boolean",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "full_name",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "gender",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "birthday",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "email_address",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "location",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Service",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "service_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "service_type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "InformationRequest",
+      "attributes": [
+        {
+          "name": "request_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "payment_may_be_required",
+          "type": "boolean",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataProcessing",
+      "attributes": [
+        {
+          "name": "process_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "processing_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "method",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "action",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "activity_type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Pattern",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "style",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Color",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Plane",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Composition",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Component",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "characteristic",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "style",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "quantity",
+          "type": "number",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "position",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Platform",
+      "attributes": [
+        {
+          "name": "platform_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Inquiry",
+      "attributes": [
+        {
+          "name": "inquiry_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "topic",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Agreement",
+      "attributes": [
+        {
+          "name": "agreement_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataSubject",
+      "attributes": [
+        {
+          "name": "subject_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "identifier",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "PersonalData",
+      "attributes": [
+        {
+          "name": "data_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "is_sensitive",
+          "type": "boolean",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "data_type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "is_expired",
+          "type": "boolean",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "is_outdated",
+          "type": "boolean",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "is_inaccurate",
+          "type": "boolean",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "identifier",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "definition",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Website",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Authority",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "LegalMatter",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "LegalEntity",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ProcessingActivity",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "LegalDocument",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Consent",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "consent_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "provision_method",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataUsage",
+      "attributes": [
+        {
+          "name": "usage_identifier",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "condition",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "MarketingActivity",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "PromotionalMaterial",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "MarketingItem",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Product",
+      "attributes": [
+        {
+          "name": "product_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "JobApplication",
+      "attributes": [
+        {
+          "name": "application_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataHandling",
+      "attributes": [
+        {
+          "name": "handling_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "actions",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataProvision",
+      "attributes": [
+        {
+          "name": "provision_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "is_voluntary",
+          "type": "boolean",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "consequence_of_omission",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Item",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "System",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "system_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ProcessingMethod",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Algorithm",
+      "attributes": [
+        {
+          "name": "algorithm_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "SecurityMeasure",
+      "attributes": [
+        {
+          "name": "measure_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Risk",
+      "attributes": [
+        {
+          "name": "risk_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "source",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ThirdParty",
+      "attributes": [
+        {
+          "name": "party_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "SecurityIncident",
+      "attributes": [
+        {
+          "name": "incident_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "action",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "SocialMediaForum",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Communication",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "feature",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "communication_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "purpose",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Strategy",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Disclosure",
+      "attributes": [
+        {
+          "name": "disclosure_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "condition",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Offering",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Party",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Contract",
+      "attributes": [
+        {
+          "name": "contract_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "FinancialAccount",
+      "attributes": [
+        {
+          "name": "account_number",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "WorkExperience",
+      "attributes": [
+        {
+          "name": "experience_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "details",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DigitalPlatform",
+      "attributes": [
+        {
+          "name": "platform_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Device",
+      "attributes": [
+        {
+          "name": "device_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "operating_system",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "platform",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "wireless_network_info",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "general_network_info",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "UsageSession",
+      "attributes": [
+        {
+          "name": "session_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "ip_address",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "browser_type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "browser_version",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "time_zone_settings",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "browser_plugin_types",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "email_interaction_system_info",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ContactInformation",
+      "attributes": [
+        {
+          "name": "value",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "PolicySection",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Request",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Tool",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "tool_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Server",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Service_Provider",
+      "attributes": [
+        {
+          "name": "provider_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "location_context",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Personal_Data",
+      "attributes": [
+        {
+          "name": "data_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "is_excluded",
+          "type": "boolean",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Data_Subject",
+      "attributes": [
+        {
+          "name": "subject_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Data_Transfer",
+      "attributes": [
+        {
+          "name": "transfer_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "purpose",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "legal_basis",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Marketing_Action",
+      "attributes": [
+        {
+          "name": "action_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Promotional_Material",
+      "attributes": [
+        {
+          "name": "material_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "delivery_method",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Customer",
+      "attributes": [
+        {
+          "name": "customer_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "profile_information",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "preferences",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Analysis",
+      "attributes": [
+        {
+          "name": "analysis_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "purpose",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Operation",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "purpose",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataProcessor",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "AdjustmentRequest",
+      "attributes": [
+        {
+          "name": "request_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ProcessingTool",
+      "attributes": [
+        {
+          "name": "tool_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "purpose",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Advertisement",
+      "attributes": [
+        {
+          "name": "ad_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "content",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "BrowsingTool",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Marketing",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Profile",
+      "attributes": [
+        {
+          "name": "profile_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Referee",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "phone_number",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "job_position",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "other_specific_information",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Employer",
+      "attributes": [
+        {
+          "name": "employer_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Account",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Action",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Claim",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "FinancialItem",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Right",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Content",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Design",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "style",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DesignElement",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "VisualEffect",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Process",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Activity",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "activity_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "purpose",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Law",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Feature",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "style",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Benefit",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Frequency",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Image",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "background_color",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "aesthetic",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "identifier",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "background",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "background_type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "image_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Text",
+      "attributes": [
+        {
+          "name": "content",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "size",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "style",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "font_style",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Border",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "style",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "style_description",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "orientation",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "fill_style",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "appearance",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "border_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Program",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataTransfer",
+      "attributes": [
+        {
+          "name": "identifier",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "CompanyValue",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Behavior",
+      "attributes": [
+        {
+          "name": "description",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Outcome",
+      "attributes": [
+        {
+          "name": "description",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Employee",
+      "attributes": [
+        {
+          "name": "employee_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "background",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "identity",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "personal_characteristics",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Opportunity",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "CulturalPillar",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Achievement",
+      "attributes": [
+        {
+          "name": "achievement_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "scale",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Workplace",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "goal",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Principle",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Safeguard",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataRisk",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "LegalRegulation",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataCollector",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataSource",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Collection",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "method",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "legality",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataProcessingTool",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Statistics",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "purpose",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataType",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "is_sensitive",
+          "type": "boolean",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataRequest",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ServiceAgreement",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "context",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Recipient",
+      "attributes": [
+        {
+          "name": "recipient_type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataAccess",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Position",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Department",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "department_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "OrganizationalUnit",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "acronym",
+          "type": "string",
+          "unique": true,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Function",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "SolutionsCenter",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "acronym",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "purpose",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "SubUnit",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Technology",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "CompensationFramework",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "focus",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "RewardPhilosophy",
+      "attributes": [
+        {
+          "name": "component",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "GraphicDesign",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "aesthetic",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "background_color",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "TextElement",
+      "attributes": [
+        {
+          "name": "content",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "style",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "size",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "weight",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "alignment",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "span_description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Frame",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "shape",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "orientation",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "color_description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Gradient",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Framework",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Goal",
+      "attributes": [
+        {
+          "name": "description",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "goal_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "WorkingSchedule",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "hours_per_day",
+          "type": "number",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "days",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "morning_hours",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "afternoon_hours",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "PolicyTopic",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Milestone",
+      "attributes": [
+        {
+          "name": "description",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "date",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "MembershipRecord",
+      "attributes": [
+        {
+          "name": "date",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "count",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "is_projection",
+          "type": "boolean",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Artwork",
+      "attributes": [
+        {
+          "name": "description",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "SceneObject",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ObjectFeature",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Surface",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "CorporateGoal",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "statement",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "StrategicFocus",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Stakeholder",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Region",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "CorporateComponent",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Effect",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Value",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Concept",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Adornment",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Role",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "role_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "OnboardingItem",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Logo",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Event",
+      "attributes": [
+        {
+          "name": "title",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "start_time",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "end_time",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "event_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Group",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Resource",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DesignComponent",
+      "attributes": [
+        {
+          "name": "id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "style",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "component_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Farm",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Crop",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Cloud",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataStorage",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "BITool",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "AISystem",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ClientInterface",
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DataProcess",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Graphic",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Word",
+      "attributes": [
+        {
+          "name": "content",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Style",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Orientation",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Clothing",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Object",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Gesture",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "implied_meaning",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "CompanyProfile",
+      "attributes": [
+        {
+          "name": "profile_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Industry",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "PartnerCategory",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "examples",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "OrganizationalStructure",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "LegalFramework",
+      "attributes": [
+        {
+          "name": "framework_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "VisualElement",
+      "attributes": [
+        {
+          "name": "element_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "relations": [
+    {
+      "label": "ISSUED_BY",
+      "source": {
+        "label": "Policy"
+      },
+      "target": {
+        "label": "Company"
+      },
+      "attributes": []
+    },
+    {
+      "label": "COMPLIES_WITH",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "Regulation"
+      },
+      "attributes": []
+    },
+    {
+      "label": "APPLIES_IN",
+      "source": {
+        "label": "Regulation"
+      },
+      "target": {
+        "label": "Country"
+      },
+      "attributes": []
+    },
+    {
+      "label": "EMPLOYS",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ADHERES_TO",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Standard"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_ON",
+      "source": {
+        "label": "GeometricPattern"
+      },
+      "target": {
+        "label": "Background"
+      },
+      "attributes": []
+    },
+    {
+      "label": "FEATURES",
+      "source": {
+        "label": "GeometricPattern"
+      },
+      "target": {
+        "label": "Line"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CREATES",
+      "source": {
+        "label": "GeometricPattern"
+      },
+      "target": {
+        "label": "VisualDesign"
+      },
+      "attributes": []
+    },
+    {
+      "label": "FORMS",
+      "source": {
+        "label": "Line"
+      },
+      "target": {
+        "label": "Shape"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "Policy"
+      },
+      "attributes": []
+    },
+    {
+      "label": "GOVERNS",
+      "source": {
+        "label": "Policy"
+      },
+      "target": {
+        "label": "Data"
+      },
+      "attributes": [
+        {
+          "name": "rights",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "obligations",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "PROCESSES",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "Data"
+      },
+      "attributes": [
+        {
+          "name": "actions",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "purpose",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "method",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "COLLECTS",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Information"
+      },
+      "attributes": []
+    },
+    {
+      "label": "COLLECTED_FROM",
+      "source": {
+        "label": "Information"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_PRIVACY_SETTINGS",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "DataProvider"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REQUIRED_BY",
+      "source": {
+        "label": "Information"
+      },
+      "target": {
+        "label": "LegalBasis"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REQUIRES_CONSENT_FROM",
+      "source": {
+        "label": "LegalBasis"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "COLLECTED_FOR",
+      "source": {
+        "label": "Information"
+      },
+      "target": {
+        "label": "Purpose"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SUBJECT_OF",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "BusinessTransaction"
+      },
+      "attributes": []
+    },
+    {
+      "label": "TRANSFERRED_DURING",
+      "source": {
+        "label": "PersonalInformation"
+      },
+      "target": {
+        "label": "BusinessTransaction"
+      },
+      "attributes": [
+        {
+          "name": "condition",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "PROCESSED_ACCORDING_TO",
+      "source": {
+        "label": "PersonalInformation"
+      },
+      "target": {
+        "label": "Policy"
+      },
+      "attributes": [
+        {
+          "name": "condition",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "DISCLOSED_TO",
+      "source": {
+        "label": "PersonalInformation"
+      },
+      "target": {
+        "label": "Partner"
+      },
+      "attributes": [
+        {
+          "name": "condition",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "BASED_IN",
+      "source": {
+        "label": "Partner"
+      },
+      "target": {
+        "label": "Country"
+      },
+      "attributes": []
+    },
+    {
+      "label": "OPERATED_BY",
+      "source": {
+        "label": "DigitalAsset"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CONTAINS",
+      "source": {
+        "label": "DigitalAsset"
+      },
+      "target": {
+        "label": "Information"
+      },
+      "attributes": [
+        {
+          "name": "position",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "GOVERNED_BY",
+      "source": {
+        "label": "DigitalAsset"
+      },
+      "target": {
+        "label": "Document"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SUBJECT_TO",
+      "source": {
+        "label": "Information"
+      },
+      "target": {
+        "label": "UsagePolicy"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SHARES_INFORMATION_WITH",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PERFORMS",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "DataProcessing"
+      },
+      "attributes": []
+    },
+    {
+      "label": "APPLIES_TO",
+      "source": {
+        "label": "DataProcessing"
+      },
+      "target": {
+        "label": "PersonalInformation"
+      },
+      "attributes": []
+    },
+    {
+      "label": "OCCURS_IN",
+      "source": {
+        "label": "DataProcessing"
+      },
+      "target": {
+        "label": "Country"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PROVIDED_BY",
+      "source": {
+        "label": "PersonalInformation"
+      },
+      "target": {
+        "label": "User"
+      },
+      "attributes": []
+    },
+    {
+      "label": "USES",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "Service"
+      },
+      "attributes": [
+        {
+          "name": "purpose",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "OFFERED_BY",
+      "source": {
+        "label": "Service"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SUBMITS",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "InformationRequest"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DIRECTED_TO",
+      "source": {
+        "label": "InformationRequest"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CONCERNS",
+      "source": {
+        "label": "InformationRequest"
+      },
+      "target": {
+        "label": "PersonalInformation"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_COLOR",
+      "source": {
+        "label": "Pattern"
+      },
+      "target": {
+        "label": "Color"
+      },
+      "attributes": [
+        {
+          "name": "property",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "CONSISTS_OF",
+      "source": {
+        "label": "Pattern"
+      },
+      "target": {
+        "label": "Line"
+      },
+      "attributes": []
+    },
+    {
+      "label": "INTERSECTS",
+      "source": {
+        "label": "Plane"
+      },
+      "target": {
+        "label": "Plane"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_COMPONENT",
+      "source": {
+        "label": "Composition"
+      },
+      "target": {
+        "label": "Component"
+      },
+      "attributes": [
+        {
+          "name": "position",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "RESERVES_RIGHT_TO_CHANGE",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Policy"
+      },
+      "attributes": [
+        {
+          "name": "change_types",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "without_notice",
+          "type": "boolean",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "ANNOUNCES_CHANGES_ON",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Platform"
+      },
+      "attributes": []
+    },
+    {
+      "label": "TAKE_EFFECT_ON",
+      "source": {
+        "label": "Policy"
+      },
+      "target": {
+        "label": "Platform"
+      },
+      "attributes": [
+        {
+          "name": "timing",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "IMPLIES_ACCEPTANCE_OF",
+      "source": {
+        "label": "Platform"
+      },
+      "target": {
+        "label": "Policy"
+      },
+      "attributes": [
+        {
+          "name": "condition",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "CAN_MAKE",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "Inquiry"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ISSUES",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Policy"
+      },
+      "attributes": []
+    },
+    {
+      "label": "OWNS",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Website"
+      },
+      "attributes": [
+        {
+          "name": "role",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "HAS_AGREEMENT_WITH",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "DataSubject"
+      },
+      "attributes": []
+    },
+    {
+      "label": "BELONGS_TO",
+      "source": {
+        "label": "PersonalData"
+      },
+      "target": {
+        "label": "DataSubject"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ADJUSTED_BY",
+      "source": {
+        "label": "Policy"
+      },
+      "target": {
+        "label": "Agreement"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SUPPORTS",
+      "source": {
+        "label": "Purpose"
+      },
+      "target": {
+        "label": "Authority"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MEETS",
+      "source": {
+        "label": "Purpose"
+      },
+      "target": {
+        "label": "LegalMatter"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AGREED_WITH",
+      "source": {
+        "label": "LegalMatter"
+      },
+      "target": {
+        "label": "Authority"
+      },
+      "attributes": []
+    },
+    {
+      "label": "OPERATES_IN",
+      "source": {
+        "label": "Authority"
+      },
+      "target": {
+        "label": "Country"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PROVIDES",
+      "source": {
+        "label": "LegalEntity"
+      },
+      "target": {
+        "label": "PersonalData"
+      },
+      "attributes": [
+        {
+          "name": "selection_basis",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "ALLOWS",
+      "source": {
+        "label": "LegalEntity"
+      },
+      "target": {
+        "label": "DataProcessing"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AFFECTS",
+      "source": {
+        "label": "DataProcessing"
+      },
+      "target": {
+        "label": "PersonalData"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_PURPOSE",
+      "source": {
+        "label": "DataProcessing"
+      },
+      "target": {
+        "label": "Purpose"
+      },
+      "attributes": []
+    },
+    {
+      "label": "INVOLVES",
+      "source": {
+        "label": "DataProcessing"
+      },
+      "target": {
+        "label": "ProcessingActivity"
+      },
+      "attributes": []
+    },
+    {
+      "label": "GIVES",
+      "source": {
+        "label": "DataSubject"
+      },
+      "target": {
+        "label": "Consent"
+      },
+      "attributes": []
+    },
+    {
+      "label": "APPROVES",
+      "source": {
+        "label": "Consent"
+      },
+      "target": {
+        "label": "DataProcessing"
+      },
+      "attributes": []
+    },
+    {
+      "label": "RESPONSIBLE_FOR",
+      "source": {
+        "label": "LegalEntity"
+      },
+      "target": {
+        "label": "Consent"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REQUESTS",
+      "source": {
+        "label": "LegalEntity"
+      },
+      "target": {
+        "label": "Consent"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PERFORMED_BY",
+      "source": {
+        "label": "DataUsage"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "INCLUDES",
+      "source": {
+        "label": "Purpose"
+      },
+      "target": {
+        "label": "MarketingActivity"
+      },
+      "attributes": []
+    },
+    {
+      "label": "USES_MATERIAL",
+      "source": {
+        "label": "MarketingActivity"
+      },
+      "target": {
+        "label": "PromotionalMaterial"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PROMOTES",
+      "source": {
+        "label": "MarketingActivity"
+      },
+      "target": {
+        "label": "MarketingItem"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_RESPONSIBLE_FOR",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "DataHandling"
+      },
+      "attributes": []
+    },
+    {
+      "label": "OCCURS_VIA",
+      "source": {
+        "label": "DataHandling"
+      },
+      "target": {
+        "label": "Platform"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_FOR",
+      "source": {
+        "label": "DataProvision"
+      },
+      "target": {
+        "label": "JobApplication"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PARTICIPATES_IN",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "Product"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_CONDITIONED_BY",
+      "source": {
+        "label": "DataHandling"
+      },
+      "target": {
+        "label": "Service"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AUTHORIZED_AGENT_OF",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SUBSIDIARY_OF",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DISTRIBUTES",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Item"
+      },
+      "attributes": []
+    },
+    {
+      "label": "APPLIES",
+      "source": {
+        "label": "System"
+      },
+      "target": {
+        "label": "ProcessingMethod"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CONTAINS_LINK_TO",
+      "source": {
+        "label": "DigitalAsset"
+      },
+      "target": {
+        "label": "DigitalAsset"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PROTECTED_BY",
+      "source": {
+        "label": "PersonalInformation"
+      },
+      "target": {
+        "label": "SecurityMeasure"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AFFECTED_BY",
+      "source": {
+        "label": "System"
+      },
+      "target": {
+        "label": "Risk"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_INFORMATION",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "PersonalInformation"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PERPETRATED_BY",
+      "source": {
+        "label": "SecurityIncident"
+      },
+      "target": {
+        "label": "ThirdParty"
+      },
+      "attributes": []
+    },
+    {
+      "label": "TARGETS",
+      "source": {
+        "label": "SecurityIncident"
+      },
+      "target": {
+        "label": "PersonalInformation"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CONTACTS",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "Company"
+      },
+      "attributes": []
+    },
+    {
+      "label": "LOCATED_IN",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "Country"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_RESTRICTIONS_IN",
+      "source": {
+        "label": "System"
+      },
+      "target": {
+        "label": "Country"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MANAGES",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "System"
+      },
+      "attributes": [
+        {
+          "name": "setting",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "EVALUATES",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Strategy"
+      },
+      "attributes": []
+    },
+    {
+      "label": "RECIPIENT_OF",
+      "source": {
+        "label": "Disclosure"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AGENT_OF",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PROVIDER_OF",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Offering"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MEMBER_OF",
+      "source": {
+        "label": "Party"
+      },
+      "target": {
+        "label": "Party"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DISCLOSER",
+      "source": {
+        "label": "Disclosure"
+      },
+      "target": {
+        "label": "Party"
+      },
+      "attributes": []
+    },
+    {
+      "label": "RECIPIENT",
+      "source": {
+        "label": "Disclosure"
+      },
+      "target": {
+        "label": "Party"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MANDATED_BY",
+      "source": {
+        "label": "Disclosure"
+      },
+      "target": {
+        "label": "LegalBasis"
+      },
+      "attributes": []
+    },
+    {
+      "label": "APPLICABLE_TO",
+      "source": {
+        "label": "LegalBasis"
+      },
+      "target": {
+        "label": "Party"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_PARTICIPANT",
+      "source": {
+        "label": "LegalBasis"
+      },
+      "target": {
+        "label": "Party"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HOLDS",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "Contract"
+      },
+      "attributes": [
+        {
+          "name": "action",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "hand_description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "OWNS_FINANCIAL_ACCOUNT",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "FinancialAccount"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_WORK_EXPERIENCE",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "WorkExperience"
+      },
+      "attributes": []
+    },
+    {
+      "label": "INITIATES",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "UsageSession"
+      },
+      "attributes": []
+    },
+    {
+      "label": "OCCURS_ON",
+      "source": {
+        "label": "UsageSession"
+      },
+      "target": {
+        "label": "DigitalPlatform"
+      },
+      "attributes": []
+    },
+    {
+      "label": "FROM_DEVICE",
+      "source": {
+        "label": "UsageSession"
+      },
+      "target": {
+        "label": "Device"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DEVELOPS",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "DigitalPlatform"
+      },
+      "attributes": [
+        {
+          "name": "role",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "PARTNERS_WITH",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "COMMUNICATES_WITH",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": [
+        {
+          "name": "communication_id",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "HAS_CONTACT_INFORMATION",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "ContactInformation"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MENTIONED_IN",
+      "source": {
+        "label": "ContactInformation"
+      },
+      "target": {
+        "label": "PolicySection"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SUBMITTED_TO",
+      "source": {
+        "label": "Request"
+      },
+      "target": {
+        "label": "ContactInformation"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CONCERNS_DATA",
+      "source": {
+        "label": "Request"
+      },
+      "target": {
+        "label": "Data"
+      },
+      "attributes": []
+    },
+    {
+      "label": "LOCATED_ON",
+      "source": {
+        "label": "Tool"
+      },
+      "target": {
+        "label": "Device"
+      },
+      "attributes": []
+    },
+    {
+      "label": "OPERATES_THROUGH",
+      "source": {
+        "label": "Tool"
+      },
+      "target": {
+        "label": "Server"
+      },
+      "attributes": []
+    },
+    {
+      "label": "READS",
+      "source": {
+        "label": "Server"
+      },
+      "target": {
+        "label": "Information"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_SOURCE",
+      "source": {
+        "label": "Data_Transfer"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_RECIPIENT",
+      "source": {
+        "label": "Data_Transfer"
+      },
+      "target": {
+        "label": "Service_Provider"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SENDS",
+      "source": {
+        "label": "Marketing_Action"
+      },
+      "target": {
+        "label": "Promotional_Material"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PERFORMED_ON",
+      "source": {
+        "label": "Analysis"
+      },
+      "target": {
+        "label": "Customer"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IMPROVES",
+      "source": {
+        "label": "Analysis"
+      },
+      "target": {
+        "label": "Offering"
+      },
+      "attributes": []
+    },
+    {
+      "label": "GENERATES_RECOMMENDATION",
+      "source": {
+        "label": "Analysis"
+      },
+      "target": {
+        "label": "Customer"
+      },
+      "attributes": [
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "PARTY_TO",
+      "source": {
+        "label": "DataSubject"
+      },
+      "target": {
+        "label": "Agreement"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_DATA",
+      "source": {
+        "label": "DataSubject"
+      },
+      "target": {
+        "label": "PersonalData"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PROVIDED_DURING",
+      "source": {
+        "label": "PersonalData"
+      },
+      "target": {
+        "label": "Agreement"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CAN_PROCESS",
+      "source": {
+        "label": "DataProcessor"
+      },
+      "target": {
+        "label": "PersonalData"
+      },
+      "attributes": []
+    },
+    {
+      "label": "OPERATES_ON",
+      "source": {
+        "label": "ProcessingTool"
+      },
+      "target": {
+        "label": "Platform"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DISPLAYED_ON",
+      "source": {
+        "label": "Advertisement"
+      },
+      "target": {
+        "label": "Platform"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AGREEMENT",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "Policy"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_OWNER",
+      "source": {
+        "label": "Profile"
+      },
+      "target": {
+        "label": "User"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_APPLICANT",
+      "source": {
+        "label": "JobApplication"
+      },
+      "target": {
+        "label": "User"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CONTAINS_REFEREE",
+      "source": {
+        "label": "Profile"
+      },
+      "target": {
+        "label": "Referee"
+      },
+      "attributes": []
+    },
+    {
+      "label": "INCLUDES_REFEREE",
+      "source": {
+        "label": "JobApplication"
+      },
+      "target": {
+        "label": "Referee"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_CONTRACT",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "Contract"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_ACCOUNT",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "Account"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_RECIPIENT_OF",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "Communication"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ACCESSES",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "Content"
+      },
+      "attributes": []
+    },
+    {
+      "label": "OWES",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "FinancialItem"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_MENTIONED_IN",
+      "source": {
+        "label": "Action"
+      },
+      "target": {
+        "label": "Document"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_MADE_UNDER",
+      "source": {
+        "label": "Claim"
+      },
+      "target": {
+        "label": "Contract"
+      },
+      "attributes": []
+    },
+    {
+      "label": "RELATES_TO",
+      "source": {
+        "label": "FinancialItem"
+      },
+      "target": {
+        "label": "Contract"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_ELEMENT",
+      "source": {
+        "label": "Design"
+      },
+      "target": {
+        "label": "DesignElement"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PRESCRIBED_BY",
+      "source": {
+        "label": "Activity"
+      },
+      "target": {
+        "label": "Law"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_BACKGROUND",
+      "source": {
+        "label": "Design"
+      },
+      "target": {
+        "label": "Background"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_FEATURE",
+      "source": {
+        "label": "Design"
+      },
+      "target": {
+        "label": "Feature"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_FREQUENCY",
+      "source": {
+        "label": "Benefit"
+      },
+      "target": {
+        "label": "Frequency"
+      },
+      "attributes": []
+    },
+    {
+      "label": "FRAMED_BY",
+      "source": {
+        "label": "Image"
+      },
+      "target": {
+        "label": "Border"
+      },
+      "attributes": [
+        {
+          "name": "edges",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "RELATED_TO",
+      "source": {
+        "label": "Service"
+      },
+      "target": {
+        "label": "Program"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_SUBJECT",
+      "source": {
+        "label": "DataTransfer"
+      },
+      "target": {
+        "label": "PersonalData"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_DESTINATION",
+      "source": {
+        "label": "DataTransfer"
+      },
+      "target": {
+        "label": "Party"
+      },
+      "attributes": []
+    },
+    {
+      "label": "UPHOLDS",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "CompanyValue"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DIRECTED_AT",
+      "source": {
+        "label": "Behavior"
+      },
+      "target": {
+        "label": "Employee"
+      },
+      "attributes": []
+    },
+    {
+      "label": "LEADS_TO",
+      "source": {
+        "label": "Behavior"
+      },
+      "target": {
+        "label": "Outcome"
+      },
+      "attributes": []
+    },
+    {
+      "label": "BENEFITS_FROM",
+      "source": {
+        "label": "Employee"
+      },
+      "target": {
+        "label": "Opportunity"
+      },
+      "attributes": []
+    },
+    {
+      "label": "FOSTERS",
+      "source": {
+        "label": "CulturalPillar"
+      },
+      "target": {
+        "label": "Workplace"
+      },
+      "attributes": []
+    },
+    {
+      "label": "RECOGNIZES",
+      "source": {
+        "label": "CulturalPillar"
+      },
+      "target": {
+        "label": "Achievement"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PART_OF",
+      "source": {
+        "label": "Employee"
+      },
+      "target": {
+        "label": "Workplace"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ADOPTS",
+      "source": {
+        "label": "Employee"
+      },
+      "target": {
+        "label": "Principle"
+      },
+      "attributes": []
+    },
+    {
+      "label": "RETAINS",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "Data"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PREVENTS",
+      "source": {
+        "label": "Safeguard"
+      },
+      "target": {
+        "label": "DataRisk"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PROTECTS",
+      "source": {
+        "label": "Safeguard"
+      },
+      "target": {
+        "label": "Data"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ENSURES_COMPLIANCE_WITH",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "LegalRegulation"
+      },
+      "attributes": []
+    },
+    {
+      "label": "STORED_IN",
+      "source": {
+        "label": "Data"
+      },
+      "target": {
+        "label": "System"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MANDATES_DESTRUCTION_OF",
+      "source": {
+        "label": "Purpose"
+      },
+      "target": {
+        "label": "Data"
+      },
+      "attributes": [
+        {
+          "name": "condition",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "IS_SUBJECT_OF",
+      "source": {
+        "label": "DataSubject"
+      },
+      "target": {
+        "label": "Collection"
+      },
+      "attributes": []
+    },
+    {
+      "label": "UTILIZES",
+      "source": {
+        "label": "Collection"
+      },
+      "target": {
+        "label": "DataSource"
+      },
+      "attributes": []
+    },
+    {
+      "label": "STORES",
+      "source": {
+        "label": "Server"
+      },
+      "target": {
+        "label": "Information"
+      },
+      "attributes": []
+    },
+    {
+      "label": "RUNS_ON",
+      "source": {
+        "label": "DataProcessingTool"
+      },
+      "target": {
+        "label": "Device"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DEPLOYED_ON",
+      "source": {
+        "label": "DataProcessingTool"
+      },
+      "target": {
+        "label": "Platform"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DERIVED_FROM",
+      "source": {
+        "label": "Statistics"
+      },
+      "target": {
+        "label": "Information"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REFERENCES",
+      "source": {
+        "label": "Statistics"
+      },
+      "target": {
+        "label": "Platform"
+      },
+      "attributes": []
+    },
+    {
+      "label": "INTERACTS_WITH",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "Platform"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_ABOUT",
+      "source": {
+        "label": "PersonalInformation"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_TYPE",
+      "source": {
+        "label": "PersonalInformation"
+      },
+      "target": {
+        "label": "DataType"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_PROFILE",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Profile"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MADE_BY",
+      "source": {
+        "label": "DataRequest"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "TARGETS_PERSON",
+      "source": {
+        "label": "DataRequest"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "FOR_DATA_TYPE",
+      "source": {
+        "label": "DataRequest"
+      },
+      "target": {
+        "label": "DataType"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PROVIDER_IN",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "ServiceAgreement"
+      },
+      "attributes": []
+    },
+    {
+      "label": "BENEFICIARY_IN",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "ServiceAgreement"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PERSON_BENEFICIARY_IN",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "ServiceAgreement"
+      },
+      "attributes": []
+    },
+    {
+      "label": "INCLUDES_SERVICE",
+      "source": {
+        "label": "ServiceAgreement"
+      },
+      "target": {
+        "label": "Service"
+      },
+      "attributes": []
+    },
+    {
+      "label": "FOR_PURPOSE",
+      "source": {
+        "label": "DataProcessing"
+      },
+      "target": {
+        "label": "Purpose"
+      },
+      "attributes": []
+    },
+    {
+      "label": "WITHDRAWS",
+      "source": {
+        "label": "DataSubject"
+      },
+      "target": {
+        "label": "Consent"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AUTHORIZES",
+      "source": {
+        "label": "Consent"
+      },
+      "target": {
+        "label": "DataProcessing"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SUBJECT_IS",
+      "source": {
+        "label": "DataAccess"
+      },
+      "target": {
+        "label": "User"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_POLICY",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Policy"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_PROFILE_ON",
+      "source": {
+        "label": "User"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "STRUCTURED_IN",
+      "source": {
+        "label": "Company"
+      },
+      "target": {
+        "label": "OrganizationalChart"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_POSITION",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Position"
+      },
+      "attributes": []
+    },
+    {
+      "label": "REPORTS_TO",
+      "source": {
+        "label": "Position"
+      },
+      "target": {
+        "label": "Position"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_FUNCTION",
+      "source": {
+        "label": "OrganizationalUnit"
+      },
+      "target": {
+        "label": "Function"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CONNECTED_TO",
+      "source": {
+        "label": "SolutionsCenter"
+      },
+      "target": {
+        "label": "SolutionsCenter"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_SUB_UNIT",
+      "source": {
+        "label": "SolutionsCenter"
+      },
+      "target": {
+        "label": "SubUnit"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AIMS_TO_LEVERAGE",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Technology"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_FRAMEWORK",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "CompensationFramework"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_PHILOSOPHY",
+      "source": {
+        "label": "CompensationFramework"
+      },
+      "target": {
+        "label": "RewardPhilosophy"
+      },
+      "attributes": []
+    },
+    {
+      "label": "OFFERS",
+      "source": {
+        "label": "CompensationFramework"
+      },
+      "target": {
+        "label": "Benefit"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_FILL",
+      "source": {
+        "label": "Frame"
+      },
+      "target": {
+        "label": "Gradient"
+      },
+      "attributes": []
+    },
+    {
+      "label": "STARTS_WITH",
+      "source": {
+        "label": "Gradient"
+      },
+      "target": {
+        "label": "Color"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ENDS_WITH",
+      "source": {
+        "label": "Gradient"
+      },
+      "target": {
+        "label": "Color"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_GOAL",
+      "source": {
+        "label": "Framework"
+      },
+      "target": {
+        "label": "Goal"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DEFINES",
+      "source": {
+        "label": "Policy"
+      },
+      "target": {
+        "label": "WorkingSchedule"
+      },
+      "attributes": []
+    },
+    {
+      "label": "WORKS_FOR",
+      "source": {
+        "label": "Employee"
+      },
+      "target": {
+        "label": "Company"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_MILESTONE",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Milestone"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_MEMBERSHIP_RECORD",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "MembershipRecord"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DEPICTS",
+      "source": {
+        "label": "Artwork"
+      },
+      "target": {
+        "label": "SceneObject"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_BORDER",
+      "source": {
+        "label": "Surface"
+      },
+      "target": {
+        "label": "Border"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DISPLAYS",
+      "source": {
+        "label": "Image"
+      },
+      "target": {
+        "label": "Text"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ENCLOSED_BY",
+      "source": {
+        "label": "Text"
+      },
+      "target": {
+        "label": "Frame"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_FOCUSED_ON",
+      "source": {
+        "label": "CorporateGoal"
+      },
+      "target": {
+        "label": "StrategicFocus"
+      },
+      "attributes": []
+    },
+    {
+      "label": "LEVERAGES",
+      "source": {
+        "label": "CorporateGoal"
+      },
+      "target": {
+        "label": "Technology"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SET_WITHIN",
+      "source": {
+        "label": "TextElement"
+      },
+      "target": {
+        "label": "Frame"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_SHAPE",
+      "source": {
+        "label": "Frame"
+      },
+      "target": {
+        "label": "Shape"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_EFFECT",
+      "source": {
+        "label": "Frame"
+      },
+      "target": {
+        "label": "Effect"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DRIVES",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Concept"
+      },
+      "attributes": []
+    },
+    {
+      "label": "EMPOWERS",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Stakeholder"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PRIORITIZES",
+      "source": {
+        "label": "Value"
+      },
+      "target": {
+        "label": "Stakeholder"
+      },
+      "attributes": []
+    },
+    {
+      "label": "STRIVES_FOR",
+      "source": {
+        "label": "Value"
+      },
+      "target": {
+        "label": "Standard"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_ADORNED_WITH",
+      "source": {
+        "label": "Frame"
+      },
+      "target": {
+        "label": "Adornment"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_ROLE",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Role"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SUPPORTED_BY",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "RECEIVES",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "OnboardingItem"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SCHEDULES",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "OnboardingItem"
+      },
+      "attributes": []
+    },
+    {
+      "label": "INVOLVES_GROUP",
+      "source": {
+        "label": "Event"
+      },
+      "target": {
+        "label": "Group"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MANAGES_RESOURCE",
+      "source": {
+        "label": "Event"
+      },
+      "target": {
+        "label": "Resource"
+      },
+      "attributes": []
+    },
+    {
+      "label": "GROWN_ON",
+      "source": {
+        "label": "Crop"
+      },
+      "target": {
+        "label": "Farm"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MONITORS",
+      "source": {
+        "label": "Device"
+      },
+      "target": {
+        "label": "Farm"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CONNECTS_TO",
+      "source": {
+        "label": "Device"
+      },
+      "target": {
+        "label": "Server"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HOSTS",
+      "source": {
+        "label": "Cloud"
+      },
+      "target": {
+        "label": "DataStorage"
+      },
+      "attributes": []
+    },
+    {
+      "label": "VISUALIZES",
+      "source": {
+        "label": "BITool"
+      },
+      "target": {
+        "label": "DataStorage"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ANALYZES",
+      "source": {
+        "label": "AISystem"
+      },
+      "target": {
+        "label": "DataStorage"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_BACKGROUND_COLOR",
+      "source": {
+        "label": "Image"
+      },
+      "target": {
+        "label": "Color"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_TEXT_COLOR",
+      "source": {
+        "label": "TextElement"
+      },
+      "target": {
+        "label": "Color"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_STYLE",
+      "source": {
+        "label": "Word"
+      },
+      "target": {
+        "label": "Style"
+      },
+      "attributes": []
+    },
+    {
+      "label": "POSITIONED_WITHIN",
+      "source": {
+        "label": "Word"
+      },
+      "target": {
+        "label": "Border"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_ORIENTATION",
+      "source": {
+        "label": "Border"
+      },
+      "target": {
+        "label": "Orientation"
+      },
+      "attributes": []
+    },
+    {
+      "label": "WEARS",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Clothing"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MAKES_GESTURE",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Gesture"
+      },
+      "attributes": [
+        {
+          "name": "hand_description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "IN_FRONT_OF",
+      "source": {
+        "label": "Person"
+      },
+      "target": {
+        "label": "Background"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_PARTNER_CATEGORY",
+      "source": {
+        "label": "CompanyProfile"
+      },
+      "target": {
+        "label": "PartnerCategory"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_STAKEHOLDER",
+      "source": {
+        "label": "CompanyProfile"
+      },
+      "target": {
+        "label": "Stakeholder"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_STRUCTURE",
+      "source": {
+        "label": "CompanyProfile"
+      },
+      "target": {
+        "label": "OrganizationalStructure"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DISCLOSES_TO",
+      "source": {
+        "label": "Activity"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": [
+        {
+          "name": "condition",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "HAS_DEPARTMENT",
+      "source": {
+        "label": "Organization"
+      },
+      "target": {
+        "label": "Department"
+      },
+      "attributes": []
+    },
+    {
+      "label": "FOR_ROLE",
+      "source": {
+        "label": "JobApplication"
+      },
+      "target": {
+        "label": "Role"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AUTHORIZED_BY",
+      "source": {
+        "label": "Activity"
+      },
+      "target": {
+        "label": "Contract"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SENT_BY",
+      "source": {
+        "label": "Communication"
+      },
+      "target": {
+        "label": "Person"
+      },
+      "attributes": []
+    },
+    {
+      "label": "ADDRESSED_TO",
+      "source": {
+        "label": "Communication"
+      },
+      "target": {
+        "label": "Organization"
+      },
+      "attributes": []
+    },
+    {
+      "label": "FOR_GOAL",
+      "source": {
+        "label": "Activity"
+      },
+      "target": {
+        "label": "Goal"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MITIGATED_BY",
+      "source": {
+        "label": "Risk"
+      },
+      "target": {
+        "label": "SecurityMeasure"
+      },
+      "attributes": []
+    },
+    {
+      "label": "USES_TOOL",
+      "source": {
+        "label": "Activity"
+      },
+      "target": {
+        "label": "Tool"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_VISUAL_DESIGN",
+      "source": {
+        "label": "Platform"
+      },
+      "target": {
+        "label": "VisualElement"
+      },
+      "attributes": []
+    }
+  ]
+}

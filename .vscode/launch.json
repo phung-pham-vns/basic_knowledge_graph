@@ -11,6 +11,14 @@
             "program": "src/construct.py",
             "console": "integratedTerminal",
             "justMyCode": false,
+        },
+        {
+            "name": "Create VNS Ontology",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "create_vns_ontology.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
         }
     ]
 }

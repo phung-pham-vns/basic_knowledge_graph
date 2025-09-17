@@ -1,0 +1,80 @@
+[
+  {
+    "metadata": {},
+    "element_index": 0.0,
+    "equation": null,
+    "created_at": "2025-09-15T07:24:15.255879",
+    "table": null,
+    "text": {
+      "text_translated": "9 9 Long-horned stem borer\n\n(Longhorn stem borer)\n\nScientific name: Batocera rufomaculata Other names: Sing wian, Sri wian\n\nDamage characteristics: The larvae gnaw and burrow along the inner bark without a specific direction, or may girdle the bark twice around the stem. Damage caused by small larvae cannot be observed from the outside. However, as the larvae grow, fine wood dust, which is the frass of the larvae, will be found along the damage trails.\n\nThe life cycle of an insect, likely a long-horned beetle, begins with the adult stage, which lasts for over 6 months. The adult then lays an egg, a stage lasting 7 to 14 days. The egg hatches into a larva, which develops for approximately 280 days. Following the larval stage is the pupal stage, which lasts for 17 days, after which the adult insect emerges, completing the cycle.\n\nPrevention and control of the long-horned stem borer\n\n1. Regularly inspect the plot by observing wounds. If frass and damage are found, destroy the pests.\n2. Use chemical insecticides, such as imidacloprid 10% SL (4A), acetamiprid 20% SP (4A), thiamethoxam 25% WG (4A), fipronil, or profenofos. Spray on the trunk and large branches, or inject into the holes.",
+      "intents": null,
+      "text": "9 9 ด้วงหนวดยาวเจาะล าต้น \n\n(Longhorn stem borer) \n\nชื่อวิทยาศาสตร์ Batocera rufomaculata ชื่ออื่น สิงเวียน, ศรีเวียน \n\nลักษณะการท าลาย หนอนจะกัดกินชอนไชไปตามเปลือกไม้ ด้านในไม่มีทิศทางหรืออาจกัดควั่นเปลือก 2 รอบต้น การท าลายที่เกิดหนอนขนาดเล็ก ไม่สามารถสังเกตได้จากภายนอก แต่เมื่อ หนอนโตขึ้นจะพบขุยไม้ละเอียดซึ่งเป็นมูล 9U ของหนอนตามแนวรอยท าลาย \n\nThe life cycle of an insect, likely a long-horned beetle, begins with the adult stage, which lasts for over 6 months. The adult then lays an egg, a stage lasting 7 to 14 days. The egg hatches into a larva, which develops for approximately 280 days. Following the larval stage is the pupal stage, which lasts for 17 days, after which the adult insect emerges, completing the cycle.\n\nการป้องกันก าจัดด้วงหนวดยาวเจาะล าต้น \n\n1. หมั่นส ารวจแปลงอย่างสม่ าเสมอ โดยการสังเกตรอยแผล ถ้าพบขุยและการท าลายให้ท าลาย 2. ใช้สารเคมีก าจัดแมลง ได้แก่ อิมิดาโคลพริด $10 \\%$ SL (4A) หรืออะเซทามิพริด $20 \\%$ SP (4A) หรือไธอะมีโท แซม $2 5 \\%$ WG (4A) หรือฟิโพลนิล หรือโพรฟีโนฟอส พ่นบริเวณล าต้นและกิ่งขนาดใหญ่ หรือฉีดเข้าไปในร",
+      "contextual_text": null
+    },
+    "updated_at": "2025-09-15T07:24:15.255884",
+    "source_blocks": [
+      {
+        "page_idx": 0.0,
+        "char_start": 0.0,
+        "type": "text",
+        "block_idx": 0.0,
+        "char_end": 26.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 27.0,
+        "type": "text",
+        "block_idx": 1.0,
+        "char_end": 49.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 51.0,
+        "type": "text",
+        "block_idx": 2.0,
+        "char_end": 117.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 119.0,
+        "type": "text",
+        "block_idx": 3.0,
+        "char_end": 346.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 348.0,
+        "type": "image",
+        "block_idx": 5.0,
+        "char_end": 728.0
+      },
+      {
+        "page_idx": 1.0,
+        "char_start": 730.0,
+        "type": "text",
+        "block_idx": 6.0,
+        "char_end": 768.0
+      },
+      {
+        "page_idx": 1.0,
+        "char_start": 770.0,
+        "type": "text",
+        "block_idx": 7.0,
+        "char_end": 1056.0
+      }
+    ],
+    "block_index": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      5.0,
+      6.0,
+      7.0
+    ],
+    "image": null,
+    "content_type": "text",
+    "document_id": "28887fc7cb382999bb1d0dfb743ca16875649553f8294be096acb7af2a27d14e",
+    "id": "fc228a8a-d84c-459a-82e4-07ba330e0d13"
+  }
+]

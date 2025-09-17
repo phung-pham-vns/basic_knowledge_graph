@@ -1,0 +1,1773 @@
+{
+  "entities": [
+    {
+      "label": "Disease",
+      "attributes": [
+        {
+          "name": "english_name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "vietnamese_name",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "thailand_name",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "scientific_name",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "alternative_names",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "seasonality",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "economic_impact",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "vietnamese_names",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "thailand_names",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "seasonality_description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "economic_threat_level",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "effect_description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "disease_type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Fungus",
+      "attributes": [
+        {
+          "name": "scientific_name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "teleomorph",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "anamorph",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "survival_method",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "HostPlant",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "susceptibility",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "affected_parts",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "vulnerable_stage",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Cultivar",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "susceptibility_notes",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "designation",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "alternative_names",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "susceptibility_status",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "code",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "origin",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "alternative_name",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "susceptibility_level",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Symptom",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "stage",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "texture",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "affected_part",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "affected_plant_part",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Effect",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "target_area",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "impact_area",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "target",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "RiskFactor",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "optimal_range",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "SpreadMethod",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "survival_mechanism",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DiagnosticMethod",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "method_type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Treatment",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "application_details",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "mode_of_action",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "example_products",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "application_notes",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "PreventionMethod",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Chemical",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "active_ingredient",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "example_trade_name",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Location",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "prevalence_notes",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "region",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "specific_areas",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "country",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "specific_regions",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "country_name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "regions",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Pathogen",
+      "attributes": [
+        {
+          "name": "scientific_name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "spread_method",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "survival_method",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "teleomorph_name",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "common_name",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "phylum",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "survival_form",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "pathogen_type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "spread_mechanism",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "anastomosis_group",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "genus",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "species_complex",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "taxonomic_order",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "classification",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "optimal_conditions",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "anamorph",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "teleomorph",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "PlantPart",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "PreventionMeasure",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "goal",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "importance",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Plant",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "AffectedPart",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Condition",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "optimal_range",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ControlMethod",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Agent",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Host",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "time_to_bear_fruit",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ManagementStrategy",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "strategy_type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ChemicalAgent",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "agent_type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "BiocontrolAgent",
+      "attributes": [
+        {
+          "name": "scientific_name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "agent_type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "EnvironmentalCondition",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "optimal_range",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "SpreadMechanism",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ManagementMethod",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "application_details",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ChemicalControl",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "active_ingredient",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "control_type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "application_notes",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "BiologicalControl",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "organism_name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "application_method",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "species_examples",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "CulturalControl",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "BiologicalControlAgent",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "PlantVariety",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "designation_code",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "susceptibility_notes",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "ControlAgent",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "examples",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "active_ingredient",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "DiagnosisMethod",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    },
+    {
+      "label": "Seasonality",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string",
+          "unique": true,
+          "required": true
+        },
+        {
+          "name": "peak_period",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "climatic_triggers",
+          "type": "string",
+          "unique": false,
+          "required": false
+        },
+        {
+          "name": "risk_growth_stage",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "relations": [
+    {
+      "label": "CAUSED_BY",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Fungus"
+      },
+      "attributes": [
+        {
+          "name": "role",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "is_primary_agent",
+          "type": "boolean",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "AFFECTS",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "HostPlant"
+      },
+      "attributes": [
+        {
+          "name": "affected_parts",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "AFFECTS_CULTIVAR",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Cultivar"
+      },
+      "attributes": [
+        {
+          "name": "susceptibility_level",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "susceptibility",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "IS_CULTIVAR_OF",
+      "source": {
+        "label": "Cultivar"
+      },
+      "target": {
+        "label": "HostPlant"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_SYMPTOM",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Symptom"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_EFFECT",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Effect"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_RISK_FACTOR",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "RiskFactor"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SPREADS_VIA",
+      "source": {
+        "label": "Fungus"
+      },
+      "target": {
+        "label": "SpreadMethod"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DIAGNOSED_BY",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "DiagnosticMethod"
+      },
+      "attributes": []
+    },
+    {
+      "label": "TREATED_BY",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Treatment"
+      },
+      "attributes": [
+        {
+          "name": "application_type",
+          "type": "string",
+          "unique": false,
+          "required": true
+        },
+        {
+          "name": "effectiveness",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "PREVENTED_BY",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "PreventionMethod"
+      },
+      "attributes": []
+    },
+    {
+      "label": "USES_CHEMICAL",
+      "source": {
+        "label": "Treatment"
+      },
+      "target": {
+        "label": "Chemical"
+      },
+      "attributes": [
+        {
+          "name": "application_method",
+          "type": "string",
+          "unique": false,
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "IS_PREVALENT_IN",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Location"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MANIFESTS_AS",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Symptom"
+      },
+      "attributes": []
+    },
+    {
+      "label": "APPEARS_ON",
+      "source": {
+        "label": "Symptom"
+      },
+      "target": {
+        "label": "PlantPart"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PREVALENT_IN",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Location"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_LOCATED_IN",
+      "source": {
+        "label": "Location"
+      },
+      "target": {
+        "label": "Location"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IMPACTS",
+      "source": {
+        "label": "Effect"
+      },
+      "target": {
+        "label": "Plant"
+      },
+      "attributes": []
+    },
+    {
+      "label": "FAVORED_BY",
+      "source": {
+        "label": "Pathogen"
+      },
+      "target": {
+        "label": "Condition"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SPREAD_BY",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "SpreadMethod"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AGGRAVATED_BY",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "RiskFactor"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_VARIETY_OF",
+      "source": {
+        "label": "Cultivar"
+      },
+      "target": {
+        "label": "Plant"
+      },
+      "attributes": []
+    },
+    {
+      "label": "MANAGED_BY",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "ControlMethod"
+      },
+      "attributes": []
+    },
+    {
+      "label": "USES_AGENT",
+      "source": {
+        "label": "ControlMethod"
+      },
+      "target": {
+        "label": "Agent"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PART_OF",
+      "source": {
+        "label": "Location"
+      },
+      "target": {
+        "label": "Location"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_SUSCEPTIBILITY",
+      "source": {
+        "label": "Cultivar"
+      },
+      "target": {
+        "label": "Disease"
+      },
+      "attributes": [
+        {
+          "name": "level",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "FOUND_IN",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Location"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_VARIETY",
+      "source": {
+        "label": "Host"
+      },
+      "target": {
+        "label": "Cultivar"
+      },
+      "attributes": []
+    },
+    {
+      "label": "USES_CHEMICAL_AGENT",
+      "source": {
+        "label": "ManagementStrategy"
+      },
+      "target": {
+        "label": "ChemicalAgent"
+      },
+      "attributes": [
+        {
+          "name": "application_method",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "USES_BIOCONTROL_AGENT",
+      "source": {
+        "label": "ManagementStrategy"
+      },
+      "target": {
+        "label": "BiocontrolAgent"
+      },
+      "attributes": [
+        {
+          "name": "application_method",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "EXHIBITS",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Symptom"
+      },
+      "attributes": []
+    },
+    {
+      "label": "LEADS_TO",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Effect"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_SUSCEPTIBLE_TO",
+      "source": {
+        "label": "Cultivar"
+      },
+      "target": {
+        "label": "Disease"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DIAGNOSED_USING",
+      "source": {
+        "label": "Pathogen"
+      },
+      "target": {
+        "label": "DiagnosticMethod"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SPREAD_VIA",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "SpreadMethod"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_CULTIVAR",
+      "source": {
+        "label": "HostPlant"
+      },
+      "target": {
+        "label": "Cultivar"
+      },
+      "attributes": []
+    },
+    {
+      "label": "OBSERVED_ON",
+      "source": {
+        "label": "Symptom"
+      },
+      "target": {
+        "label": "PlantPart"
+      },
+      "attributes": []
+    },
+    {
+      "label": "PROMOTED_BY",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "RiskFactor"
+      },
+      "attributes": []
+    },
+    {
+      "label": "DIAGNOSED_WITH",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "DiagnosticMethod"
+      },
+      "attributes": []
+    },
+    {
+      "label": "EMPLOYS",
+      "source": {
+        "label": "ControlMethod"
+      },
+      "target": {
+        "label": "ControlAgent"
+      },
+      "attributes": []
+    },
+    {
+      "label": "AFFECTS_VARIETY",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Cultivar"
+      },
+      "attributes": [
+        {
+          "name": "susceptibility_level",
+          "type": "string",
+          "unique": false,
+          "required": true
+        }
+      ]
+    },
+    {
+      "label": "PRESENTS_SYMPTOM",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Symptom"
+      },
+      "attributes": []
+    },
+    {
+      "label": "CAUSES_EFFECT",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Effect"
+      },
+      "attributes": []
+    },
+    {
+      "label": "EXACERBATED_BY",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "RiskFactor"
+      },
+      "attributes": []
+    },
+    {
+      "label": "SHOWS_SYMPTOM",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Symptom"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_FOUND_IN",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Location"
+      },
+      "attributes": []
+    },
+    {
+      "label": "HAS_SEASONALITY",
+      "source": {
+        "label": "Disease"
+      },
+      "target": {
+        "label": "Seasonality"
+      },
+      "attributes": []
+    },
+    {
+      "label": "IS_SPREAD_BY",
+      "source": {
+        "label": "Pathogen"
+      },
+      "target": {
+        "label": "SpreadMethod"
+      },
+      "attributes": []
+    }
+  ]
+}

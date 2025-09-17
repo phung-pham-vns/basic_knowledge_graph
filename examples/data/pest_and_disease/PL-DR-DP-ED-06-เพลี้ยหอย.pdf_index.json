@@ -1,0 +1,104 @@
+[
+  {
+    "metadata": {},
+    "element_index": 0.0,
+    "equation": null,
+    "created_at": "2025-09-15T07:23:07.239489",
+    "table": null,
+    "text": {
+      "text_translated": "Scale insects\n\nDurian pit scale \n\nAsterolecanium ungulata \n\nA side-by-side comparison shows the impact of Russell's scale insects on durian leaves. The image on the left displays the underside of a leaf covered in numerous small, light-colored scale insects. The image on the right shows the corresponding damage on the top surface of the leaves, which manifests as yellow, mottled spots.\n\nBreadfruit scale Icerya aegyptiaca \n\nDurian armoured scale, Hard scale \n\nA comparison is shown between two types of scale insects. The first, labeled in Thai as 'เพลี้ยหอยยักษ์สาเก' (Giant breadfruit scale insect), are large, white, fluffy insects on two brownish leaves. The second type, labeled in Thai as 'เพลี้ยหอยเกล็ดทุเรียน' (Durian armoured scale insect) and identified by the scientific name Aulacaspis vitis, consists of smaller, white scale insects clustered on a green leaf.\n\nVarious types of scale insects affecting durian plants are presented. The first section shows a close-up of a durian fruit infested with Coccus sp., identified as the New Brown soft scale from Trat. The second section displays pests on the branches and stems of the plant. The third section details the Tortoise durian soft scale (Paralecanium album Takahashi, 1950), highlighting its distinct, patterned appearance on a durian leaf.\n\n1. Brown durian soft scale (Coccus hesperidum) \n\n2. Durian bark scale insect \nAccanthococcus lagersthroemiae   \n3. Tortoise durian soft scale (Paralecanium album)   \n1. If a few scale insects are found, cut off the infested parts 91 9 and burn them outside the plot.   \n2. If a small number of scale insects are found on the leaves, use water mixed with 67%EC white oil and spray thoroughly %. This will help to effectively eliminate the scale insects.   \n3. Spray with chemical pesticides such as dinotefuran 10%WP 9 (3A), profenofos 50% EC (1B), or fipronil (2B), by spraying only on the trees where scale insects are found.",
+      "intents": null,
+      "text": "เพลี้ยหอย \n\nDurian pit scale \n\nAsterolecanium ungulata \n\nA side-by-side comparison shows the impact of Russell's scale insects on durian leaves. The image on the left displays the underside of a leaf covered in numerous small, light-colored scale insects. The image on the right shows the corresponding damage on the top surface of the leaves, which manifests as yellow, mottled spots.\n\nBreadfruit scale Icerya aegyptiaca \n\nDurian armoured scale, Hard scale \n\nA comparison is shown between two types of scale insects. The first, labeled in Thai as 'เพลี้ยหอยยักษ์สาเก', are large, white, fluffy insects on two brownish leaves. The second type, labeled in Thai as 'เพลี้ยหอยเกล็ดทุเรียน' and identified by the scientific name Aulacaspis vitis, consists of smaller, white scale insects clustered on a green leaf.\n\nVarious types of scale insects affecting durian plants are presented. The first section shows a close-up of a durian fruit infested with Coccus sp., identified as the New Brown soft scale from Trat. The second section displays pests on the branches and stems of the plant. The third section details the Tortoise durian soft scale (Paralecanium album Takahashi, 1950), highlighting its distinct, patterned appearance on a durian leaf.\n\n1. เพลี ้ ยหอยเกราะอ่อนทเุ  รี ยนสี น ้ าตาล (Brown durian soft scale) Coccus hesperidum \n\n2. เพลี้ยหอยเปลือกล าต้นทุเรียน   \nAccanthococcus lagersthroemiae   \n3. เพลี้ยหอยเกราะอ่อนหลงั เต่าทเุ รียน (Tortoise durian soft scale) Paralecanium album   \n1. หากพบเพลี้ยหอยเล็กน้อยให้ตัดส่วนที่ถูก 91 9   \nท าลายเผาทิ้งนอกแปลง   \n2. พบเพลี้ยหอยปริมาณน้อยบนใบ   \nใช้น้ าผสมไวท์ออยล์ 67%EC พ่นให้ทั่ว %   \nจะช่วยในการก าจัดเพลี้ยหอยได้ดี   \n3. พ่นสารเคมี ได้แก่ ไดโนทีฟูแรน 10%WP 9   \n(3A) หรือ profenofos 50% EC (1B) ฟิโพล   \nนิล (2B) โดยพ่นเฉพาะต้นที่พบเพลี้ยหอย",
+      "contextual_text": null
+    },
+    "updated_at": "2025-09-15T07:23:07.239579",
+    "source_blocks": [
+      {
+        "page_idx": 0.0,
+        "char_start": 0.0,
+        "type": "text",
+        "block_idx": 0.0,
+        "char_end": 10.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 11.0,
+        "type": "text",
+        "block_idx": 1.0,
+        "char_end": 28.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 30.0,
+        "type": "text",
+        "block_idx": 2.0,
+        "char_end": 54.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 56.0,
+        "type": "image",
+        "block_idx": 3.0,
+        "char_end": 384.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 386.0,
+        "type": "text",
+        "block_idx": 4.0,
+        "char_end": 421.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 423.0,
+        "type": "text",
+        "block_idx": 5.0,
+        "char_end": 457.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 459.0,
+        "type": "image",
+        "block_idx": 6.0,
+        "char_end": 809.0
+      },
+      {
+        "page_idx": 1.0,
+        "char_start": 811.0,
+        "type": "image",
+        "block_idx": 7.0,
+        "char_end": 1244.0
+      },
+      {
+        "page_idx": 1.0,
+        "char_start": 1246.0,
+        "type": "text",
+        "block_idx": 8.0,
+        "char_end": 1335.0
+      },
+      {
+        "page_idx": 1.0,
+        "char_start": 1337.0,
+        "type": "text",
+        "block_idx": 9.0,
+        "char_end": 1803.0
+      }
+    ],
+    "block_index": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0
+    ],
+    "image": null,
+    "content_type": "text",
+    "document_id": "4203f979eb1789487360c0656b9dd80414a8b00f6a971bb1565233ef46ae95ac",
+    "id": "58d69030-fa4d-40c5-abd4-e935ee0cf0ef"
+  }
+]

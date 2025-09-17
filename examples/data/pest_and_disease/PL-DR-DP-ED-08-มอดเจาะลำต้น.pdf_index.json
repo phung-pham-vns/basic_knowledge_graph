@@ -1,0 +1,80 @@
+[
+  {
+    "metadata": {},
+    "element_index": 0.0,
+    "equation": null,
+    "created_at": "2025-09-15T07:25:07.594741",
+    "table": null,
+    "text": {
+      "text_translated": "9. Stem borer (Shot hole borer)\n\nCharacteristics of Damage\n\nScientific Name: Xyleborus fornicatus\n\nThe larvae will burrow and feed along the inside of the bark in random directions or may girdle the bark around the trunk. Damage from small larvae cannot be observed from the outside, but as the larvae grow larger, fine wood dust, which is the larvae's frass, will be found along the damage trails.\n\nPrevention and Control of Stem Borers\n\n1. Regularly inspect durian trunks. If dry branches damaged by borers are found, they should be cut and burned. Do not leave them to allow the borers to multiply and spread the damage to other trees.\n2. For parts that cannot be cut off, such as the trunk or large branches, it is necessary to use an insecticide, such as Fipronil (2B), on the trunk or branches with borer holes.",
+      "intents": null,
+      "text": "9 มอดเจาะล าต้น \n\n(Shot hole borer) \n\nลักษณะการท าลาย \n\nชื่อวิ ทยาศาสตร์ : Xyleborus fornicatus \n\nหนอนจะกัดกินชอนไชไปตามเปลือกไม้   \nด้านในไม่มีทิศทางหรืออาจกัดควั่นเปลือก 9   \nรอบต้น การท าลายที่เกิดหนอนขนาดเล็ก   \nไม่สามารถสังเกตได้จากภายนอก แต่เมื่อ % 9   \nหนอนโตขึ้นจะพบขุยไม้ละเอียดซึ่งเป็นมูล uj   \nของหนอนตามแนวรอยท าลาย \n\nการป้องกันก าจัดมอดเจาะล าต้น \n\n1. หมั่นตรวจดูตามล าต้นทุเรียน ถ้าพบกิ่งแห้งที่ถูกมอดท าลาย ควรตัดเผาท าลาย อย่าปล่อยทิ้งไว้ให้มอดขยายปริมาณและการท าลายออกไปยังต้นอื่น ๆ 2. ส าหรับส่วนที่ไม่สามารถตัดทิ้งได้ เช่น ในส่วนของล าต้น หรือกิ่งใหญ่ จ าเป็นต้องใช้ สารฆ่า แมลง เช่น ฟิโพรนิล (2B) บนล าต้น หรือกิ่งที่มีรูมอดเจาะ",
+      "contextual_text": null
+    },
+    "updated_at": "2025-09-15T07:25:07.594745",
+    "source_blocks": [
+      {
+        "page_idx": 0.0,
+        "char_start": 0.0,
+        "type": "text",
+        "block_idx": 0.0,
+        "char_end": 16.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 17.0,
+        "type": "text",
+        "block_idx": 1.0,
+        "char_end": 35.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 37.0,
+        "type": "text",
+        "block_idx": 2.0,
+        "char_end": 53.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 55.0,
+        "type": "text",
+        "block_idx": 3.0,
+        "char_end": 95.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 97.0,
+        "type": "text",
+        "block_idx": 4.0,
+        "char_end": 327.0
+      },
+      {
+        "page_idx": 1.0,
+        "char_start": 329.0,
+        "type": "text",
+        "block_idx": 6.0,
+        "char_end": 359.0
+      },
+      {
+        "page_idx": 1.0,
+        "char_start": 361.0,
+        "type": "text",
+        "block_idx": 7.0,
+        "char_end": 648.0
+      }
+    ],
+    "block_index": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      6.0,
+      7.0
+    ],
+    "image": null,
+    "content_type": "text",
+    "document_id": "fe83d4f4d14482a9501a64c49fd1a160bce5d96af683891c32b1c010a379bf0d",
+    "id": "71c50e8d-a731-4a55-944a-0a85059e30e4"
+  }
+]

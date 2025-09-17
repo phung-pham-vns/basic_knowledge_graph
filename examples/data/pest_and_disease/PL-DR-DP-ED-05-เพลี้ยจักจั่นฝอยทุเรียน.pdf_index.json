@@ -1,0 +1,88 @@
+[
+  {
+    "metadata": {},
+    "element_index": 0.0,
+    "equation": null,
+    "created_at": "2025-09-15T07:20:46.072736",
+    "table": null,
+    "text": {
+      "text_translated": "Durian Leafhopper C\n\nScientific name: Amrasca durianae\n\n(Durian leafhopper)\n\nDamage characteristics\n\nAfter sucking and feeding, it releases toxins onto young leaves, causing them to appear scalded by hot water. They will gradually dry out on the following day, especially the leaf edges which dry and curl upwards. Soon after, the leaves will become dry, brittle, red, and fall off, leaving only the bare petiole.\n\nControl of Durian Leafhoppers\n\n1. Use sticky traps to capture adults.\n2. Spray with Beauveria/Metarhizium/Neem extract.\n3. Spray with chemical insecticides such as Carbosulfan 20% EC (1A), Imidacloprid 10% SL (4A), Fipronil (2B), Abamectin (5).",
+      "intents": null,
+      "text": "เพลี้ยจักจั ่นฝอยทุเรียน C \n\nชื่อวิ ทยาศาสตร์ : Amrasca durianae \n\n(Durian leafhopper) \n\nลักษณะการท าลาย \n\nดูดกินแล้ว มันจะปล่อยสารพิษลงบนใบ   \n9 6 99 %   \nอ่อนท าให้ใบเหมือนถูกน าร้อนลวก และ   \nจะค่อยๆ แห้งในวันถัดไป โดยเฉพาะที่ % %   \nขอบใบแห้งและม้วนงอขึ น จากนั นไม่   \nนานใบก็จะแห้งกรอบแดงและร่วง   \nเหลือแต่ก้านโด่เด่ \n\nการก าจัดเพลี ยจักจั่นฝอย \n\n90 1. ใช้กับดักกาวเหนียวเพื่อดักจับตัวเต็มวัย 2. พ่นเชื อราบิวเวอเรีย/เมตาไรเซียม/สารสกัดสะเดา 3.พ่นสารเคมีก าจัดแมลง ได้แก่ คาร์โบซัลแฟน $2 0 \\%$ EC (1A) อิมิดาโคลพริด 10% SL (4A) ฟิโพลนิล (2B) อะบาเม็กติน (5) \n\nThree agricultural pest control products are featured. The first is a fungal insecticide, Beauveria bassiana (เชื้อราบิวเวอร์เรีย), packaged in a bag with a pink label. The second is another fungal insecticide, Metarhizium anisopliae (เชื้อราเมตาไรเซียม), in a bag with a blue label. The third is a liquid chemical pesticide, Imidacloprid 60 FS (อิมิดาโคลพริด 60 เอฟเอส), in a white bottle.",
+      "contextual_text": null
+    },
+    "updated_at": "2025-09-15T07:20:46.072740",
+    "source_blocks": [
+      {
+        "page_idx": 0.0,
+        "char_start": 0.0,
+        "type": "text",
+        "block_idx": 0.0,
+        "char_end": 27.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 28.0,
+        "type": "text",
+        "block_idx": 1.0,
+        "char_end": 64.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 66.0,
+        "type": "text",
+        "block_idx": 2.0,
+        "char_end": 86.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 88.0,
+        "type": "text",
+        "block_idx": 3.0,
+        "char_end": 104.0
+      },
+      {
+        "page_idx": 0.0,
+        "char_start": 106.0,
+        "type": "text",
+        "block_idx": 4.0,
+        "char_end": 323.0
+      },
+      {
+        "page_idx": 2.0,
+        "char_start": 325.0,
+        "type": "text",
+        "block_idx": 9.0,
+        "char_end": 351.0
+      },
+      {
+        "page_idx": 2.0,
+        "char_start": 353.0,
+        "type": "text",
+        "block_idx": 10.0,
+        "char_end": 564.0
+      },
+      {
+        "page_idx": 2.0,
+        "char_start": 566.0,
+        "type": "image",
+        "block_idx": 11.0,
+        "char_end": 956.0
+      }
+    ],
+    "block_index": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      9.0,
+      10.0,
+      11.0
+    ],
+    "image": null,
+    "content_type": "text",
+    "document_id": "3f4e161dbadfb1f5d8b14ce91fb9cacc0df48c389bda25d238c078c6b4066f56",
+    "id": "1f7fb838-6e36-4505-822e-7005cc9a5eb5"
+  }
+]

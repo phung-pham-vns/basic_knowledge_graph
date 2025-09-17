@@ -1,8 +1,3 @@
-"""
-Graphiti-compatible disease schema using Pydantic models.
-Converted from the original disease_schema.py to work with Graphiti framework.
-"""
-
 from pydantic import BaseModel, Field
 from typing import Optional
 from datetime import datetime
@@ -279,5 +274,5 @@ EDGE_TYPE_MAP = {
     ("Disease", "Location"): ["OccursIn"],
     ("Pathogen", "SpreadMethod"): ["SpreadsVia"],
     # Fallback for any unexpected relationships
-    ("Entity", "Entity"): ["RELATES_TO"],
+    # ("Entity", "Entity"): ["RELATES_TO"],
 }
