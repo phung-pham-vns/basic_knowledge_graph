@@ -19,6 +19,22 @@
             "program": "create_vns_ontology.py",
             "console": "integratedTerminal",
             "justMyCode": false,
+        },
+        {
+            "name": "Graphiti Construction",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "graphiti/core/construct.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+        },
+        {
+            "name": "Graphiti Retrieval",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "graphiti/core/retrieve.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
         }
     ]
 }

@@ -1,0 +1,13 @@
+services:
+  falkordb:
+    image: falkordb/falkordb:latest
+    container_name: falkordb
+    ports:
+      - "6379:6379" # Redis protocol
+      - "3000:3000" # Web UI
+    volumes:
+      - falkordb_data:/data
+    restart: unless-stopped
+
+volumes:
+  falkordb_data:
