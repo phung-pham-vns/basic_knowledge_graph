@@ -9,8 +9,6 @@ from ragas import SingleTurnSample
 from ragas.llms import LangchainLLMWrapper
 from ragas.metrics import AnswerAccuracy
 
-from graphiti.settings import settings
-
 
 def save_json(data: dict, path: str):
     with open(file=path, mode="w", encoding="utf-8") as f:
@@ -43,7 +41,8 @@ async def main(
                 model="gemini-2.5-pro",
                 temperature=0.0,
                 model_kwargs={"seed": 42},
-                google_api_key=settings.llm_api_key,
+                # google_api_key=settings.llm_api_key,
+                google_api_key="AIzaSyCJEHXFRh_tbiAkiIV55ieydAHLpJjJaCA",
             )
         )
 
@@ -77,9 +76,13 @@ async def main(
     num_passed = 0
     num_failed = 0
     sum_score = 0
+    time_to_retrieval = 0
+    time_to_generation = 0
     for sample, score in zip(samples, scores):
         sum_score += score
         sample["score"] = score
+        time_to_retrieval += sample["time_to_retrieval"]
+        time_to_generation += sample["time_to_generation"]
         if score >= score_threshold:
             num_passed += 1
             sample["conclusion"] = "pass"
@@ -91,6 +94,8 @@ async def main(
     print(f"Number of samples: {num_samples}")
     print(f"Number of passed samples: {num_passed} ({num_passed / num_samples * 100:.2f}%)")
     print(f"Number of failed samples: {num_failed} ({num_failed / num_samples * 100:.2f}%)")
+    print(f"Average time to retrieval: {time_to_retrieval / num_samples}")
+    print(f"Average time to generation: {time_to_generation / num_samples}")
     print(f"Average score: {sum_score / num_samples}")
 
     # 6. Save file
@@ -105,6 +110,6 @@ async def main(
 if __name__ == "__main__":
     asyncio.run(
         main(
-            file_path="/Users/mac/Documents/PHUNGPX/knowledge_graph_searching/data/QA_17_pest_disease_v2.json",
+            file_path="/Users/mac/Documents/PHUNGPX/knowledge_graph_searching/data/QA_17_pest_disease_GEMINI_PRO_COMBINED_HYBRID_SEARCH_CROSS_ENCODER_limit_10.json",
         )
     )

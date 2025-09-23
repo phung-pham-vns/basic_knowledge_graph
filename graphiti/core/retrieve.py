@@ -16,6 +16,7 @@ from graphiti_core.search.search_config_recipes import (
 from graphiti.core.combine_context import format_context
 from graphiti.core.graphiti_client import GraphitiClient
 from graphiti.prompts.generation import generation_prompt_template
+from graphiti.settings import settings
 
 
 class SearchType(Enum):
@@ -65,7 +66,7 @@ async def rag(
     search_config.limit = limit
 
     t1 = time.time()
-    retrieved = await graphiti_client._search(
+    retrieved = await graphiti_client.search_(
         query=question,
         config=search_config,
     )
@@ -119,10 +120,14 @@ async def main(
             question = sample["question"]
             print(f"Question: {question}\n")
 
-            # if "successed" in sample and sample["successed"] == True:
-            #     print(f"Answer: {sample['generation']}")
-            #     print("\n")
-            #     continue
+            if (
+                "successed" in sample
+                and sample["successed"] == True
+                and sample["argumentation"] != "No relevant context found."
+            ):
+                print(f"Groundtruth: {sample['answer']}\n")
+                print(f"Prediction: {sample['generation']}")
+                continue
 
             try:
                 responses = await rag(
@@ -141,9 +146,16 @@ async def main(
                 print(f"Groundtruth: {sample['answer']}\n")
                 print(f"Prediction: {sample['generation']}")
             except Exception as e:
-                sample["predict"] = f"Error: {e}"
+                sample["generation"] = f"Error: {e}"
                 sample["successed"] = False
                 print(f"Error: {e}")
+                break
+
+            sample["construction_model_name"] = "gemini-2.5-pro"
+            sample["generation_model_name"] = settings.llm_model
+            sample["embedding_model_name"] = settings.embedding.embedding_model
+            sample["embedding_dimensions"] = settings.embedding.embedding_dimensions
+            sample["reranker_model"] = settings.reranker.reranker_model
 
             save_json(data, output_json_path)
 
@@ -155,9 +167,9 @@ async def main(
 if __name__ == "__main__":
     asyncio.run(
         main(
-            input_json_path="/Users/mac/Documents/PHUNGPX/knowledge_graph_searching/data/QA_17_pest_disease_COMBINED_HYBRID_SEARCH_RRF_limit_10.json",
-            output_json_path="/Users/mac/Documents/PHUNGPX/knowledge_graph_searching/data/QA_17_pest_disease_COMBINED_HYBRID_SEARCH_RRF_limit_10.json",
-            search_type=SearchType.COMBINED_HYBRID_SEARCH_RRF,
+            input_json_path="/Users/mac/Documents/PHUNGPX/knowledge_graph_searching/data/QA_17_pest_disease_v2.json",
+            output_json_path="/Users/mac/Documents/PHUNGPX/knowledge_graph_searching/data/QA_17_pest_disease_v2.json",
+            search_type=SearchType.COMBINED_HYBRID_SEARCH_CROSS_ENCODER,
             limit=10,
         )
     )

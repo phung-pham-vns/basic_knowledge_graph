@@ -44,8 +44,8 @@ class OpenAILLMClient:
 if __name__ == "__main__":
     client = OpenAILLMClient(
         base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-        api_keys=["<your-api-key-1>", "<your-api-key-2>"],
-        model_id="gemini-2.5-flash",
+        api_keys=["AIzaSyDXaHhAQ6gi0CjXNj3rJkKVjwpO1JZ9QSQ"],
+        model_id="gemini-2.5-flash-lite-preview-06-17",
     )
 
     print(

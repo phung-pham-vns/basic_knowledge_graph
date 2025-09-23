@@ -140,4 +140,4 @@ if __name__ == "__main__":
         logger.warning("No JSON files found in %s", data_dir)
 
     documents = load_documents(json_paths)
-    # asyncio.run(main(documents))
+    asyncio.run(main(documents))
