@@ -20,6 +20,11 @@ dependencies = [
   "openpyxl==3.1.5",
   "graphiti-core[google-genai]>=0.20.3",
   "pydantic>=2.0.0",
+  "langchain-core>=0.3.75",
+  "langgraph>=0.6.7",
+  "langchain-community>=0.3.28",
+  "langchain>=0.3.27",
+  "gradio>=5.43.1",
 ]
 
 [project.optional-dependencies]

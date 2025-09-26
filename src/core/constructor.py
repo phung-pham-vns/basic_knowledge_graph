@@ -1,12 +1,13 @@
 import json
 import asyncio
+import argparse
 from pathlib import Path
 from datetime import datetime
 
 from graphiti_core.nodes import EpisodeType
 
-from graphiti.core.graphiti_client import GraphitiClient
-from graphiti.logger import setup_logging
+from src.core.graphiti_client import GraphitiClient
+from src.logger import setup_logging
 
 
 logger = setup_logging()
@@ -14,7 +15,7 @@ logger = setup_logging()
 
 def load_documents(file_paths: list[Path]) -> list[dict[str, any]]:
     documents: list[dict[str, any]] = []
-    for file_path in file_paths:  # fixed shadowing bug
+    for file_path in file_paths:
         file_name = file_path.name
         try:
             with open(file_path, "r", encoding="utf-8") as file:
@@ -72,11 +73,20 @@ def load_documents(file_paths: list[Path]) -> list[dict[str, any]]:
     return documents
 
 
-async def main(documents: list[dict[str, any]]):
+async def main(
+    documents: list[dict[str, any]],
+    clear_existing_graphdb_data: bool = False,
+    max_coroutines: int = 1,
+    add_communities: bool = False,
+):
     try:
-        graphiti_client = await GraphitiClient(clear_existing_graphdb_data=True).get_graphiti_client()
+        graphiti_client = await GraphitiClient().create_client(
+            clear_existing_graphdb_data=clear_existing_graphdb_data,
+            max_coroutines=max_coroutines,
+        )
 
-        # await graphiti_client.build_communities(group_ids=[group_id])
+        if add_communities:
+            await graphiti_client.build_communities(group_ids=None)
 
         successful_chunks = 0
         failed_chunks = 0
@@ -100,7 +110,7 @@ async def main(documents: list[dict[str, any]]):
                         reference_time=datetime.now(),
                         source=EpisodeType.text,
                         group_id=document_id,
-                        # update_communities=True,
+                        update_communities=True if add_communities else False,
                         # entity_types=ENTITY_TYPES,
                         # edge_types=EDGE_TYPES,
                         # edge_type_map=EDGE_TYPE_MAP,
@@ -132,12 +142,19 @@ async def main(documents: list[dict[str, any]]):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--data-dir", type=str, required=True)
+    parser.add_argument("--clear-existing-graphdb-data", type=bool, default=False)
+    parser.add_argument("--max-coroutines", type=int, default=1)
+    args = parser.parse_args()
+
     # Adjust this path to your data directory as needed
-    data_dir = Path("/Users/mac/Documents/PHUNGPX/knowledge_graph_searching/data/pest_and_disease")
+    data_dir = Path(args.data_dir)
     json_paths = list(data_dir.glob("*.json"))
 
     if not json_paths:
         logger.warning("No JSON files found in %s", data_dir)
 
     documents = load_documents(json_paths)
-    asyncio.run(main(documents))
+
+    asyncio.run(main(documents, args.clear_existing_graphdb_data, args.max_coroutines))

@@ -9,19 +9,20 @@ from graphiti_core.embedder.openai import OpenAIEmbedder, OpenAIEmbedderConfig
 # from graphiti_core.cross_encoder.gemini_reranker_client import GeminiRerankerClient
 from graphiti_core.cross_encoder.openai_reranker_client import OpenAIRerankerClient
 from graphiti_core.driver.neo4j_driver import Neo4jDriver
-from graphiti_core.driver.falkordb_driver import FalkorDriver
+
+# from graphiti_core.driver.falkordb_driver import FalkorDriver
 
 from graphiti_core.utils.maintenance.graph_data_operations import clear_data
 
-from graphiti.settings import settings
-from graphiti.models.providers import LLMProviders, EmbeddingProviders, GraphDBProviders
+from src.settings import settings
+from src.models.providers import LLMProviders, GraphDBProviders
 
-from graphiti.deps.embedder.cloud_hosted_embedding import CloudHostedEmbedder, CloudHostedEmbedderConfig
-from graphiti.deps.reranker.gemini import GeminiRerankerClient
+from src.deps.embedder.cloud_hosted_embedding import CloudHostedEmbedder, CloudHostedEmbedderConfig
+from src.deps.reranker.gemini import GeminiRerankerClient
 
 
 class GraphitiClient:
-    def __init__(self, clear_existing_graphdb_data: bool = False):
+    def __init__(self):
         if settings.llm_provider == LLMProviders.Gemini.value:
             self.llm_client = GeminiClient(
                 config=LLMConfig(
@@ -72,34 +73,32 @@ class GraphitiClient:
                 user=settings.graph_db_username,
                 password=settings.graph_db_password,
             )
-        elif settings.graph_db_provider == GraphDBProviders.FalkorDB.value:
-            self.driver = FalkorDriver(
-                host=settings.graph_db_host,
-                port=settings.graph_db_port,
-                username=settings.graph_db_username,
-                password=settings.graph_db_password,
-                database=settings.graph_db_database,
-            )
+        # elif settings.graph_db_provider == GraphDBProviders.FalkorDB.value:
+        #     self.driver = FalkorDriver(
+        #         host=settings.graph_db_host,
+        #         port=settings.graph_db_port,
+        #         username=settings.graph_db_username,
+        #         password=settings.graph_db_password,
+        #         database=settings.graph_db_database,
+        #     )
         else:
             raise ValueError(f"Invalid graphdb provider: {settings.graph_db_provider}")
 
-        self.clear_existing_graphdb_data = clear_existing_graphdb_data
-
-    async def get_graphiti_client(self):
+    async def create_client(self, clear_existing_graphdb_data: bool = False, max_coroutines: int = 1):
         graphiti = Graphiti(
             graph_driver=self.driver,
             llm_client=self.llm_client,
             embedder=self.embedder,
             cross_encoder=self.cross_encoder,
-            max_coroutines=1,
+            max_coroutines=max_coroutines,
         )
 
         # Initialize the graph database with graphiti's indices
         await graphiti.build_indices_and_constraints()
 
-        if self.clear_existing_graphdb_data:
-            print("Clearing existing graph data...")
+        if clear_existing_graphdb_data:
+            print("[GraphitiClient] Clearing existing graph data...")
             await clear_data(graphiti.driver)
-            print("Graph data cleared successfully.")
+            print("[GraphitiClient] Graph data cleared successfully.")
 
         return graphiti

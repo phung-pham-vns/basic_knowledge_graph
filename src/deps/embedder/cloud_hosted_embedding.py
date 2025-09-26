@@ -46,7 +46,7 @@ class CloudHostedEmbedder(EmbedderClient):
             response = await self.client.embeddings.create(
                 input=input_data,
                 model=self.config.embedding_model,
-                # dimensions=self.config.embedding_dim,
+                dimensions=self.config.embedding_dim,
             )
             if not response.data or not response.data[0].embedding:
                 raise ValueError("No valid embedding returned from Gemini API")

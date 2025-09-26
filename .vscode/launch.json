@@ -32,7 +32,7 @@
             "name": "Graphiti Retrieval",
             "type": "debugpy",
             "request": "launch",
-            "program": "graphiti/core/retrieve.py",
+            "program": "graphiti/core/retrieve_knowledge_graph.py",
             "console": "integratedTerminal",
             "justMyCode": false,
         }
