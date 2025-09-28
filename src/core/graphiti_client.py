@@ -3,7 +3,7 @@ from graphiti_core.llm_client import LLMConfig
 from graphiti_core.llm_client.gemini_client import GeminiClient
 from graphiti_core.llm_client.openai_client import OpenAIClient
 
-# from graphiti_core.embedder.gemini import GeminiEmbedder, GeminiEmbedderConfig
+from graphiti_core.embedder.gemini import GeminiEmbedder, GeminiEmbedderConfig
 from graphiti_core.embedder.openai import OpenAIEmbedder, OpenAIEmbedderConfig
 
 # from graphiti_core.cross_encoder.gemini_reranker_client import GeminiRerankerClient
@@ -15,7 +15,7 @@ from graphiti_core.driver.neo4j_driver import Neo4jDriver
 from graphiti_core.utils.maintenance.graph_data_operations import clear_data
 
 from src.settings import settings
-from src.models.providers import LLMProviders, GraphDBProviders
+from src.models.providers import LLMProviders, GraphDBProviders, EmbeddingProviders
 
 from src.deps.embedder.cloud_hosted_embedding import CloudHostedEmbedder, CloudHostedEmbedderConfig
 from src.deps.reranker.gemini import GeminiRerankerClient
@@ -59,13 +59,31 @@ class GraphitiClient:
         else:
             raise ValueError(f"Invalid reranker provider: {settings.reranker.reranker_provider}")
 
-        self.embedder = CloudHostedEmbedder(
-            config=CloudHostedEmbedderConfig(
-                api_key=settings.embedding.embedding_api_key,
-                embedding_model=settings.embedding.embedding_model,
-                embedding_dim=settings.embedding.embedding_dimensions,
+        if settings.embedding.embedding_provider == EmbeddingProviders.Gemini.value:
+            self.embedder = GeminiEmbedder(
+                config=GeminiEmbedderConfig(
+                    api_key=settings.embedding.embedding_api_key,
+                    embedding_model=settings.embedding.embedding_model,
+                    embedding_dim=settings.embedding.embedding_dimensions,
+                )
             )
-        )
+        elif settings.embedding.embedding_provider == EmbeddingProviders.OpenAI.value:
+            self.embedder = OpenAIEmbedder(
+                config=OpenAIEmbedderConfig(
+                    api_key=settings.embedding.embedding_api_key,
+                    embedding_model=settings.embedding.embedding_model,
+                    embedding_dim=settings.embedding.embedding_dimensions,
+                )
+            )
+        else:
+            raise ValueError(f"Invalid embedder provider: {settings.embedding.embedding_provider}")
+        # self.embedder = CloudHostedEmbedder(
+        #     config=CloudHostedEmbedderConfig(
+        #         api_key=settings.embedding.embedder_api_key,
+        #         embedding_model=settings.embedding.embedding_model,
+        #         embedding_dim=settings.embedding.embedding_dimensions,
+        #     )
+        # )
 
         if settings.graph_db_provider == GraphDBProviders.Neo4j.value:
             self.driver = Neo4jDriver(
@@ -84,7 +102,11 @@ class GraphitiClient:
         else:
             raise ValueError(f"Invalid graphdb provider: {settings.graph_db_provider}")
 
-    async def create_client(self, clear_existing_graphdb_data: bool = False, max_coroutines: int = 1):
+    async def create_client(
+        self,
+        clear_existing_graphdb_data: bool = False,
+        max_coroutines: int = 1,
+    ):
         graphiti = Graphiti(
             graph_driver=self.driver,
             llm_client=self.llm_client,

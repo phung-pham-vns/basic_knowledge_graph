@@ -1,7 +1,6 @@
 import asyncio
 from dataclasses import dataclass
 from typing import List, Optional, Dict, Any
-from enum import Enum
 
 from graphiti_core.graphiti import Graphiti
 from graphiti_core.search.search_config import (
@@ -19,7 +18,7 @@ from graphiti_core.search.search_config import (
     CommunitySearchMethod,
     CommunityReranker,
 )
-from src.core.combine_context import format_context
+from src.core.utils import format_context
 from src.core.graphiti_client import GraphitiClient
 
 
@@ -171,7 +170,7 @@ async def search_knowledge_graph(
         community_methods=community_methods,
     )
 
-    retrieved_results = await src.search_(query=question, config=search_config)
+    retrieved_results = await graphiti.search_(query=question, config=search_config)
     formatted_context = format_context(retrieved_results)
 
     return SearchResults(
